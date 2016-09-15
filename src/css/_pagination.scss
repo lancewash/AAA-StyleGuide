@@ -1,0 +1,55 @@
+// Pagination
+// -------------------------
+.pagination-block {
+	ul {
+		margin: 0;
+		background-color: $white;
+		padding: 0;
+		list-style: none;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 600;
+		color: $red;
+		line-height: 40px;
+		padding: 15px;
+		@include breakFirst(medium) {
+			padding: 30px 25px;
+		}
+		li {
+			padding: 0;
+			margin: 0 5px;
+			display: inline-block;
+			// &:last-child {
+			// 	margin: 0;
+			// }
+			@include breakFirst(medium) {
+				margin: 0 15px;
+			}
+			a {
+				text-decoration: underline;
+			}
+			&.current {
+				a {
+					color: $black;
+				}
+			}
+		}
+		.next-button, .previous-button {
+			width: 40px;
+			height: 25px;
+			svg {
+				float: left;
+				width: 40px;
+				height: 40px;
+			}
+			a {
+				text-decoration: none;
+				@include breakFirst(large) {
+			    &:hover, &:focus {
+				      color: $linkColorHover;
+				    }
+				 }
+			}
+		}
+	}
+}

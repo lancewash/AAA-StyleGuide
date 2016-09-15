@@ -1,0 +1,132 @@
+/*--------------------------------------------------------------
+// Table
+--------------------------------------------------------------*/
+
+table.table-block { 
+  width: 100%; 
+  border-collapse: collapse;
+  table-layout: fixed;
+  .selected {
+    color: $red;
+  }
+  .icon-arrow-circle {
+    color: $white;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    transition: all ease .2s;
+    svg {
+      float: left;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(90deg);
+      height: 30px;
+      width: 30px;
+    }
+    @include breakFirst(large) {
+      display: none;
+    }
+  }
+  .icon-mark {
+    svg {
+      width: 20px;
+      height: 20px;
+      position: relative;
+      top: 4px;
+    }
+  }
+  th { 
+    color: black; 
+    font-weight: bold; 
+    text-align: center;
+    box-shadow: inset 10px 0px 0px $greyLight;
+    text-transform: uppercase;
+    font-family: $headingsFontFamily;
+    font-size: 1.625em;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+    &:first-child {
+      background: $red;
+      color: white;
+      text-align: left;
+      box-shadow: none;
+    }
+  }
+  td, th { 
+    padding: 6px; 
+    border-top: 1px solid $greyLight;
+    background: $white;
+    padding: 15px 20px;
+    vertical-align: middle;
+  }
+  tr td + td {
+    text-align: center;
+  }
+  tbody tr td:first-child {
+    box-shadow: inset -10px 0px 0px $grey;
+    font-family: $headingsFontFamily;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+  }
+  tbody tr td:not(:first-child) {
+    box-shadow: inset 10px 0px 0px $greyLight;
+  }
+}
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+table.table-block { 
+    thead {
+      display: none;
+    }
+    td, th { 
+      padding: 6px; 
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+      border-top: 1px solid #ccc;
+      text-align: center; 
+    }
+    td {
+       display: block;
+       background: $red;
+       color: white;
+       font-weight: bold;
+       padding: 10px;
+    }
+    tr td + td {
+      background: none;
+      color: black;
+      font-weight: normal;
+      display: none;
+      &:before {
+          content: attr(data-label);
+          height: 50px;
+          display: block;
+          height: 25px;
+      }
+    }
+    tr.active {
+      td + td {
+        display: block;
+      }
+      .icon-arrow-circle {
+        svg {
+          transform: translate(-50%, -50%) rotate(-90deg);
+        }
+      }
+    }
+    tbody tr td:first-child {
+      box-shadow: none;
+      position: relative;
+    }
+    tbody tr td:not(:first-child) {
+      box-shadow: none;
+    }
+
+  }
+}

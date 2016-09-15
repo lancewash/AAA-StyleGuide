@@ -1,0 +1,38 @@
+// Breadcrumbs
+// -------------------------
+.breadcrumbs {
+	ul {
+		margin: 0;
+		background-color: $white;
+		padding: 15px;
+		list-style: none;
+		text-transform: uppercase;
+		font-size: .8em;
+		display: none;
+		@include breakFirst(medium) {
+			padding: 15px 25px;
+			display: block;
+		}
+		li {
+			padding: 0;
+			margin: 0 20px 0 0;
+			display: inline-block;
+			&:last-child {
+				margin: 0;
+			}
+			a {
+				&:after {
+					content: ":";
+				}
+			}
+			&.current {
+				a {
+					color: $black;
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

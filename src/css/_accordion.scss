@@ -1,0 +1,66 @@
+.accordion-wrap {
+	background: $white;
+	box-shadow: inset -10px 0px 0px $grey;
+	margin-bottom: 15px;
+	.section-heading {
+		margin: 0;
+		h2 {
+			color: $black;
+			padding-left: 30px;
+			font-size: 1.25em;
+    		letter-spacing: 1px;
+    		text-transform: none;
+			@include breakFirst(medium){
+				width: 500px
+			}
+			@include breakFirst(large){
+				width: 620px
+			}
+		}
+		a {
+			color: $linkColor;
+			min-width: 70px;
+			@include breakFirst(medium) {
+				padding-right: 80px;
+			}
+			.icon {
+				right: 25px;
+				display: block;
+				@include breakFirst(medium) {
+					right: 35px;
+				}
+			}
+			&:hover {
+				color: $linkColorHover;
+				.text {
+					box-shadow: 0 1px 0 $linkColorHover;
+				}
+			}
+		}
+		.text {
+			box-shadow: 0 1px 0 $linkColor;
+			display: none;
+			@include breakFirst(medium){
+				display: inline-block;
+			}
+		}
+	}
+}
+.accordion-content {
+	.js & {
+		height: 0;
+		overflow: hidden;
+	}
+	.js .accordion-open & {
+		display: block;
+	}
+	.copy-wrap {
+		padding: 10px 30px;
+		@include breakFirst(medium){
+			width: 500px
+		}
+		@include breakFirst(large){
+			width: 620px
+		}
+	}
+}

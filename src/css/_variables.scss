@@ -1,0 +1,94 @@
+// COlors
+// -------------------------
+$white:					#fff !default;
+$grey:              	#eaeaea !default;
+$greyLight:				#f4f4f4;
+$greyDark:				#dddddd;
+$black:					#222222;
+$blue:					#3b9cd6;
+$red:					#e21f11;
+$green:					#44a651;
+$gold:					#d0ab2c;
+$teal: 					#00dcb9;
+
+// Scaffoldings
+// -------------------------
+$bodyBackground:        $white !default;
+$textColor:             $grey !default;
+
+
+// Links
+// -------------------------
+$linkColor:             $red !default;
+$linkColorHover:        rgba($linkColor, .75) !default;
+
+// Buttons
+// -------------------------
+$buttonColor:             $blue !default;
+$buttonColorHover:        darken($blue, 15%) !default;
+
+// Transitions
+// -------------------------
+$cbTrans: 				cubic-bezier(0.165, 0.84, 0.44, 1);
+$pageTrans: 			cubic-bezier(.54,.06,.55,.97);
+
+// Typography
+// -------------------------
+$bodyFont:				"BryantRegular", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$bodyFontItalic:		"BryantWebRegularItalic", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$bodyFontMedium:		"BryantWebMedium", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$bodyFontMediumItalic:	"BryantWebMediumItalic", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+$baseFontSize:          16px !default;
+$baseFontFamily:        $bodyFont !default;
+$baseLineHeight:        23px !default;
+
+$headingsFontFamily:    "Tungsten A", "Tungsten B";
+$headingsFontWeight:    bold !default;
+$headingsColor:         inherit !default;
+
+// Media Queries Breakpoints
+// --------------------------------------------------
+
+// Extra small screen / phone
+$screen-xs:                  480px !default;
+$screen-phone:               $screen-xs !default;
+
+// Small screen / tablet
+$screen-sm:                  768px !default;
+$screen-tablet:              $screen-sm !default;
+
+// Medium screen / desktop
+$screen-md:                  992px !default;
+$screen-desktop:             $screen-md !default;
+
+// Large screen / wide desktop
+$screen-lg:                  1220px !default;
+$screen-lg-desktop:          $screen-lg !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm - 1) !default;
+$screen-sm-max:              ($screen-md - 1) !default;
+$screen-md-max:              ($screen-lg - 1) !default;
+
+// Grid system
+// --------------------------------------------------
+
+// Number of columns in the grid system
+$grid-columns:              12 !default;
+// Padding, to be divided by two and applied to the left and right of all columns
+$grid-gutter-width:         15px !default;
+// Point at which the navbar stops collapsing
+$grid-float-breakpoint:     $screen-tablet !default;
+
+// Container sizes
+// --------------------------------------------------
+
+// Small screen / tablet
+$container-tablet:            ((720px + $grid-gutter-width)) !default;
+
+// Medium screen / desktop
+$container-desktop:           ((940px + $grid-gutter-width)) !default;
+
+// Large screen / wide desktop
+$container-lg-desktop:        ((1140px + $grid-gutter-width)) !default;

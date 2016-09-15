@@ -1,0 +1,773 @@
+body {
+  background: $greyLight;
+  color: $black;
+  font-family: $baseFontFamily;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  margin: 0;
+}
+a {
+  color: $linkColor;
+  text-decoration: none;
+  font-family: $bodyFontMedium;
+  transition: all ease .2s;
+  &:hover, &:focus {
+    color: $linkColorHover;
+    text-decoration: none;
+    outline: none;
+  }
+}
+svg {
+  transition: all ease .2s;
+}
+strong  { font-weight: 'bold'; }
+p strong { font-family: 'BryantWebMedium'; }
+p em { font-family: 'BryantWebRegularItalic' }
+ul strong {font-family: 'BryantWebMedium'; }
+p a { font-family: $bodyFontMedium};
+ul em { font-family: 'BryantWebRegularItalic'; }
+em      { font-style: italic; }
+cite    { font-style: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: $headingsColor;
+  font-family: $headingsFontFamily;
+  font-weight: $headingsFontWeight;
+  line-height: 1;
+  text-rendering: optimizelegibility;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 3.125em;
+  margin: 0 0 10px;
+}
+h2 {
+  font-size: 2.5em;
+  margin: 0 0 10px;
+}
+h3 {
+  font-size: 2.25em;
+  margin: 0 0 10px;
+}
+h4 {
+  font-size: 1.625em;
+  margin: 0 0 10px;
+}
+h5 {
+  font-size: 1.25em;
+  margin: 0 0 10px;
+}
+h6 {
+  font-size: 1em;
+  margin: 0 0 10px;
+}
+p, ul, ol {
+  margin: 0 0 20px;
+}
+ul, ol {
+  padding: 0 0 0 20px;
+  li {
+    display: list-item;
+    margin: 0 0 8px 0;
+  }
+}
+u {
+  text-decoration: underline;
+}
+i, em {
+  font-style: italic;
+}
+strong, bold {
+  font-weight: bold;
+}
+mark {
+  background-color: $greyDark;
+  padding: 2px 5px;
+}
+s {
+  text-decoration: line-through;
+}
+small {
+  font-size: 85%;
+}
+blockquote, q {
+  quotes: none;
+  &:before,&:after {
+    content: '';
+    content: none;
+  }
+}
+// Custom ol and ul styles
+// * ol will have spacing issues for more than 2 digits
+// -------------------------
+ol.custom li, 
+ul.custom li,
+ul.custom li ul li {
+    position: relative;
+    display: list-item;
+}
+ol.custom, ul.custom {
+  list-style: none;
+  padding: 0;
+  li, ol li, ul li {
+    position: relative;
+    padding: 0 0 6px 12px;
+  }
+}
+ul.custom {
+  li {
+    &:before {
+      content: "•";
+      color: $red;
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+ol.custom {
+  counter-reset: item;
+  li { 
+    position: relative;
+    padding: 0 0 6px 25px;
+    &:before {
+      content: counter(item) ". ";
+      counter-increment: item;
+      color: $red;
+      position: absolute;
+      right: 95%;
+      right: calc(100% - 15px);
+    }
+  }
+}
+
+// Copy
+// -------------------------
+
+.copy-col-2 {
+    margin: 20px 0 30px;
+    @include breakFirst(medium) {
+      column-count: 2;
+      column-gap: 40px;
+    }
+}
+// Buttons and Links
+// -------------------------
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px 20px 0;
+    font-weight: 700;
+    line-height: 1.25;
+    text-transform: uppercase;
+    background: lighten($black, 10%);
+    color: $white;
+    border: 2px solid lighten($black, 10%);
+    font-family: $headingsFontFamily;
+    font-size: 1.15em; 
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+    &:hover, &:focus {
+      background: $white;
+      color: lighten($black, 10%);
+      text-decoration: none;
+    }
+    &.button-link-default {
+      background: $white;
+      color: $red;
+      border: 2px solid $red;
+      &:hover, &:focus {
+        background: $red;
+        color: $white;
+      }
+      &.alt {
+        background: $red;
+        color: $white;
+        &:hover, &:focus {
+          background: $white;
+          color: $red;
+        }
+      }
+    }
+    &.no-styles {
+      padding: 0;
+      border: none;
+      background: none;
+      margin: 5px 0;
+      position: relative;
+      &:before {
+        content: "";
+        display: block;
+        height: 1px;
+        background: $red;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        width: calc(100% - 10px);
+        opacity: 0;
+        transition: all ease .2s;
+      }
+      &:after {
+        display: inline-block;
+        content: " >";
+        margin-left: 4px;
+      }
+      &:hover, &:focus {
+        color: $red;
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+    &.button-link-ext {
+      background: $white;
+      color: $black;
+      border: 2px solid $greyLight;
+      padding: 10px 65px 10px 20px;
+      position: relative;
+      font-family: $headingsFontFamily;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      .icon {
+        position: absolute;
+        background: $greyLight;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 45px;
+        svg {
+          height: 30px;
+          width: 30px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: -15px 0 0 -15px;
+        }
+        &.icon-arrow {
+          svg {
+            height: 15px;
+            width: 15px;
+            margin: -7px 0 0 -7px;
+          }
+        }
+      }
+      &:hover, &:focus {
+        color: $red;
+      }
+    }
+    &.block {
+      clear: both;
+      display: block;
+    }
+}
+
+.block-link {
+  color: $red;
+  position: relative;
+  clear: both;
+  display: block;
+  &:after {
+    content: "\2192";
+    margin-left: 4px;
+  }
+  &:before {
+      content: "";
+      display: block;
+      height: 1px;
+      background: $red;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      width: calc(100% - 20px);
+      opacity: 0;
+      transition: all ease .2s;
+    }
+  &:hover, &:focus {
+    color: $red;
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+
+// Alerts 
+// -------------------------
+
+.alert {
+  width: 100%;
+  display: block;
+  font-size: 1em;
+  padding: 15px 45px 15px 20px;
+  line-height: 100%;
+  position: relative;
+  background: $buttonColor;
+  color: $white;
+  &.alert-primary {
+    color: $black;
+    background: $grey;
+    a {
+      color: $red;
+      box-shadow: 0 1px 0 $red;
+      &:hover {
+        opacity: .75;
+      }
+    }
+  }
+  &.alert-success {
+    background: $green;
+    a {
+      color: $white;
+      box-shadow: 0 1px 0 $white;
+      &:hover {
+        opacity: .75;
+      }
+    }
+  }
+  &.alert-info {
+    background: $gold;
+    a {
+      color: $white;
+      box-shadow: 0 1px 0 $white;
+      &:hover {
+        opacity: .75;
+      }
+    }
+  }
+  &.alert-warning {
+    background: $red;
+    a {
+      color: $white;
+      box-shadow: 0 1px 0 $white;
+      &:hover {
+        opacity: .75;
+      }
+    }
+  }
+  .close-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: $white;
+    padding: 7px;
+    line-height: 100%;
+    box-shadow: none !important;
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+// Forms
+// -------------------------
+
+label {
+    display: block;
+    max-width: 100%;
+    margin: 0 8px 5px 0;
+    font-size: 14px;
+    @include breakFirst(medium) {
+      display: inline-block;
+    }
+}
+input, button, textarea, select {
+  appearnce: none;
+  border: 2px solid $grey;
+  border-radius: none;
+  box-shadow: none;
+  font-size: 1em;
+  color: $black;
+  font-family: $headingsFontFamily;
+  letter-spacing: 1px;
+}
+textarea {
+  max-width: 100%;
+  max-height: 100%;
+}
+::-webkit-input-placeholder {
+   color: rgba($black, .5);
+   text-transform: uppercase;
+   font-family: $headingsFontFamily;
+   font-size: 1.125em;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba($black, .5);  
+   text-transform: uppercase;
+   font-family: $headingsFontFamily;
+   font-size: 1.125em;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba($black, .5);  
+   text-transform: uppercase;
+   font-family: $headingsFontFamily;
+   font-size: 1.125em;
+}
+
+:-ms-input-placeholder {  
+   color: rgba($black, .5);
+   text-transform: uppercase;
+   font-family: $headingsFontFamily;
+   font-size: 1.125em;
+}
+select {
+  color: rgba($black, .5);
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  font-family: $headingsFontFamily;
+  option {
+    height: 30px;
+    &:focus {
+      outline: none;
+    }
+  }
+  &.form-input {
+    min-width: 225px;
+  }
+  &:after {
+      
+  }
+  &:focus {
+    outline: none;
+    &:after {
+
+    }
+  }
+}
+select::-ms-expand {
+    display: none;
+}
+.select {
+  position: relative;
+  display: inline-block;
+  .form-input {
+    min-width: 225px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid $greyDark;
+    border-radius: 0px;
+    overflow: hidden;
+    line-height: 1.4;
+    position: relative;
+    .icon {
+      position: absolute;
+      background: $grey;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      width: 45px;
+      pointer-events: none;
+      svg {
+        height: 15px;
+        width: 15px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -7px 0 0 -7px;
+        fill: $red;
+      }
+    }
+  }
+  select {
+    padding: 5px 53px 5px 8px;
+    min-height: 45px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0;
+    appearance: none;
+    text-indent: 0.01px;
+    text-overflow: "";
+    line-height: 1.4;
+    &:focus {
+      border-color: $grey;
+      outline: 0;
+      box-shadow: 0 1px 1px rgba($red, .075);
+    }
+  }
+}
+button, button.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0;
+  font-weight: 700;
+  color: $red;
+  background: $grey;
+  border: none;
+  vertical-align: middle;
+  transition: all ease .2s;
+  // svg {
+  //   fill: $red;
+  // }
+  &.disabled {
+    cursor: not-allowed;
+    user-select: none;
+    opacity: .65;
+    &:hover, &:focus {
+      color: $red;
+      background: $white !important;
+    }
+  }
+}
+.disabled {
+  button {
+    cursor: not-allowed;
+    user-select: none;
+    opacity: .65;
+    &:hover, &:focus {
+      color: $red;
+      background: $white !important;
+    }
+  }
+  ::-webkit-input-placeholder {
+     color: $greyDark;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+     color: $greyDark;  
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: $greyDark;  
+  }
+
+  :-ms-input-placeholder {  
+     color: $greyDark;  
+  }
+}
+.form-block {
+  margin: 5px 0 15px;
+  width: 100%;
+  .form-inline & {
+    display: block;
+    margin: 10px 0;
+    vertical-align: middle;
+    @include breakFirst(medium) {
+      display: inline-block;
+      margin: 0 10px 10px 0;
+      width: auto;
+    }
+
+  }
+}
+.form-input {
+  min-height: 45px;
+  width: 100%;
+  display: block;
+  padding: 6px 12px;
+  line-height: 1.4;
+  color: $black;
+  background-color: $white;
+  border: 1px solid $greyDark;
+  border-radius: 0px;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    font-family: $baseFontFamily;
+  &.text-area {
+    height: auto;
+    width: 100%;
+  }
+  &:focus {
+    border-color: $grey;
+    outline: 0;
+    box-shadow: 0 1px 1px rgba($red, .075);
+  }
+  .form-inline & {
+      display: inline-block;
+      width: auto;
+      vertical-align: middle;
+  }
+}
+input[type=file] {
+    display: block;
+    margin-bottom: 10px;
+    border: none;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+.help-block {
+  color: rgba($black, .7);
+  margin: 10px 0;
+  font-size: 14px;
+  &.error {
+    color: $red;
+  }
+  &.success {
+    color: $green;
+  }
+}
+.checkbox, .radio {
+  margin: 10px 0;
+  position: relative;
+  font-family: $headingsFontFamily;
+  text-transform: uppercase;
+  font-size: 1em;
+  label {
+    min-height: 20px;
+    padding-left: 50px;
+    margin-bottom: 0;
+    font-size: 1em;
+    line-height: 40px;
+  }
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .control-indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: $white;
+    border: 2px solid $grey;
+  }
+  /* Hover and focus states */
+  &:hover input ~ .control-indicator,
+  input:focus ~ .control-indicator {
+    background: $greyLight;
+  }
+  /* Checked state */
+  .control input:checked ~ .control_indicator {
+    background: $greyLight;
+  }
+  /* Hover state whilst checked */
+  .control:hover input:not([disabled]):checked ~ .control_indicator,
+  .control input:checked:focus ~ .control_indicator {
+    background: $white
+  }
+  /* Disabled state */
+  .control input:disabled ~ .control_indicator {
+    pointer-events: none;
+    opacity: .6;
+    background: $greyLight;
+  }
+}
+.checkbox {
+  /* Check mark */
+  .control-indicator:after {
+    position: absolute;
+    display: block;
+    content: '';
+    background-image: url('img/icon-check.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease .2s;
+  }
+  /* Show check mark */
+  input:checked ~ .control-indicator:after {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.radio {
+  .control-indicator {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  /* Check mark */
+  .control-indicator:after {
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    content: '';
+    background-color: $red;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    width: 35px;
+    height: 35px;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease .2s;
+  }
+  /* Show check mark */
+  input:checked ~ .control-indicator:after {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.checkbox input[type=checkbox], 
+.checkbox-inline input[type=checkbox], 
+.radio input[type=radio], 
+.radio-inline input[type=radio] {
+    position: absolute;
+    margin: 4px 0 0 -20px;
+    line-height: normal;
+}
+input[type=checkbox] {
+  appearance: none;
+}
+input[type=radio] {
+   appearance: none;
+}
+input, label, textarea, button, select {
+  cursor: pointer;
+}
+.disabled {
+  input, label, textarea, button, select {
+    cursor: not-allowed;
+    opacity: .65;
+  }
+}
+.form-input[disabled], 
+.form-input[readonly], 
+fieldset[disabled] .form-input {
+  background-color: rgba($grey, .1);
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+// Asides
+// -------------------------
+.aside {
+  &.excerpt, &.blockquote {
+    padding: 50px;
+    font-family: $bodyFontItalic;
+    p {
+      font-size: 2em;
+      text-transform: uppercase;
+      line-height: 125%;
+      font-weight: bold;
+    }
+    .pre, .post {
+      display: block;
+      text-transform: none;
+      font-size: 1em;
+      line-height: 100%;
+    }
+    .pre {
+      margin: 0 0 15px;
+    }
+    .post {
+      margin: 15px 0 0;
+    }
+  } 
+  &.excerpt {
+
+  }
+  &.blockquote {
+
+  }
+}

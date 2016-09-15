@@ -1,0 +1,582 @@
+/*--------------------------------------------------------------
+// Header
+--------------------------------------------------------------*/
+
+#header {
+  height: 60px;
+  background: $red;
+  backface-visibility: hidden;
+  transition: all ease .2s;
+  z-index: 1001;
+  @include breakFirst(large) {
+    background: transparent;
+    height: 130px;
+  }
+  .container {
+    max-width: 100%;
+    width: 100%;
+    @include breakFirst(large) {
+      max-width: 955px;
+    }
+    @include breakFirst(wide) {
+      max-width: 1155px;
+    }
+  }
+  .col-sm-12 {
+    padding: 0;
+    @include breakFirst(large) {
+      padding-left: 7.5px;
+      padding-right: 7.5px;
+    }
+  }
+  .nav-wrapper {
+    background: $white;
+    position: relative;
+    width: 100%;
+    float: left;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all ease .2s;
+    @include breakFirst(large) {
+      opacity: 1;
+      overflow: visible;
+      float: left;
+      height: 130px;
+      width: calc(100% - 130px);
+    }
+    @include breakFirst(wide) {
+      width: calc(100% - 171px);
+    }
+  }
+  .active-nav & {
+    .nav-wrapper {
+      opacity: 1;
+      height: calc(100vh - 60px);
+      overflow: scroll;
+      @include breakFirst(large) {
+        height: auto;
+      }
+    }
+  }
+  .nav {
+    width: 100%;
+    float: left;
+    a {
+      text-transform: uppercase;
+      color: $black;
+      @include breakFirst(large) {
+        &:hover, &:focus {
+          color: $red;
+        }
+      }
+    }
+    .menu-label {
+      font-size: 22px;
+    }
+    .sub {
+      text-transform: lowercase;
+      font-size: 11px;
+    }
+  }
+  form {
+    > *, input {
+      float: left;
+    }
+  }
+  .member-menu {
+    font-size: 11px;
+    float: left;
+    width: 100%;
+    display: flex;
+    @include breakFirst(large) {
+      display: block;
+      width: auto;
+    }
+    @include breakFirst(wide) {
+      font-size: .8125em;
+    }
+    li {
+      float: none;
+      position: relative;
+      display: flex;
+      @include breakFirst(large) {
+        display: inline-block;
+      }
+      &:first-child {
+        &:after {
+          content: "";
+          width: 1px;
+          height: 15px;
+          background: $black;
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    a {
+      color: $red;
+      padding: 10px;
+      display: inline-block;
+      margin: 0 auto;
+      &:hover, &:focus {
+        color: $black;
+      }
+      @include breakFirst(wide) {
+        padding: 10px 17px;
+      }
+    }
+    .icon, svg {
+      width: 20px;
+      height: 20px;
+    }
+    svg {
+      float: left;
+    }
+  }
+  &.headroom--unpinned {
+    transform: translateY(-40px);
+    #main-logo {
+      height: 90px;
+      transform: translateY(40px);
+    }
+  }
+  .search-field {
+    width: 100%;
+    float: left;
+    padding: 15px;
+    @include breakFirst(large) {
+      padding: 0;
+      display: inline-block;
+      width: 30%;
+      float: right;
+      margin-top: 15px;
+    }
+    @include breakFirst(wide) {
+      width: 25%;
+    }
+    form {
+      float: left;
+      width: 100%;
+      @include breakFirst(large) {
+        width: 85%;
+      }
+      @include breakFirst(wide) {
+        width: 100%;
+      }
+    }
+    input, .button-link {
+      height: 45px;
+    }
+    input {
+      width: calc(100% - 45px);
+      padding: 6px 12px;
+      @include breakFirst(wide) {
+        width: 165px;
+      }
+    }
+    .button-link {
+      width: 45px;
+      padding: 0;
+      &:hover, &:focus {
+        background: $red;
+        color: $white;
+      }
+    }
+    svg {
+      width: 24px;
+      height: 24px;
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+.nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      margin: 0;
+      float: left;
+      width: 100%;
+      @include breakFirst(large) {
+        width: auto;
+        display: inline-block;
+        color: $red;
+      }
+      a {
+        display: block;
+      }
+      ul {
+        li {
+          display: block;
+          float: none;
+          padding: 0 10px;
+          @include breakFirst(large) {
+            padding: 0;
+          }
+          &.col-intro {
+            display: none;
+            @include breakFirst(large) {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sub-menu {
+    background: $white;
+    width: 100%;
+    overflow: hidden;
+    @include breakFirst(large) {
+      padding: 12.5px;
+      border-bottom: 4px solid $red;
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+    a {
+      font-family: $headingsFontFamily;
+      letter-spacing: 1px;
+    }
+    &:before {
+      content: "";
+      display: block;
+      height: 2px;
+      background: $greyLight;
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 100%;
+    }
+    @include breakFirst(large) {
+      &.col-lg {
+        width: 100%;
+        width: calc(100% + 130px);
+        left: -130px;
+        &:before {
+          width: calc(100% - 130px);
+          left: 130px;
+        }
+      }
+      &.col-md {
+        width: 75%;
+      }
+      &.col-sm {
+        width: 50%;
+      }
+      &.pull-right {
+        left: auto;
+        right: 0;
+      }
+      &.col-4 {
+        .col {
+          display: block;
+          float: left;
+          width: 25%;
+        }
+      }
+      &.col-3 {
+        .col {
+          display: block;
+          float: left;
+          width: 33.3333%;
+        }
+      }
+      &.col-2 {
+        .col {
+          display: block;
+          float: left;
+          width: 50%;
+        }
+      }
+      .col {
+        padding: 12.5px;
+      }
+    }
+    @include breakFirst(wide) {
+      &.col-lg {
+        width: 100%;
+        width: calc(100% + 171.5px);
+        left: -171.5px;
+        &:before {
+          width: calc(100% - 171.5px);
+          left: 171.5px;
+        }
+      }
+    }
+    li:not(.title-link) a {
+      font-size: 16px;
+      padding: 15px 10px;
+      color: $black;
+      display: block;
+      border-bottom: 2px solid $greyLight;
+    }
+    p {
+      margin: 12.5px 0;
+    }
+    .title-link {
+      a {
+        border: 2px solid $greyLight;
+        font-size: 1.25em;
+      }
+    }
+  }
+}
+.title-link {
+  a {
+    @extend .button-link.button-link-ext;
+    font-size: 1.25em;
+    display: block;
+  }
+}
+#main-logo {
+  background: $red;
+  float: left;
+  position: relative;
+  height: 60px;
+  width: 85px;
+  transition: all ease .2s;
+  @include breakFirst(large) {
+    height: 130px;
+    width: 130px;
+  }
+  @include breakFirst(wide) {
+    width: 185px;
+    width: calc(15%);
+  }
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 55px;
+    height: 35px;
+    margin: -17.5px 0 0 -27.5px;
+    @include breakFirst(large) {
+      width: 80px;
+      height: 45px;
+      margin: -22.5px 0 0 -40px;
+    }
+    @include breakFirst(wide) {
+      width: 90px;
+      height: 55px;
+      margin: -27.5px 0 0 -45px;
+    }
+  }
+}
+#main-nav {
+  float: right;
+  @include breakFirst(large) {
+    margin-top: 40px;
+  }
+  input {
+    display: inline-block;
+  }
+}
+#alt-nav {
+  @include breakFirst(large) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-family: $bodyFontMedium;
+    > * {
+      display: block;
+      float: left;
+    }
+  }
+}
+.main-menu {
+  line-height: 130%;
+  @include breakFirst(large) {
+    display: inline-block;
+    width: 70%;
+    float: right;
+  }
+  @include breakFirst(wide) {
+    width: 75%;
+  }
+  > li {
+    > a {
+      position: relative;
+      padding: 20px;
+      border-top: 1px solid $greyLight;
+      @include breakFirst(large) {
+        padding: 25px 15px;
+        border-top: none;
+      }
+      @include breakFirst(wide) {
+        padding: 25px 30px;
+      }
+      &.closed {
+        .icon-arrow-circle {
+          svg {
+            transform: translate(-50%, -50%) rotate(90deg);
+          }
+        }
+      }
+    }
+  }
+  .show-menu {
+    &.sub-menu {
+      display: block;
+    }
+  }
+  .menu-label {
+    display: block;
+    &.main {
+      font-family: $headingsFontFamily;
+      letter-spacing: 1px;
+    }
+  }
+  .icon-arrow-circle {
+    color: $red;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    transition: all ease .2s;
+    svg {
+      float: left;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-90deg);
+      height: 30px;
+      width: 30px;
+    }
+    @include breakFirst(large) {
+      display: none;
+    }
+  }
+}
+.alt-menu {
+  font-size: .875em;
+  line-height: 100%;
+  @include breakFirst(large) {
+    font-size: 11px;
+  }
+  @include breakFirst(wide) {
+    width: 72%;
+  }
+  // font-family: $bodyFont;
+  li {
+    @include breakFirst(large) {
+      float: left;
+    }
+  }
+  a {
+    background: $greyLight;
+    padding: 20px;
+    border-top: 1px solid $grey;
+    @include breakFirst(large) {
+      border-top: none;
+      padding: 15px;
+    }
+    @include breakFirst(wide) {
+      padding: 15px 27px;
+    }
+  }
+}
+.no-js {
+  .main-menu {
+    > li {
+      &:hover {
+        .sub-menu {
+          display: block;
+        }
+      }
+    }
+  }
+}
+.main-menu {
+  > li {
+    @include breakFirst(large) {
+      &:hover {
+        &[aria-haspopup="true"] {
+          > {
+            a {
+              position: relative;
+              &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 0; 
+                height: 0; 
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-bottom: 15px solid $greyLight;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.menu-button {
+  margin: 10px 10px 0 0;
+  color: $white;
+  text-transform: uppercase;
+  font-family: $headingsFontFamily;
+  letter-spacing: 1px;
+  float: right;
+  position: relative;
+  &:hover, &:focus {
+    color: $white;
+    text-decoration: none;
+  }
+  @include breakFirst(large) {
+    display: none;
+  }
+  .text {
+    margin-top: 20px;
+    display: block;
+    transition: all ease .2s;
+  }
+  .bar {
+    content: "";
+    display: block;
+    height: 3px;
+    margin: 4px 0;
+    width: 100%;
+    background: $white;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all ease .2s;
+    &:first-child {
+      top: 10px;
+    }
+  }
+}
+.active-nav {
+  overflow: hidden;
+  @include breakFirst(large) {
+    overflow-y: scroll;
+  }
+  .menu-button {
+    .bar {
+      transform: rotate(-45deg);
+      top: 10px;
+      &:first-child {
+        transform: rotate(45deg);
+        top: 10px;  
+      }
+    }
+    .text {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+  }
+}

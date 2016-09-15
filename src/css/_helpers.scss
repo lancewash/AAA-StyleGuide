@@ -1,0 +1,445 @@
+// Clearfix
+// -------------------------
+
+.cf:before,
+.cf:after,
+[class*="content"]:before,
+[class*="content"]:after,
+[class*="site"]:before,
+[class*="site"]:after {
+  content: '';
+  display: table; 
+}
+.cf:after,
+[class*="content"]:after,
+[class*="site"]:after {
+  clear: both; 
+}
+.cf {
+  *zoom: 1; 
+}
+
+// No transitions while loading
+// -------------------------
+
+.loading * {
+  transition: none;
+}
+
+// SVG format
+// -------------------------
+
+.icon-svg {
+  display: inline-block;
+  svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+// Screen reader text
+// -------------------------
+
+.visuallyhidden {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: #333;
+		border-radius: 3px;
+		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+		clip: auto !important;
+		color: #fff;
+		display: block;
+		font-weight: bold;
+		height: auto;
+		left: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
+		width: auto;
+		z-index: 100000; /* Above WP toolbar */
+	}
+}
+
+// Hide the text and show an image
+// -------------------------
+
+%textToImg {
+  display: block;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+// Positioning
+// -------------------------
+
+%centerVert, .center-vert {
+  @include breakFirst(medium){
+    backface-visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .no-csstransforms & {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+%centerVertLarge, .center-vert-large {
+  @include breakFirst(large){
+    backface-visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .no-csstransforms & {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+%centerVertAll, .center-vert-all {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .no-csstransforms & {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+// Alignment
+// -------------------------
+
+.align-left {
+	display: inline;
+	float: left;
+	margin: 7px 1.5em 1em 0;
+}
+.align-right {
+	display: inline;
+	float: right;
+	margin: 7px 0 1em 1.5em;
+}
+img {
+	&.align-left,
+	&.align-right {
+		width: 100%;
+		@include breakFirst(medium){
+			width: auto;
+		}
+	}
+}
+.align-center {
+	display: block;
+	margin: 0 auto;
+}
+.align-text-center {
+	text-align: center;
+}
+.align-text-left {
+	text-align: left;
+}
+.align-text-right {
+	text-align: right;
+}
+.align-text-justify {
+    text-align: justify;
+}
+.fl-left {
+	float: left;
+}
+.fl-right {
+	float: right;
+}
+.clear-both {
+	clear: both;
+}
+
+// Hide on sizes
+// -------------------------
+
+.hd-mobile {
+	display: none;
+	@media (min-width: 768px) {
+		display: inline-block;
+	}
+}
+.hd-tablet {
+	display: inline-block;
+	@media (min-width: 768px) {
+		display: none;
+	}
+	@media (min-width: 992px) {
+		display: inline-block;
+	}
+}
+.hd-desktop {
+	display: inline-block;
+	@media (min-width: 992px) {
+		display: none;
+	}
+}
+
+// Images
+// -------------------------
+
+img {
+	width: 100%;
+	height: auto;
+}
+.img-cover {
+	background-size: cover;
+	background-position: center;
+}
+
+// Heading Space
+// ------------------------
+.headspace {
+	margin-top: 70px;
+	@include breakFirst(large) {
+		margin-top: 150px;
+	}
+}
+
+// Spacers
+// ------------------------
+.spacer {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 15px;
+}
+@media (min-width: $screen-tablet) {
+	.spacer-sm-1 {
+		height: 10px;
+	}
+	.spacer-sm-2 {
+		height: 20px;
+	}
+	.spacer-sm-3 {
+		height: 30px;
+	}
+}
+@media (min-width: $screen-desktop) {
+	.spacer-md-1 {
+		height: 20px;
+	}
+	.spacer-md-2 {
+		height: 40px;
+	}
+	.spacer-md-3 {
+		height: 60px;
+	}
+}
+@media (min-width: $screen-lg-desktop) {
+  	.spacer-lg-1 {
+		height: 30px;
+	}
+	.spacer-lg-2 {
+		height: 60px;
+	}
+	.spacer-lg-3 {
+		height: 90px;
+	}
+}
+
+// SVG Fill Helpers
+// -------------------------
+
+.fill-white {
+  svg {
+    fill: $white;
+  }
+}
+.fill-red {
+  svg {
+    fill: $red;
+  }
+}
+.fill-blue {
+  svg {
+    fill: $blue;
+  }
+}
+.fill-green {
+  svg {
+    fill: $green;
+  }
+}
+.fill-gold {
+  svg {
+    fill: $gold;
+  }
+}
+
+// Color Helpers
+// -------------------------
+
+.white {
+	color: $white;
+}
+.red {
+	color: $red;
+}
+.blue {
+	color: $blue;
+}
+.green {
+	color: $green;
+}
+.gold {
+	color: $gold;
+}
+
+// Background Color Helpers
+// -------------------------
+
+.bg-white {
+	background-color: $white;
+}
+.bg-red {
+	background-color: $red;
+}
+.bg-blue {
+	background-color: $blue;
+}
+.bg-green {
+	background-color: $green;
+}
+.bg-gold {
+	background-color: $gold;
+}
+
+// Card Titles
+// -------------------------
+
+[class*='card-title'] {
+	h4 {
+		padding: 20px 30px;
+		margin: 0;
+		background-color: $grey;
+		color: $black;
+	}
+	&[class*='-red'] {
+		h4 {
+			background-color: $red;
+			color: $white;
+		}
+	}
+	&[class*='-blue'] {
+		h4 {
+			background-color: $blue;
+			color: $white;
+		}
+	}
+	&[class*='-green'] {
+		h4 {
+			background-color: $green;
+			color: $white;
+		}
+	}
+	&[class*='-gold'] {
+		h4 {
+			background-color: $gold;
+			color: $white;
+		}
+	}
+}
+
+// Negative Margins
+// -------------------------
+
+[class*='neg-top'] {
+	margin-top: -20px;
+	&[class*='-xlg'] {
+		margin-top: -60px;
+		@include breakFirst(wide) {
+			margin-top: -100px;
+		}
+	}
+	&[class*='-lg'] {
+		margin-top: -60px;
+	}
+	&[class*='-md'] {
+		margin-top: -40px;
+	}
+	&[class*='-sm'] {
+		margin-top: -30px;
+	}
+}
+
+// Positive Margins
+// -------------------------
+
+[class*='pos-top'] {
+	margin-top: 15px;
+	&[class*='-xlg'] {
+		margin-top: 60px;
+		@include breakFirst(wide) {
+			margin-top: 100px;
+		}
+	}
+	&[class*='-lg'] {
+		margin-top: 60px;
+	}
+	&[class*='-md'] {
+		margin-top: 40px;
+	}
+	&[class*='-sm'] {
+		margin-top: 30px;
+	}
+}
+
+// Layering
+// -------------------------
+
+[class*='z-index'] {
+	position: relative;
+	&[class*='-5'] {
+		z-index: 5;
+	}
+	&[class*='-4'] {
+		z-index: 4;
+	}
+	&[class*='-3'] {
+		z-index: 3;
+	}
+	&[class*='-2'] {
+		z-index: 2;
+	}
+	&[class*='-1'] {
+		z-index: 1;
+	}
+	&[class*='-0'] {
+		z-index: 0;
+	}
+	&[class*='--1'] {
+		z-index: -1;
+	}
+	&[class*='--2'] {
+		z-index: -2;
+	}
+	&[class*='--3'] {
+		z-index: -3;
+	}
+	&[class*='--4'] {
+		z-index: -4;
+	}
+	&[class*='--5'] {
+		z-index: -5;
+	}
+}

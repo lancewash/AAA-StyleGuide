@@ -1,0 +1,51 @@
+// Wells
+// -------------------------
+.well-block {
+	width: 100%;
+	background: $white;
+	position: relative;
+	h3 {
+		background: $grey;
+		display: block;
+		font-size: .95em;
+		font-weight: normal;
+		padding: 10px 15px;
+		margin: 0;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			margin: 0;
+		}
+	}
+	.content-wrap {
+		padding: 30px;
+	}
+	&.quick-links {
+		li {
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		a {
+			@extend .button-link.button-link-ext;
+			display: block;
+			color: $red;
+			&:hover, &:focus {
+				color: $black;
+			}
+		}
+	}
+	&.aside {
+		img {
+			float: left;
+			margin-bottom: 20px;
+		}
+		.button-link {
+			margin-bottom: 0;
+		}
+	}
+}

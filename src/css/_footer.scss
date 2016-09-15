@@ -1,0 +1,75 @@
+// Footer
+// -------------------------
+#footer {
+	position: relative;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			margin: 0;
+		}
+	}
+	a {
+		font-family: $headingsFontFamily;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+	.footer-links {
+		
+		&.primary {
+			background: $white;
+			padding: 60px 0;
+			a {
+				color: $black;
+				&:hover, &:focus {
+					color: $red;
+				}
+			}
+			li:not(.title-link) a {
+				padding: 10px 20px;
+    			display: block;
+    			font-size: 1em;
+    			border-bottom: 1px solid $greyLight;
+			}
+		}
+		&.secondary {
+			background: $grey;
+			font-size: 1.25em;
+			ul {
+				justify-content: space-around;
+			}
+			a {
+				color: $red;
+				display: inline-block;
+				padding: 15px;
+			}
+		}
+	}
+	.footer-colophon {
+		background: $red;
+		color: $white;
+		padding: 30px 0;
+		.icon, svg {
+			width: 80px;
+			height: 47px;
+		}
+		p {
+			font-size: .565em;
+			line-height: 175%;
+			margin: 0;
+		}
+	}
+}
+.flex-item {
+	.flex-ft & {
+		@include breakFirst(medium) {
+			&:first-child {
+				padding-right: 0;
+			}
+			&:last-child {
+				padding-left: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,112 @@
+.search-result {
+	box-shadow: inset -10px 0px 0px $grey;
+	border-bottom: 2px solid $greyLight;
+	h3 {
+		@extend h5;
+		a {
+			color: $black;
+			&:hover, &:focus {
+				color: $linkColor;
+			}
+		}
+	}
+	.copy-wrap {
+		@include breakFirst(medium){
+			width: 500px
+		}
+		@include breakFirst(large){
+			width: 620px
+		}
+	}
+}
+.results-form {
+	.search-field, .results-amount, .search-toggles {
+		float: left;
+	}
+	.search-field {
+		width: 100%;
+		@include breakFirst(medium) {
+			width: 30%;
+		}
+		@include breakFirst(large) {
+			width: 45%;
+		}
+	}
+	.results-amount {
+		margin: 15px 0;
+		width: 100%;
+		@include breakFirst(medium) {
+			margin: 0 0  0 15px;
+			width: 30%;
+			width: calc(30% - 15px);
+		}
+		@include breakFirst(large) {
+			width: 20%;
+		}
+		p {
+			margin: 0;
+			@include breakFirst(medium) {
+				line-height: 40px;
+    		}
+		}
+	}
+	.search-toggles {
+		width: 100%;
+		@include breakFirst(medium) {
+			width: 40%;
+		}
+		@include breakFirst(large) {
+			width: 30%;
+		}
+		.radio {
+			display: inline-block;
+			margin: 0;
+			@include breakFirst(medium) {
+				float: right;
+				margin: 0 0 0 10px;
+			}
+		}
+	}
+	.search-field {
+	    float: left;
+	    .form-group {
+	    	margin: 0;
+	    }
+	    form {
+	      float: left;
+	      width: 100%;
+	      @include breakFirst(large) {
+	        width: 85%;
+	      }
+	      @include breakFirst(wide) {
+	        width: 100%;
+	      }
+	      input {
+	      	float: left;
+	      }
+	    }
+	    input, .button-link {
+	      height: 45px;
+	    }
+	    input {
+	      width: calc(100% - 45px);
+	      @include breakFirst(wide) {
+	        width: 425px;
+	      }
+	    }
+	    .button-link {
+	      width: 45px;
+	      padding: 0;
+	      &:hover, &:focus {
+	        background: $red;
+	        color: $white;
+	      }
+	    }
+	    svg {
+	      width: 24px;
+	      height: 24px;
+	      position: relative;
+	      top: 2px;
+	    }
+	  }
+}

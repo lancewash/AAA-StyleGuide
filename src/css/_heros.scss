@@ -1,0 +1,42 @@
+// Heros
+// -------------------------
+.hero {
+	background-size: cover;
+	background-position: center;
+	&.large {
+		height: 25vh;
+    	min-height: 240px;
+    	max-height: 275px;
+    	@include breakFirst(medium){
+			height: 30vh;
+			min-height: 325px;
+			max-height: 600px;
+		}
+		@include breakFirst(large){
+			height: 35vh;
+			min-height: 435px;
+			max-height: 600px;
+		}
+		@include breakFirst(wide){
+			height: 45vh;
+			min-height: 475px;
+			max-height: 600px;
+		}
+	}
+
+	&.small {
+		height: 30vh;
+    	min-height: 240px;
+    	max-height: 275px;
+    	@include breakFirst(large){
+			height: 40vh;
+			min-height: 325px;
+			max-height: 375px;
+		}
+		@include breakFirst(wide){
+			height: 40vh;
+			min-height: 325px;
+			max-height: 375px;
+		}
+	}
+}

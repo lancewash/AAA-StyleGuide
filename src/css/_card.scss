@@ -1,0 +1,193 @@
+.card {
+	background: $white;
+	width: 100%;
+	margin-bottom: 15px;
+	&.card-medium {
+		h2 {
+			@extend h3;
+		}
+	}
+	&.card-small {
+		h2 {
+			@extend h4;
+		}
+	}
+	&.inset-border {
+		box-shadow: inset -10px 0px 0px $grey;
+	}
+	&.general-content {
+		.support-text {
+			@extend h5;
+		    margin: 0 0 20px;
+			color: $red;
+		}
+	}
+	.copy-wrap {
+		padding: 30px;
+	}
+	.img-wrap {
+		@extend .img-cover;
+		padding-bottom: 56.25%;
+	}
+	&.carousel {
+		.img-wrap {
+			position: relative;
+		}
+		.copy-wrap {
+			overflow: hidden;
+		}
+	}
+	&.feature {
+		@include breakFirst(medium){
+			padding-left: 58.33333%;
+			position: relative;
+		}
+		.img-wrap {
+			@include breakFirst(medium){
+				left: 0;
+				height: 100%;
+				padding-bottom: 0;
+				position: absolute;
+				width: 58.33333%;
+			}
+		}
+	}
+	&.card-list {
+		&.list-large {
+			li {
+				border-bottom: none;
+			}
+		}
+		ul {
+			margin: 0;
+		}
+		li {
+			padding: 15px 42px;
+			margin: 0;
+			border-bottom: 1px solid $grey;
+			&:last-child {
+				border-bottom: none;
+			}
+			&:before {
+				left: 30px;
+			}
+		}
+		.copy-wrap {
+			border-top: 1px solid $grey;
+		}
+		.button-link {
+			margin: 10px 5px 0 0;
+		}
+	}
+	.img-slide {
+		@extend .img-cover;
+	}
+	.img-wrap-carousel {
+		height: 100%;
+		position: absolute;
+		width: 100%;
+		@include breakFirst(medium){
+			position: relative;
+		}
+		.slick-track, .slick-list {
+			height: 100%;
+			width: 100%;
+		}
+	}
+	.arw-nav {
+		background: $red;
+		color: $white;
+		height: 40px;
+		left: 50%;
+		margin-left: -40px;
+		position: absolute;
+		top: 0;
+		width: 81px;
+		z-index: 1000;
+		@include breakFirst(medium){
+			height: 81px;
+			left: 0;
+			margin: -40px 0 0 0;
+			top: 50%;
+			width: 49px;
+		}
+		.icon-arrow {
+			cursor: pointer;
+			display: inline-block !important;
+			height: 40px;
+			position: relative;
+			width: 40px;
+			@include breakFirst(medium){
+				display: block !important;
+				width: 49px;
+			}
+			&:hover {
+				background: $linkColorHover;
+			}
+			&:first-child {
+				margin-right: 1px;
+				@include breakFirst(medium){
+					margin: 0 0 1px 0;
+				}
+				&:after {
+					background: $white;
+					bottom: 50%;
+					content: '';
+					height: 20px;
+					right: -1px;
+					margin-bottom: -10px;
+					position: absolute;
+					width: 1px;
+					z-index: 2;
+					@include breakFirst(medium){
+						bottom: -1px;
+						height: 1px;
+						left: 50%;
+						right: auto;
+						margin: 0 0 0 -10px;
+						width: 20px;
+					}
+				}
+			}
+			svg {
+				height: 15px;
+				left: 50%;
+				margin-left: -9px;
+				margin-top: -7px;
+				position: absolute;
+				top: 50%;
+				width: 18px;
+			}
+		}
+	}
+	.dot-nav {
+		margin-bottom: 10px;
+	}
+	.slick-dots {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			display: inline-block;
+			margin: 0 0 0 10px;
+			&.slick-active button {
+				background: $red;
+			}
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		button {
+			border: 2px solid $red;
+			border-radius: 50%;
+			height: 10px;
+			padding: 0;
+			text-indent: -9999px;
+			width: 10px;
+			&:hover, &:focus {
+				background: $red;
+				outline: none;
+			}
+		}
+	}
+}
