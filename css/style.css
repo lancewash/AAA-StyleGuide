@@ -2199,7 +2199,7 @@ img {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1999;
+    z-index: 1000;
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     transform: translateY(-100%);
@@ -2664,7 +2664,7 @@ pre[class*="language-"] {
     backface-visibility: hidden;
     -webkit-transition: all ease .2s;
     transition: all ease .2s;
-    z-index: 1001
+    z-index: 999;
 }
 
 @media (min-width: 992px) {
@@ -4682,4 +4682,17 @@ table.table-block tbody tr td:not(:first-child) {
     border-color: rgba(0,0,0,.15);
     color: #222;
     margin-bottom: 1.5rem
+}
+
+.active-tool-nav .overlay {
+    background: rgba(0,0,0,.75);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    transition: all .5s ease-in-out;
 }
