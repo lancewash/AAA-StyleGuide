@@ -55,11 +55,27 @@
             padding: 1rem 4rem 0;
         }
 
+        div[id*="Modal"] {
+            overflow-y: scroll;
+        }
+
+        .img-auto {
+            display: block;
+            margin: 0 auto 3rem;
+            width: auto;
+        }
+
         .iframe-container {
             padding-bottom: 60%;
             padding-top: 30px;
             height: 0;
             overflow: hidden;
+        }
+
+        em {
+            color: #e21f11;
+            font-weight: 800;
+            font-style: normal;
         }
 
         .iframe-container iframe,
@@ -95,6 +111,7 @@
                 </a>
             </div>
             <div class="align-text-right">
+                <a href="image-specs.html" class="button-link button-link-default alt">Image Specifications</a>
                 <a href="style-guide.html" class="button-link button-link-default alt">Style Guide</a>
                 <a href="#" class="button-link button-link-default alt tool-menu-button">Menu</a>
             </div>
@@ -203,141 +220,1091 @@
     </div>
     <div class="row">
         <div class="flex-wrapper flex-column">
-        <div class="col-sm-6 flex-item">
-            <div class="card card-list card-title-red list-large">
-                <h4>Videos</h4>
-                <ul class="custom">
-                    <li><strong><a href="https://www.youtube.com/watch?v=QSyb_6NRDeI">How to Export Your Images Out
-                        of Photoshop
-                        CC for the Web
-                    </a><br> - 4:07</strong></li>
-                    <li><strong><a href="https://helpx.adobe.com/photoshop/how-to/export-image-web.html">Export image
-                        for the
-                        web</a><br> - 5:07</strong></li>
-                </ul>
-
-            </div>
-
-        </div>
-        <div class="col-sm-6 flex-item">
-            <div class="card card-list card-title-red list-large">
-                <h4>Documents</h4>
-                <ul class="custom">
-                    <li><strong>Optimizing Images for the Web: A Practical Guide</strong>
-                        <a class="button-link button-link-default alt view-pdf"
-                           href="assets/optimizing-images-for-web-01.pdf">Open Document</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    </div>
-</div>
-<div class="module-wrapper">
-    <div class="module-wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="flex-wrapper flex-columns">
-                    <div class="col-sm-6 flex-item">
-                        <div class="card">
-                            <div class="img-wrap" style="background-image:url('https://unsplash.it/585/375?image=598')">
-                                <img src="https://unsplash.it/585/375?image=598" alt="" class="visuallyhidden">
-                            </div>
-                            <div class="copy-wrap">
-                                <h2>Cross Link Here</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fuga reiciendis, aperiam
-                                    praesentium ad delectus sunt! Eligendi iure molestias repellendus laborum, neque
-                                    sapiente nulla ducimus nobis excepturi obcaecati adipisci voluptas.</p>
-                                <a href="#" class="button-link button-link-default">Button Style Three</a>
-                            </div>
-
-                            <!-- Do not implement this link -->
-                            <a href="/inc/modules/?module=content-block-large" class="module-link">
-                                <i class="icon info-icon">i</i>
-                                <span class="tool-tip">Content Block Large</span>
-                            </a>
-                            <!-- Do not implement this link -->
-
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 flex-item">
-
-                        <div class="card">
-
-                            <div class="img-wrap" style="background-image:url('https://unsplash.it/585/375?image=598')">
-                                <img src="https://unsplash.it/585/375?image=598" alt="" class="visuallyhidden">
-                            </div>
-
-                            <div class="copy-wrap">
-                                <h2>Cross Link Here</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fuga reiciendis, aperiam
-                                    praesentium ad delectus sunt! Eligendi iure molestias repellendus laborum, neque
-                                    sapiente nulla ducimus nobis excepturi obcaecati adipisci voluptas.</p>
-                                <a href="#" class="button-link button-link-default">Button Style Three</a>
-                            </div>
-
-                            <!-- Do not implement this link -->
-                            <a href="/inc/modules/?module=content-block-large" class="module-link">
-                                <i class="icon info-icon">i</i>
-                                <span class="tool-tip">Content Block Large</span>
-                            </a>
-                            <!-- Do not implement this link -->
-
-                        </div>
-                    </div>
+            <div class="col-sm-6 flex-item">
+                <div class="card card-list card-title-red list-large">
+                    <h4>Videos</h4>
+                    <ul class="custom">
+                        <li><strong><a href="https://www.youtube.com/watch?v=QSyb_6NRDeI">How to Export Your Images Out
+                            of Photoshop
+                            CC for the Web
+                        </a><br> - 4:07</strong></li>
+                        <li><strong><a href="https://helpx.adobe.com/photoshop/how-to/export-image-web.html">Export
+                            image
+                            for the
+                            web</a><br> - 5:07</strong></li>
+                    </ul>
 
                 </div>
 
             </div>
-
-            <span class="spacer spacer-md-3"></span>
-
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2>Markup</h2>
-<pre><code class="language-html">&lt;div class=&quot;card&quot;&gt;
-
-&lt;div class=&quot;img-wrap&quot; style=&quot;background-image:url('https://unsplash.it/585/375?image=598')&quot;&gt;
-&lt;img src=&quot;https://unsplash.it/585/375?image=598&quot; alt=&quot;&quot; class=&quot;visuallyhidden&quot;&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;copy-wrap&quot;&gt;
-&lt;h2&gt;Cross Link Here&lt;/h2&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fuga reiciendis, aperiam praesentium ad delectus sunt! Eligendi iure molestias repellendus laborum, neque sapiente nulla ducimus nobis excepturi obcaecati adipisci voluptas.&lt;/p&gt;
-&lt;a href=&quot;#&quot; class=&quot;button-link button-link-default&quot;&gt;Button Style Three&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;!-- Do not implement this link --&gt;
-&lt;a href=&quot;/inc/modules/?module=content-block-large&quot; class=&quot;module-link&quot;&gt;
-&lt;i class=&quot;icon info-icon&quot;&gt;i&lt;/i&gt;
-&lt;span class=&quot;tool-tip&quot;&gt;Content Block Large&lt;/span&gt;
-&lt;/a&gt;
-&lt;!-- Do not implement this link --&gt;
-
-&lt;/div&gt;</code></pre>
+            <div class="col-sm-6 flex-item">
+                <div class="card card-list card-title-red list-large">
+                    <h4>Documents</h4>
+                    <ul class="custom">
+                        <li><strong>Optimizing Images for the Web: A Practical Guide</strong>
+                            <a class="button-link button-link-default alt view-pdf"
+                               href="assets/optimizing-images-for-web-01.pdf">Open Document</a></li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="row">
-
-                <div class="col-sm-12">
-
-                    <div class="module-rules">
-
-                        <p>It should not be used more than twice on a particular page and always above all support
-                            modules.</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
         </div>
 
     </div>
 </div>
+<div class="container pos-top">
+    <h3>Image Size Specifications for each Content Module</h3>
+    <p><strong>Please note that images may appear to be different in size because of cropping and re-sizing applied by CSS</strong></p>
+    <div class="row flex-wrapper flex-columns">
+
+        <div class="col-sm-6 flex-item">
+            <div class="card">
+                <div class="copy-wrap">
+                    <ul>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalOne">Content Block Carousel Images</a>
+                        </li>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalTwo">Content Block Feature Images</a>
+                        </li>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalThree">Content Block Large Images</a>
+                        </li>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalFour">Content Block Medium Images</a>
+                        </li>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalFive">Content Block Small Images</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 flex-item">
+            <div class="card">
+                <div class="copy-wrap">
+                    <ul>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalSix">Hero Images</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalSeven">List Module Feature Images</a>
+                        </li>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalEight">List Module Full Images</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalNine">Sidebar CTA Content Images</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalTen">Support Module Images</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Begin Modal One Code for modal content -->
+<div id="ModalOne" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="button-link fl-right" data-dismiss="modal">
+                    Close
+                </a>
+            </div>
+            <div class="modal-body">
+                <div class="module-wrapper">
+                    <div class="module-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <h3>Content Block Carousel Image</h3>
+                                    <p><strong>Actual image size as fully displayed - 676 x 430 (72dpi)</strong></p>
+                                    <img src="img/676x430.png" alt="" class="img-auto">
+                                </div>
+                                <div class="col-sm-12 text-center">
+                                    <p><strong>Image in carousel below may appear to be different in size to above image
+                                        because of cropping and re-sizing applied by CSS</strong><br>
+                                        Click carousel buttons if carousel display is not correctly rendered</p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="flex-wrapper flex-columns">
+                                    <div class="col-sm-12 flex-item">
+                                        <div class="card feature carousel">
+
+                                            <div class="img-wrap">
+                                                <div class="arw-nav"></div>
+                                                <div class="img-wrap-carousel">
+                                                    <div class="img-slide"
+                                                         style="background-image:url('https://unsplash.it/676/430?image=645')">
+                                                        <img src="https://unsplash.it/676/430?image=645" alt=""
+                                                             class="visuallyhidden">
+                                                    </div>
+                                                    <div class="img-slide"
+                                                         style="background-image:url('https://unsplash.it/676/430?image=655')">
+                                                        <img src="https://unsplash.it/676/430?image=655" alt=""
+                                                             class="visuallyhidden">
+                                                    </div>
+                                                    <div class="img-slide"
+                                                         style="background-image:url('https://unsplash.it/676/430?image=818')">
+                                                        <img src="https://unsplash.it/676/430?image=818" alt=""
+                                                             class="visuallyhidden">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="copy-wrap">
+                                                <div class="dot-nav"></div>
+                                                <div class="copy-wrap-carousel">
+                                                    <div class="copy-slide">
+                                                        <h2>Rotating Content Block. Heading Style Two.</h2>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+                                                            fuga reiciendis, aperiam praesentium ad delectus sunt!
+                                                            Eligendi iure molestias repellendus laborum, neque sapiente
+                                                            nulla ducimus nobis excepturi obcaecati adipisci
+                                                            voluptas.</p>
+                                                        <a href="#" class="button-link button-link-default">Button Style
+                                                            Three</a>
+                                                    </div>
+                                                    <div class="copy-slide">
+                                                        <h2>Rotating Content Block. Heading Style Two.</h2>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+                                                            fuga reiciendis, aperiam praesentium ad delectus sunt!
+                                                            Eligendi iure molestias repellendus laborum, neque sapiente
+                                                            nulla ducimus nobis excepturi obcaecati adipisci
+                                                            voluptas.</p>
+                                                        <a href="#" class="button-link button-link-default">Button Style
+                                                            Three</a>
+                                                    </div>
+                                                    <div class="copy-slide">
+                                                        <h2>Rotating Content Block. Heading Style Two.</h2>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+                                                            fuga reiciendis, aperiam praesentium ad delectus sunt!
+                                                            Eligendi iure molestias repellendus laborum, neque sapiente
+                                                            nulla ducimus nobis excepturi obcaecati adipisci
+                                                            voluptas.</p>
+                                                        <a href="#" class="button-link button-link-default">Button Style
+                                                            Three</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal One Code for modal content -->
+
+<!-- Begin Modal Two Code for modal content -->
+<div id="ModalTwo" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="button-link fl-right" data-dismiss="modal">
+                    Close
+                </a>
+            </div>
+            <div class="modal-body">
+                <div class="module-wrapper">
+                    <div class="module-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <h3>Content Block Feature Image</h3>
+                                    <p><strong>Actual image size as fully displayed - 676 x 350 (72dpi)</strong></p>
+                                    <img src="img/676x350.png" alt="" class="img-auto">
+                                </div>
+                                <div class="col-sm-12 text-center">
+                                    <p><strong>Image in feature below may appear to be different in size to above image
+                                        because of cropping and re-sizing applied by CSS</strong></p>
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="card feature">
+                                    <div class="img-wrap"
+                                         style="background-image:url('https://unsplash.it/676/350?image=655')">
+                                        <img src="https://unsplash.it/676/350?image=655" alt="" class="visuallyhidden">
+                                    </div>
+
+                                    <div class="copy-wrap">
+                                        <h2>Cross Link Here</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fuga reiciendis,
+                                            aperiam praesentium ad delectus sunt! Eligendi iure molestias repellendus
+                                            laborum, neque sapiente nulla ducimus nobis excepturi obcaecati adipisci
+                                            voluptas.</p>
+                                        <a href="#" class="button-link button-link-default">Button Style Three ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal Two Code for modal content -->
+
+<!-- Begin Modal Three Code for modal content -->
+<div id="ModalThree" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="button-link fl-right" data-dismiss="modal">
+                    Close
+                </a>
+            </div>
+            <div class="modal-body">
+                <div class="module-wrapper">
+                    <div class="module-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <h3>Content Block Large Images</h3>
+                                    <p><strong>Actual image size as fully displayed - 585 x 375 (72dpi)</strong></p>
+                                    <img src="img/585x375.png" alt="" class="img-auto">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="flex-wrapper flex-columns">
+                                    <div class="col-sm-12 text-center">
+                                        <p><strong>Images in cards below may appear to be different in size to above
+                                            image because of cropping and re-sizing applied by CSS</strong></p>
+                                    </div>
+                                    <div class="col-sm-6 flex-item">
+                                        <div class="card">
+                                            <div class="img-wrap"
+                                                 style="background-image:url('https://unsplash.it/585/375?image=598')">
+                                                <img src="https://unsplash.it/585/375?image=598" alt=""
+                                                     class="visuallyhidden">
+                                            </div>
+                                            <div class="copy-wrap">
+                                                <h2>Cross Link Here</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fuga
+                                                    reiciendis, aperiam
+                                                    praesentium ad delectus sunt! Eligendi iure molestias repellendus
+                                                    laborum, neque
+                                                    sapiente nulla ducimus nobis excepturi obcaecati adipisci
+                                                    voluptas.</p>
+                                                <a href="#" class="button-link button-link-default">Button Style
+                                                    Three</a>
+                                            </div>
+                                            <a href="/inc/modules/?module=content-block-large" class="module-link">
+                                                <i class="icon info-icon">i</i>
+                                                <span class="tool-tip">Content Block Large</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 flex-item">
+                                        <div class="card">
+                                            <div class="img-wrap"
+                                                 style="background-image:url('https://unsplash.it/585/375?image=598')">
+                                                <img src="https://unsplash.it/585/375?image=598" alt=""
+                                                     class="visuallyhidden">
+                                            </div>
+                                            <div class="copy-wrap">
+                                                <h2>Cross Link Here</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fuga
+                                                    reiciendis, aperiam
+                                                    praesentium ad delectus sunt! Eligendi iure molestias repellendus
+                                                    laborum, neque
+                                                    sapiente nulla ducimus nobis excepturi obcaecati adipisci
+                                                    voluptas.</p>
+                                                <a href="#" class="button-link button-link-default">Button Style
+                                                    Three</a>
+                                            </div>
+                                            <a href="/inc/modules/?module=content-block-large" class="module-link">
+                                                <i class="icon info-icon">i</i>
+                                                <span class="tool-tip">Content Block Large</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal Three Code for modal content -->
+
+<!-- Begin Modal Four Code for modal content -->
+<div id="ModalFour" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="button-link fl-right" data-dismiss="modal">
+                    Close
+                </a>
+            </div>
+            <div class="modal-body">
+                <div class="module-wrapper">
+                    <div class="module-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <h3>Content Block Medium Images</h3>
+                                    <p><strong>Actual image size as fully displayed - 676 x 350 (72dpi)</strong></p>
+                                    <img src="img/676x350.png" alt="" class="img-auto">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="flex-wrapper flex-columns">
+                                    <div class="col-sm-12 text-center">
+                                        <p><strong>Images in cards below may appear to be different in size to above
+                                            image because of cropping and re-sizing applied by CSS</strong></p>
+                                    </div>
+
+                                    <div class="col-sm-4 flex-item">
+
+                                        <div class="card card-medium">
+
+                                            <div class="img-wrap"
+                                                 style="background-image:url('https://unsplash.it/676/350?image=860')">
+                                                <img src="https://unsplash.it/676/350?image=860" alt=""
+                                                     class="visuallyhidden">
+                                            </div>
+
+                                            <div class="copy-wrap">
+                                                <h2>Cross Link Here</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fuga
+                                                    reiciendis, aperiam praesentium ad delectus sunt! Eligendi iure
+                                                    molestias repellendus laborum, neque sapiente nulla ducimus nobis
+                                                    excepturi obcaecati adipisci voluptas.</p>
+                                                <a href="#" class="button-link button-link-default">Button Style
+                                                    Three</a>
+                                            </div>
+
+                                            <!-- Do not implement this link -->
+                                            <a href="/inc/modules/?module=content-block-medium" class="module-link">
+                                                <i class="icon info-icon">i</i>
+                                                <span class="tool-tip">Content Block Medium</span>
+                                            </a>
+                                            <!-- Do not implement this link -->
+
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 flex-item">
+
+                                        <div class="card card-medium">
+
+                                            <div class="img-wrap"
+                                                 style="background-image:url('https://unsplash.it/676/350?image=860')">
+                                                <img src="https://unsplash.it/676/350?image=860" alt=""
+                                                     class="visuallyhidden">
+                                            </div>
+
+                                            <div class="copy-wrap">
+                                                <h2>Cross Link Here</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fuga
+                                                    reiciendis, aperiam praesentium ad delectus sunt! Eligendi iure
+                                                    molestias repellendus laborum, neque sapiente nulla ducimus nobis
+                                                    excepturi obcaecati adipisci voluptas.</p>
+                                                <a href="#" class="button-link button-link-default">Button Style
+                                                    Three</a>
+                                            </div>
+
+                                            <!-- Do not implement this link -->
+                                            <a href="/inc/modules/?module=content-block-medium" class="module-link">
+                                                <i class="icon info-icon">i</i>
+                                                <span class="tool-tip">Content Block Medium</span>
+                                            </a>
+                                            <!-- Do not implement this link -->
+
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 flex-item">
+
+                                        <div class="card card-medium">
+
+                                            <div class="img-wrap"
+                                                 style="background-image:url('https://unsplash.it/676/350?image=860')">
+                                                <img src="https://unsplash.it/676/350?image=860" alt=""
+                                                     class="visuallyhidden">
+                                            </div>
+
+                                            <div class="copy-wrap">
+                                                <h2>Cross Link Here</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fuga
+                                                    reiciendis, aperiam praesentium ad delectus sunt! Eligendi iure
+                                                    molestias repellendus laborum, neque sapiente nulla ducimus nobis
+                                                    excepturi obcaecati adipisci voluptas.</p>
+                                                <a href="#" class="button-link button-link-default">Button Style
+                                                    Three</a>
+                                            </div>
+
+                                            <!-- Do not implement this link -->
+                                            <a href="/inc/modules/?module=content-block-medium" class="module-link">
+                                                <i class="icon info-icon">i</i>
+                                                <span class="tool-tip">Content Block Medium</span>
+                                            </a>
+                                            <!-- Do not implement this link -->
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal Four Code for modal content -->
+
+<!-- Begin Modal Five Code for modal content -->
+<div id="ModalFive" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="button-link fl-right" data-dismiss="modal">
+                    Close
+                </a>
+            </div>
+            <div class="modal-body">
+                <div class="module-wrapper">
+                    <div class="module-wrapper">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <h3>Content Block Small Images</h3>
+                                    <p><strong>Actual image size as fully displayed - 380 x 210 (72dpi)</strong></p>
+                                    <img src="img/380x210.png" alt="" class="img-auto">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="flex-wrapper flex-columns">
+                                    <div class="col-sm-12 text-center">
+                                        <p><strong>Images in cards below may appear to be different in size to above
+                                            image because of cropping and re-sizing applied by CSS</strong></p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 flex-item">
+
+                                        <div class="card card-small">
+
+                                            <div class="img-wrap"
+                                                 style="background-image:url('https://unsplash.it/380/210?image=1012')">
+                                                <img src="https://unsplash.it/380/210?image=1012" alt=""
+                                                     class="visuallyhidden">
+                                            </div>
+
+                                            <div class="copy-wrap">
+                                                <h2>Cross Link Here</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fuga
+                                                    reiciendis, aperiam praesentium ad delectus sunt! Eligendi iure
+                                                    molestias repellendus laborum, neque sapiente nulla ducimus nobis
+                                                    excepturi obcaecati adipisci voluptas.</p>
+                                                <a href="#" class="button-link no-styles red">Button Style Three</a>
+                                            </div>
+
+                                            <!-- Do not implement this link -->
+                                            <a href="/inc/modules/?module=content-block-small" class="module-link">
+                                                <i class="icon info-icon">i</i>
+                                                <span class="tool-tip">Content Block Small</span>
+                                            </a>
+                                            <!-- Do not implement this link -->
+
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 flex-item">
+
+                                        <div class="card card-small">
+
+                                            <div class="img-wrap"
+                                                 style="background-image:url('https://unsplash.it/380/210?image=1012')">
+                                                <img src="https://unsplash.it/380/210?image=1012" alt=""
+                                                     class="visuallyhidden">
+                                            </div>
+
+                                            <div class="copy-wrap">
+                                                <h2>Cross Link Here</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fuga
+                                                    reiciendis, aperiam praesentium ad delectus sunt! Eligendi iure
+                                                    molestias repellendus laborum, neque sapiente nulla ducimus nobis
+                                                    excepturi obcaecati adipisci voluptas.</p>
+                                                <a href="#" class="button-link no-styles red">Button Style Three</a>
+                                            </div>
+
+                                            <!-- Do not implement this link -->
+                                            <a href="/inc/modules/?module=content-block-small" class="module-link">
+                                                <i class="icon info-icon">i</i>
+                                                <span class="tool-tip">Content Block Small</span>
+                                            </a>
+                                            <!-- Do not implement this link -->
+
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 flex-item">
+
+                                        <div class="card card-small">
+
+                                            <div class="img-wrap"
+                                                 style="background-image:url('https://unsplash.it/380/210?image=1012')">
+                                                <img src="https://unsplash.it/380/210?image=1012" alt=""
+                                                     class="visuallyhidden">
+                                            </div>
+
+                                            <div class="copy-wrap">
+                                                <h2>Cross Link Here</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fuga
+                                                    reiciendis, aperiam praesentium ad delectus sunt! Eligendi iure
+                                                    molestias repellendus laborum, neque sapiente nulla ducimus nobis
+                                                    excepturi obcaecati adipisci voluptas.</p>
+                                                <a href="#" class="button-link no-styles red">Button Style Three</a>
+                                            </div>
+
+                                            <!-- Do not implement this link -->
+                                            <a href="/inc/modules/?module=content-block-small" class="module-link">
+                                                <i class="icon info-icon">i</i>
+                                                <span class="tool-tip">Content Block Small</span>
+                                            </a>
+                                            <!-- Do not implement this link -->
+
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 flex-item">
+
+                                        <div class="card card-small">
+
+                                            <div class="img-wrap"
+                                                 style="background-image:url('https://unsplash.it/380/210?image=1012')">
+                                                <img src="https://unsplash.it/380/210?image=1012" alt=""
+                                                     class="visuallyhidden">
+                                            </div>
+
+                                            <div class="copy-wrap">
+                                                <h2>Cross Link Here</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fuga
+                                                    reiciendis, aperiam praesentium ad delectus sunt! Eligendi iure
+                                                    molestias repellendus laborum, neque sapiente nulla ducimus nobis
+                                                    excepturi obcaecati adipisci voluptas.</p>
+                                                <a href="#" class="button-link no-styles red">Button Style Three</a>
+                                            </div>
+
+                                            <!-- Do not implement this link -->
+                                            <a href="/inc/modules/?module=content-block-small" class="module-link">
+                                                <i class="icon info-icon">i</i>
+                                                <span class="tool-tip">Content Block Small</span>
+                                            </a>
+                                            <!-- Do not implement this link -->
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal Five Code for modal content -->
+
+<!-- Begin Modal Six Code for modal content -->
+<div id="ModalSix" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="button-link fl-right" data-dismiss="modal">
+                    Close
+                </a>
+            </div>
+            <div class="modal-body">
+                <div class="module-wrapper">
+                    <div class="module-wrapper">
+                        <div class="text-center">
+                            <h3>Hero Image (Large)</h3>
+                            <p><strong>Actual image size as fully displayed - 1470 x 600 (72dpi)</strong></p>
+                            <p><em><strong>Note:</strong> Both the Large and the Small Hero Banners use 1470 x 600 image
+                                size</em></p>
+                            <img src="img/1470x600.png" alt="" class="img-auto">
+                        </div>
+                        <div class="text-center">
+                            <p><strong>Image in feature below may appear to be different in size to above image
+                                because of cropping and re-sizing applied by CSS</strong></p>
+                        </div>
+                        <div class="hero large" style="background-image:url('https://unsplash.it/1470/600?image=314')">
+                            <img src="https://unsplash.it/1470/600?image=314" alt="" class="visuallyhidden">
+                        </div>
+                        <div class="spacer-lg-3"></div>
+                        <!--small-->
+                        <div class="container">
+                            <div class="row text-center">
+                                <h3>Hero Image (Small)</h3>
+                                <p><strong>Actual image size as fully displayed - 1470 x 600 (72dpi)</strong></p>
+                                <div class="col-sm-12">
+                                    <div class="hero small"
+                                         style="background-image:url('https://unsplash.it/1470/600?image=829')">
+                                        <img src="https://unsplash.it/1470/600?image=829" alt="" class="visuallyhidden">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--small-->
+                    </div>
+                    <div class="spacer-lg-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal Six Code for modal content -->
+
+<!-- Begin Modal Seven Code for modal content -->
+<div id="ModalSeven" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="button-link fl-right" data-dismiss="modal">
+                    Close
+                </a>
+            </div>
+            <div class="modal-body">
+                <div class="module-wrapper">
+                    <div class="module-wrapper">
+                        <div class="text-center">
+                            <h3>List Module Feature Image</h3>
+                            <p><strong>Actual image size as fully displayed - 375 x 375 (72dpi)</strong></p>
+
+                            <img src="img/375x375.png" alt="" class="img-auto">
+                        </div>
+                        <div class="text-center">
+                            <p><strong>Image in List Module Feature below may appear to be different in size to above
+                                image
+                                because of cropping and re-sizing applied by CSS</strong></p>
+                        </div>
+                        <div class="container">
+
+                            <div class="row">
+
+                                <div class="col-sm-4">
+                                    <img src="http://placehold.it/375x375" alt="">
+                                </div>
+
+                                <div class="col-sm-8">
+
+                                    <div class="card card-list card-title-red list-large">
+
+                                        <h4>Topic Goes Here</h4>
+
+                                        <ul class="custom">
+                                            <li><strong>Always being there</strong> - Glass damage can happen at any
+                                                hour. AAA Auto Glass - Powered by Safelite is always here for you with
+                                                24/7 live representatives in our renowned contact centers, as well as
+                                                web and mobile app scheduling.
+                                            </li>
+                                            <li><strong>Knowing who to expect</strong> - When you schedule mobile
+                                                service, you'll receive peace of mind with our Technician Profile Email,
+                                                including the technician's name, photo, and credentials before he
+                                                arrives.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer-lg-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal Seven Code for modal content -->
+
+<!-- Begin Modal Eight Code for modal content -->
+<div id="ModalEight" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="button-link fl-right" data-dismiss="modal">
+                    Close
+                </a>
+            </div>
+            <div class="modal-body">
+                <div class="module-wrapper">
+                    <div class="module-wrapper">
+                        <div class="text-center">
+                            <h3>List Module Full Images</h3>
+                            <p><strong>Actual image size as fully displayed - 380 x 200 (72dpi)</strong></p>
+
+                            <img src="img/380x200.png" alt="" class="img-auto">
+                        </div>
+                        <div class="text-center">
+                            <p><strong>Image in List Module Feature below may appear to be different in size to above
+                                image
+                                because of cropping and re-sizing applied by CSS</strong></p>
+                        </div>
+                        <div class="container">
+
+                            <div class="row">
+
+                                <div class="col-sm-4">
+
+                                    <div class="card card-list card-title-red">
+
+                                        <div class="img-wrap"
+                                             style="background-image:url('https://unsplash.it/380/200?image=655')">
+                                            <img src="https://unsplash.it/380/200?image=655" alt=""
+                                                 class="visuallyhidden">
+                                        </div>
+
+                                        <h4>Topic Goes Here</h4>
+
+                                        <ul class="custom">
+                                            <li><strong>Gas Delivery</strong> - including Free Gas.</li>
+                                            <li><strong>Towing</strong> - to responding facility or site of choice up to
+                                                3 miles.
+                                            </li>
+                                            <li><strong>Gas Delivery</strong> - including Free Gas.</li>
+                                            <li><strong>Towing</strong> - to responding facility or site of choice up to
+                                                3 miles.
+                                            </li>
+                                        </ul>
+
+                                        <div class="copy-wrap">
+                                            <p>It is a long established fact that a reader will be distracted by the the
+                                                lorem ipsum dummy copy. Dummy copy displays here.</p>
+                                            <a href="#" class="button-link button-link-default">Button Style Three</a>
+                                        </div>
+
+                                        <!-- Do not implement this link -->
+                                        <a href="/inc/modules/?module=list-module-full" class="module-link">
+                                            <i class="icon info-icon">i</i>
+                                            <span class="tool-tip">List Module Full</span>
+                                        </a>
+                                        <!-- Do not implement this link -->
+
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4">
+
+                                    <div class="card card-list card-title-red">
+
+                                        <div class="img-wrap"
+                                             style="background-image:url('https://unsplash.it/380/200?image=655')">
+                                            <img src="https://unsplash.it/380/200?image=655" alt=""
+                                                 class="visuallyhidden">
+                                        </div>
+
+                                        <h4>Topic Goes Here</h4>
+
+                                        <ul class="custom">
+                                            <li><strong>Gas Delivery</strong> - including Free Gas.</li>
+                                            <li><strong>Towing</strong> - to responding facility or site of choice up to
+                                                3 miles.
+                                            </li>
+                                            <li><strong>Gas Delivery</strong> - including Free Gas.</li>
+                                            <li><strong>Towing</strong> - to responding facility or site of choice up to
+                                                3 miles.
+                                            </li>
+                                        </ul>
+
+                                        <div class="copy-wrap">
+                                            <p>It is a long established fact that a reader will be distracted by the the
+                                                lorem ipsum dummy copy. Dummy copy displays here.</p>
+                                            <a href="#" class="button-link button-link-default">Button Style Three</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4">
+
+                                    <div class="card card-list card-title-red">
+
+                                        <div class="img-wrap"
+                                             style="background-image:url('https://unsplash.it/380/200?image=655')">
+                                            <img src="https://unsplash.it/380/200?image=655" alt=""
+                                                 class="visuallyhidden">
+                                        </div>
+
+                                        <h4>Topic Goes Here</h4>
+
+                                        <ul class="custom">
+                                            <li><strong>Gas Delivery</strong> - including Free Gas.</li>
+                                            <li><strong>Towing</strong> - to responding facility or site of choice up to
+                                                3 miles.
+                                            </li>
+                                            <li><strong>Gas Delivery</strong> - including Free Gas.</li>
+                                            <li><strong>Towing</strong> - to responding facility or site of choice up to
+                                                3 miles.
+                                            </li>
+                                        </ul>
+
+                                        <div class="copy-wrap">
+                                            <p>It is a long established fact that a reader will be distracted by the the
+                                                lorem ipsum dummy copy. Dummy copy displays here.</p>
+                                            <a href="#" class="button-link button-link-default">Button Style Three</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer-lg-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal Eight Code for modal content -->
+
+<!-- Begin Modal Nine Code for modal content -->
+<div id="ModalNine" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="button-link fl-right" data-dismiss="modal">
+                    Close
+                </a>
+            </div>
+            <div class="modal-body">
+                <div class="module-wrapper">
+                    <div class="module-wrapper">
+                        <div class="text-center">
+                            <h3>Sidebar CTA Content Images</h3>
+                            <p><strong>Actual image size as fully displayed - 300 x 200 (72dpi)</strong></p>
+
+                            <img src="img/300x200.png" alt="" class="img-auto">
+                        </div>
+                        <div class="text-center">
+                            <p><strong>Image in Sidebar CTA Content below may appear to be different in size to above
+                                image
+                                because of cropping and re-sizing applied by CSS</strong></p>
+                        </div>
+                        <div class="container">
+
+                            <div class="row">
+
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="well-block aside">
+                                        <div class="content-wrap card">
+                                            <img src="http://placehold.it/300x200" alt="">
+                                            <p>Tool bar style three allows for copy, image, and call to action as
+                                                components. Tool bar style three allows for copy, image.</p>
+                                            <a href="#" class="button-link button-link-default alt">Button Two &gt;</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer-lg-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal Nine Code for modal content -->
+
+<!-- Begin Modal Ten Code for modal content -->
+<div id="ModalTen" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a href="#" class="button-link fl-right" data-dismiss="modal">
+                    Close
+                </a>
+            </div>
+            <div class="modal-body">
+                <div class="module-wrapper">
+                    <div class="module-wrapper">
+                        <div class="text-center">
+                            <h3>Support Module Images</h3>
+                            <p><strong>Actual image size as fully displayed - 676 x 350 (72dpi)</strong></p>
+
+                            <img src="img/676x350.png" alt="" class="img-auto">
+                        </div>
+                        <div class="text-center">
+                            <p><strong>Images in the Support Module below may appear to be different in size to above
+                                image
+                                because of cropping and re-sizing applied by CSS</strong></p>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="section-heading gold">
+                                        <i class="icon icon-brand icon-map">
+                                            <svg>
+                                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                     xlink:href="/img/spritemap.svg#icon-map"></use>
+                                                <svg>
+                                                </svg>
+                                            </svg>
+                                        </i>
+                                        <h2>Header Style Four</h2>
+                                        <a href="#">
+<span class="text">
+Link To Explore
+</span>
+                                            <i class="icon icon-arrow">
+                                                <svg>
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                         xlink:href="/img/spritemap.svg#icon-arrow-circle"></use>
+                                                    <svg>
+                                                    </svg>
+                                                </svg>
+                                            </i>
+                                        </a>
+
+                                        <!-- Do not implement this link -->
+                                        <a href="/inc/modules/?module=general-titles" class="module-link">
+                                            <i class="icon info-icon">i</i>
+                                            <span class="tool-tip">General Titles</span>
+                                        </a>
+                                        <!-- Do not implement this link -->
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="flex-wrapper flex-columns">
+
+                                    <div class="col-sm-4 flex-item">
+
+                                        <div class="card card-medium">
+
+                                            <div class="img-wrap"
+                                                 style="background-image:url('https://unsplash.it/676/350?image=860')">
+                                                <img src="https://unsplash.it/676/350?image=860" alt=""
+                                                     class="visuallyhidden">
+                                            </div>
+
+                                            <div class="copy-wrap">
+                                                <h2>Cross Link Here</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fuga
+                                                    reiciendis, aperiam praesentium ad delectus sunt! Eligendi iure
+                                                    molestias repellendus laborum, neque sapiente nulla ducimus nobis
+                                                    excepturi obcaecati adipisci voluptas.</p>
+                                                <a href="#" class="button-link button-link-default">Button Style
+                                                    Three</a>
+                                            </div>
+
+                                            <!-- Do not implement this link -->
+                                            <a href="/inc/modules/?module=content-block-medium" class="module-link">
+                                                <i class="icon info-icon">i</i>
+                                                <span class="tool-tip">Content Block Medium</span>
+                                            </a>
+                                            <!-- Do not implement this link -->
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 flex-item">
+
+                                        <div class="card card-medium">
+
+                                            <div class="img-wrap"
+                                                 style="background-image:url('https://unsplash.it/676/350?image=860')">
+                                                <img src="https://unsplash.it/676/350?image=860" alt=""
+                                                     class="visuallyhidden">
+                                            </div>
+
+                                            <div class="copy-wrap">
+                                                <h2>Cross Link Here</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fuga
+                                                    reiciendis, aperiam praesentium ad delectus sunt! Eligendi iure
+                                                    molestias repellendus laborum, neque sapiente nulla ducimus nobis
+                                                    excepturi obcaecati adipisci voluptas.</p>
+                                                <a href="#" class="button-link button-link-default">Button Style
+                                                    Three</a>
+                                            </div>
+
+                                            <!-- Do not implement this link -->
+                                            <a href="/inc/modules/?module=content-block-medium" class="module-link">
+                                                <i class="icon info-icon">i</i>
+                                                <span class="tool-tip">Content Block Medium</span>
+                                            </a>
+                                            <!-- Do not implement this link -->
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4 flex-item">
+
+                                        <div class="card news-link">
+
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <h3>Header Style Whatever Here Article Title</h3>
+                                                        <span class="text">source page</span>
+                                                        <i class="icon icon-arrow">
+                                                            <svg>
+                                                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                     xlink:href="/img/spritemap.svg#icon-arrow-circle"></use>
+                                                                <svg>
+                                                                </svg>
+                                                            </svg>
+                                                        </i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <h3>Header Style Whatever Here Article Title</h3>
+                                                        <span class="text">source page</span>
+                                                        <i class="icon icon-arrow">
+                                                            <svg>
+                                                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                     xlink:href="/img/spritemap.svg#icon-arrow-circle"></use>
+                                                                <svg>
+                                                                </svg>
+                                                            </svg>
+                                                        </i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <h3>Header Style Whatever Here Article Title</h3>
+                                                        <span class="text">source page</span>
+                                                        <i class="icon icon-arrow">
+                                                            <svg>
+                                                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                     xlink:href="/img/spritemap.svg#icon-arrow-circle"></use>
+                                                                <svg>
+                                                                </svg>
+                                                            </svg>
+                                                        </i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <h3>Header Style Whatever Here Article Title</h3>
+                                                        <span class="text">source page</span>
+                                                        <i class="icon icon-arrow">
+                                                            <svg>
+                                                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                     xlink:href="/img/spritemap.svg#icon-arrow-circle"></use>
+                                                                <svg>
+                                                                </svg>
+                                                            </svg>
+                                                        </i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer-lg-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal Ten Code for modal content -->
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="js/plugins.js"></script>
@@ -395,7 +1362,7 @@
                 title: '',
                 message: iframe,
                 closeButton: true,
-                scrollable: false
+                scrollable: true
             });
             return false;
         });
