@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Image Specifications</title>
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7141914/7601752/css/fonts.css"/>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" href="img/aaa-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/aaa-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/aaa-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/aaa-icon-ipad-retina.png">
+    <link rel="icon" href="/favicon.ico">
+    <style>
+        html {
+            overflow-x: hidden;
+        }
+
+        .modal-dialog {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .modal-content {
+            border: none;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+        }
+
+        .modal.fade .modal-dialog {
+            -webkit-transition: -webkit-transform .55s ease-out;
+            -o-transition: -o-transform .55s ease-out;
+            transition: transform .55s ease-out;
+            -webkit-transform: translate(0, -25%);
+            -ms-transform: translate(0, -25%);
+            -o-transform: translate(0, -25%);
+            transform: translate(0, -25%)
+        }
+
+        .tool-menu-button {
+            cursor: pointer;
+        }
+
+        .modal-header {
+            padding: 1rem 4rem 0;
+        }
+
+        .iframe-container {
+            padding-bottom: 60%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .iframe-container iframe,
+        .iframe-container object,
+        .iframe-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .modal.in .modal-dialog {
+            transform: none; /*translate(0px, 0px);*/
+        }
+    </style>
+</head>
+
+<body class="loading  module-page ">
+<div class="overlay"></div>
+
+<div id="tool-header" class="header">
+    <div class="container">
+        <div class="table-wrap">
+            <div class="logo align-text-left">
+                <a href="index.html">
+                    <i class="icon icon-aaa fill-white">
+                        <svg>
+                            <use xlink:href="img/spritemap.svg#aaa-logo"></use>
+                        </svg>
+                    </i>
+                    <span class="visuallyhidden">AAA</span>
+                </a>
+            </div>
+            <div class="align-text-right">
+                <a href="style-guide.html" class="button-link button-link-default alt">Style Guide</a>
+                <a href="#" class="button-link button-link-default alt tool-menu-button">Menu</a>
+            </div>
+        </div>
+    </div>
+    <div class="tool-header-trigger">
+        <a href="#">
+            <i class="icon icon-trigger">
+                <svg>
+                    <use xlink:href="img/spritemap.svg#icon-plus-circle"></use>
+                </svg>
+            </i>
+        </a>
+    </div>
+</div>
+
+<div id="tool-nav" class="nav">
+    <div class="nav-wrap-inner">
+        <div class="align-text-right"><a href="#" class="button-link tool-menu-button">Close</a></div>
+        <div class="nav-group">
+            <div class="row">
+                <div class="col-sm-6 nav-block"><h4>Applications</h4>
+                    <ul>
+                        <li><a href="application-1.html"> Application 1 </a></li>
+                        <li><a href="application-2.html"> Application 2 </a></li>
+                        <li><a href="application-3.html"> Application 3 </a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 nav-block"><h4>Additional Styling and Functionality</h4>
+                    <ul>
+                        <li><a href="modals.html"> Modals </a></li>
+                        <li><a href="tooltips.html"> Tooltips </a></li>
+                        <li><a href="lists.html"> Lists </a></li>
+                        <li><a href="table.html"> Tables </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav-group"><h4>Modules</h4>
+            <div class="row">
+                <div class="col-sm-6 nav-block">
+                    <ul>
+                        <li><a href="accordion.html"> Accordion </a></li>
+                        <li><a href="breadcrumbs.html"> Breadcrumbs </a></li>
+                        <li><a href="content-block-carousel.html"> Content Block Carousel </a></li>
+                        <li><a href="content-block-feature.html"> Content Block Feature </a></li>
+                        <li><a href="content-block-large.html"> Content Block Large </a></li>
+                        <li><a href="content-block-medium.html"> Content Block Medium </a></li>
+                        <li><a href="content-block-small.html"> Content Block Small </a></li>
+                        <li><a href="content-block-suggested-links.html"> Content Block Suggested Links </a></li>
+                        <li><a href="footer.html"> Footer </a></li>
+                        <li><a href="forms.html"> Forms </a></li>
+                        <li><a href="general-content.html"> General Content </a></li>
+                        <li><a href="general-titles.html"> General Titles </a></li>
+                        <li><a href="header.html"> Header </a></li>
+                        <li><a href="heros.html"> Heros </a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 nav-block">
+                    <ul>
+                        <li><a href="list-module-featured.html"> List Module Featured </a></li>
+                        <li><a href="list-module-full.html"> List Module Full </a></li>
+                        <li><a href="list-module.html"> List Module </a></li>
+                        <li><a href="map-modules.html"> Map Modules </a></li>
+                        <li><a href="news-link.html"> News Link </a></li>
+                        <li><a href="pagination.html"> Pagination </a></li>
+                        <li><a href="results-form.html"> Results Form </a></li>
+                        <li><a href="search-list.html"> Search List </a></li>
+                        <li><a href="sidebar-CTA-content.html"> Sidebar CTA Content </a></li>
+                        <li><a href="sidebar-contact-links.html"> Sidebar Contact Links </a></li>
+                        <li><a href="sidebar-login.html"> Sidebar Login </a></li>
+                        <li><a href="sidebar-quicklinks.html"> Sidebar Quicklinks </a></li>
+                        <li><a href="sidebar-titles.html"> Sidebar Titles </a></li>
+                        <li><a href="table.html"> Table </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav-group">
+            <div class="row">
+                <div class="col-sm-12 nav-block"><h4>Collections</h4>
+                    <ul>
+                        <li><a href="content-blocks.html"> Content Blocks </a></li>
+                        <li><a href="search-results.html"> Search Results </a></li>
+                        <li><a href="sidebar-tools.html"> Sidebar Tools </a></li>
+                        <li><a href="support-module.html"> Support Module </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="module-label">Image Specifications</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <p>The image specifications Style guide serves to provide the required image sizes<br>
+                This is the master guide for all AAA image dimensions and specs for the AAA website.</p>
+            <h3>Optimizing images in Photoshop? refer to the following:</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="flex-wrapper flex-column">
+        <div class="col-sm-6 flex-item">
+            <div class="card card-list card-title-red list-large">
+                <h4>Videos</h4>
+                <ul class="custom">
+                    <li><strong><a href="https://www.youtube.com/watch?v=QSyb_6NRDeI">How to Export Your Images Out
+                        of Photoshop
+                        CC for the Web
+                    </a><br> - 4:07</strong></li>
+                    <li><strong><a href="https://helpx.adobe.com/photoshop/how-to/export-image-web.html">Export image
+                        for the
+                        web</a><br> - 5:07</strong></li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="col-sm-6 flex-item">
+            <div class="card card-list card-title-red list-large">
+                <h4>Documents</h4>
+                <ul class="custom">
+                    <li><strong>Optimizing Images for the Web: A Practical Guide</strong>
+                        <a class="button-link button-link-default alt view-pdf"
+                           href="assets/optimizing-images-for-web-01.pdf">Open Document</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+<div class="module-wrapper">
+    <div class="module-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="flex-wrapper flex-columns">
+                    <div class="col-sm-6 flex-item">
+                        <div class="card">
+                            <div class="img-wrap" style="background-image:url('https://unsplash.it/585/375?image=598')">
+                                <img src="https://unsplash.it/585/375?image=598" alt="" class="visuallyhidden">
+                            </div>
+                            <div class="copy-wrap">
+                                <h2>Cross Link Here</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fuga reiciendis, aperiam
+                                    praesentium ad delectus sunt! Eligendi iure molestias repellendus laborum, neque
+                                    sapiente nulla ducimus nobis excepturi obcaecati adipisci voluptas.</p>
+                                <a href="#" class="button-link button-link-default">Button Style Three</a>
+                            </div>
+
+                            <!-- Do not implement this link -->
+                            <a href="/inc/modules/?module=content-block-large" class="module-link">
+                                <i class="icon info-icon">i</i>
+                                <span class="tool-tip">Content Block Large</span>
+                            </a>
+                            <!-- Do not implement this link -->
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 flex-item">
+
+                        <div class="card">
+
+                            <div class="img-wrap" style="background-image:url('https://unsplash.it/585/375?image=598')">
+                                <img src="https://unsplash.it/585/375?image=598" alt="" class="visuallyhidden">
+                            </div>
+
+                            <div class="copy-wrap">
+                                <h2>Cross Link Here</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fuga reiciendis, aperiam
+                                    praesentium ad delectus sunt! Eligendi iure molestias repellendus laborum, neque
+                                    sapiente nulla ducimus nobis excepturi obcaecati adipisci voluptas.</p>
+                                <a href="#" class="button-link button-link-default">Button Style Three</a>
+                            </div>
+
+                            <!-- Do not implement this link -->
+                            <a href="/inc/modules/?module=content-block-large" class="module-link">
+                                <i class="icon info-icon">i</i>
+                                <span class="tool-tip">Content Block Large</span>
+                            </a>
+                            <!-- Do not implement this link -->
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <span class="spacer spacer-md-3"></span>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Markup</h2>
+<pre><code class="language-html">&lt;div class=&quot;card&quot;&gt;
+
+&lt;div class=&quot;img-wrap&quot; style=&quot;background-image:url('https://unsplash.it/585/375?image=598')&quot;&gt;
+&lt;img src=&quot;https://unsplash.it/585/375?image=598&quot; alt=&quot;&quot; class=&quot;visuallyhidden&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;copy-wrap&quot;&gt;
+&lt;h2&gt;Cross Link Here&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. In fuga reiciendis, aperiam praesentium ad delectus sunt! Eligendi iure molestias repellendus laborum, neque sapiente nulla ducimus nobis excepturi obcaecati adipisci voluptas.&lt;/p&gt;
+&lt;a href=&quot;#&quot; class=&quot;button-link button-link-default&quot;&gt;Button Style Three&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;!-- Do not implement this link --&gt;
+&lt;a href=&quot;/inc/modules/?module=content-block-large&quot; class=&quot;module-link&quot;&gt;
+&lt;i class=&quot;icon info-icon&quot;&gt;i&lt;/i&gt;
+&lt;span class=&quot;tool-tip&quot;&gt;Content Block Large&lt;/span&gt;
+&lt;/a&gt;
+&lt;!-- Do not implement this link --&gt;
+
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-12">
+
+                    <div class="module-rules">
+
+                        <p>It should not be used more than twice on a particular page and always above all support
+                            modules.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/bootstrap.min2.js"></script>
+<script>
+    /*
+     * This is the plugin
+     */
+    (function (a) {
+        a.createModal = function (b) {
+            defaults = {title: "", message: "Your Message Goes Here!", closeButton: true, scrollable: false};
+            var b = a.extend({}, defaults, b);
+            var c = (b.scrollable === true) ? 'style="max-height: 100%;overflow-y: auto;"' : "";
+            html = '<div class="modal fade" id="myModal">';
+            html += '<div class="modal-dialog">';
+            html += '<div class="modal-content">';
+            html += '<div class="modal-header">';
+//            html += '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>';
+            if (b.title.length > 0) {
+                html += '<h4 class="modal-title">' + b.title + "</h4>"
+            }
+            if (b.closeButton === true) {
+                html += '<a type="button" class="button-link tool-menu-button fl-right" data-dismiss="modal">Close</a>'
+            }
+            html += "</div>";
+            html += '<div class="modal-body" ' + c + ">";
+            html += b.message;
+            html += "</div>";
+            html += '<div class="modal-footer">';
+            if (b.closeButton === true) {
+                html += '<a type="button" class="button-link tool-menu-button fl-right" data-dismiss="modal">Close</a>'
+            }
+            html += "</div>";
+            html += "</div>";
+            html += "</div>";
+            html += "</div>";
+            a("body").prepend(html);
+            a("#myModal").modal().on("hidden.bs.modal", function () {
+                a(this).remove()
+            })
+        }
+    })(jQuery);
+
+    /*
+     * Here is how you use it
+     */
+    $(function () {
+        $('.view-pdf').on('click', function () {
+            var pdf_link = $(this).attr('href');
+//var iframe = '<div class="iframe-container"><iframe src="'+pdf_link+'"></iframe></div>'
+//var iframe = '<object data="'+pdf_link+'" type="application/pdf"><embed src="'+pdf_link+'" type="application/pdf" /></object>'
+            var iframe = '<object type="application/pdf" data="' + pdf_link + '" width="100%" height="800px">No Support</object>'
+            $.createModal({
+                title: '',
+                message: iframe,
+                closeButton: true,
+                scrollable: false
+            });
+            return false;
+        });
+    })
+</script>
+</body>
+</html>
