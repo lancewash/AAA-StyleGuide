@@ -1,0 +1,570 @@
+<html lang="en" class="gr__localhost">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="coveo.css">
+    <link type="text/css" rel="stylesheet" href="chrome-extension://dagdlcijhfbmgkjokkjicnnfimlebcll/style.css">
+    <script type="text/javascript" charset="utf-8" src="chrome-extension://dagdlcijhfbmgkjokkjicnnfimlebcll/page_context.js"></script>
+</head>
+<body data-gr-c-s-loaded="true" screen_capture_injected="true" cz-shortcut-listen="true">
+
+<div class="search-container">
+    <div id="search"
+         class="CoveoSearchInterface Coveostate CoveoComponentState CoveoComponentOptions CoveoQueryController CoveoHistoryController CoveoDebug"
+         data-enable-history="True" data-results-per-page="10" data-excerpt-length="200"
+         data-hide-until-first-query="False" data-auto-trigger-query="True" style="display: block;">
+
+        <div class="coveo-results-section">
+            <div class="coveo-results-column float-right card">
+                <div class="search-field">
+                    <div class="CoveoSearchBox" data-activate-omnibox="True" data-omnibox-delay="500">
+                        <a class="CoveoSearchButton" href="javascript:"><span class="coveo-icon">Search</span></a>
+                        <div class="form-group">
+                            <input type="text" autocapitalize="off" autocorrect="off" class="CoveoQueryBox"
+                                   form="coveo-dummy-form" placeholder="">
+                            <div class="coveo-omnibox" style="display: none;">
+
+                            </div>
+                            <span class="coveo-query-box-clear" style=""><span class="coveo-icon"></span></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="coveo-facet-column">
+                <!-- When customizing this component, ensure to use "Coveo.$" instead of the regular jQuery "$" to
+                     avoid any conflicts with Sitecore's Page Editor/Experience Editor.  -->
+                <div class="card">
+                    <div class="coveo-topSpace"></div>
+                    <style>
+                        .CoveoFacet[data-id="@section"] .coveo-header > .coveo-icon.section {
+                            background-position: 0;
+                            background-image: url('/~/media/sectionIcon.ashx?h=16&thn=0&w=16');
+                            width: 16px;
+                            height: 16px;
+                        }
+
+                    </style>
+                    <div class="CoveoFacet copy-wrap" data-title="Section" data-field="@section"
+                         data-number-of-values="5" data-id="@section" data-enable-collapse="False"
+                         data-enable-more-less="True" data-enable-settings="False" data-lookup-field=""
+                         data-sort-criteria="occurrences" data-is-multi-value-field="True" data-show-icon="True"
+                         data-computed-field="" data-computed-field-operation="" data-computed-field-format=""
+                         data-computed-field-caption="" data-include-in-breadcrumb="True"
+                         data-number-of-values-in-breadcrumb="5" data-include-in-omnibox="True"
+                         data-enable-facet-search="False" data-facet-number-of-values-in-facet-search="15"
+                         data-allow-toggling-operator="False" data-use-and="False" data-page-size="10"
+                         data-injection-depth="1000" data-available-sorts="">
+                        <div class="coveo-header">
+                            <div class="coveo-icon section"></div>
+                            <div class="coveo-wait-animation" style="display: none;"></div>
+                            <div title="Switch to AND" class="coveo-operator" style="display: none;"><span
+                                    class="coveo-icon coveo-or"></span></div>
+                            <div title="Clear Section" class="coveo-eraser" style="display: none;"><span
+                                    class="coveo-icon"></span></div>
+                            <div class="coveo-title">Section</div>
+                        </div>
+                        <ul class="coveo-values">
+
+                            <li class="coveo-value coveo-selectable">
+                                <div title="Exclude Content" class="coveo-exclude"></div>
+                                <label>
+                                    <div class="coveo-label"><input type="checkbox" form="coveo-dummy-form">
+                                        <div class="coveo-checkbox"><span></span></div>
+                                        <div class="coveo-icon section content"></div>
+                                        <span class="coveo-caption">Content</span><span class="coveo-count">2,699</span>
+                                    </div>
+                                </label></li>
+                            <li class="coveo-value coveo-selectable">
+                                <div title="Exclude Products" class="coveo-exclude"></div>
+                                <label>
+                                    <div class="coveo-label"><input type="checkbox" form="coveo-dummy-form">
+                                        <div class="coveo-checkbox"><span></span></div>
+                                        <div class="coveo-icon section products"></div>
+                                        <span class="coveo-caption">Products</span><span class="coveo-count">733</span>
+                                    </div>
+                                </label></li>
+                            <li class="coveo-value coveo-selectable">
+                                <div title="Exclude Discounts" class="coveo-exclude"></div>
+                                <label>
+                                    <div class="coveo-label"><input type="checkbox" form="coveo-dummy-form">
+                                        <div class="coveo-checkbox"><span></span></div>
+                                        <div class="coveo-icon section discounts"></div>
+                                        <span class="coveo-caption">Discounts</span><span class="coveo-count">5</span>
+                                    </div>
+                                </label></li>
+                        </ul>
+                        <div class="coveo-footer coveo-empty"><a class="coveo-more" href="javascript:">More</a><a
+                                class="coveo-less" href="javascript:" style="display: none;">Fewer</a></div>
+                    </div>
+
+                    <div class="coveo-bottomSpace"></div>
+                </div>
+                &nbsp;
+            </div>
+
+            <div class="coveo-results-column float-right card">
+
+                <div class="CoveoBreadcrumb" style="display: none;">
+                    <div class="coveo-clear-all" title="Clear All Filters">
+                        <div class="coveo-icon"></div>
+                    </div>
+                </div>
+
+                <div class="coveo-results-header">
+                    <div class="coveo-summary-section">
+
+                        <span class="CoveoQuerySummary" style="display: inline;"><span>Results <span
+                                class="coveo-highlight">1</span>-<span class="coveo-highlight">10</span> of <span
+                                class="coveo-highlight">3,437</span></span></span>
+
+                                <span class="CoveoQueryDuration" style="display: inline;" title="Duration: in 0.03 second
+Index Duration: in 0.02 second
+Proxy Duration: Unavailable
+Client Duration: in 0.39 second"><span>in 0.03 second</span></span>
+
+                    </div>
+
+
+                    <div class="coveo-sort-section">
+                        <!-- When customizing this component, ensure to use "Coveo.$" instead of the regular jQuery "$" to
+                             avoid any conflicts with Sitecore's Page Editor/Experience Editor.  -->
+                        <div>
+                            <span class="CoveoSort coveo-selected" data-sort-criteria="relevancy">Relevance</span>
+                        </div>
+                        <!-- When customizing this component, ensure to use "Coveo.$" instead of the regular jQuery "$" to
+                             avoid any conflicts with Sitecore's Page Editor/Experience Editor.  -->
+
+                        <div>
+
+                            <span class="CoveoSort coveo-ascending" data-sort-criteria="date ascending,date descending">Date<span
+                                    class="coveo-icon"></span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="CoveoHiddenQuery" style="display: none;"></div>
+
+
+                <div class="CoveoDidYouMean" style="display: none;"></div>
+
+                <div class="CoveoErrorReport" style="display: none;">
+                    <div class="coveo-error-title"><h3></h3><h4></h4></div>
+                    <div class="coveo-options"><span class="coveo-previous"> Go Back </span><span class="coveo-clear">Reset</span><span
+                            class="coveo-retry">Retry</span></div>
+                    <div class="coveo-error-message"></div>
+                </div>
+
+                <div class="CoveoResultList" data-wait-animation="fade" data-enable-infinite-scroll="False"
+                     data-infinite-scroll-page-size="10">
+
+                    <script class="result-template" type="text/x-underscore-template">
+                        <div class='coveo-icon objecttype {{-raw.objecttype}}'>{{-raw.objecttype}}</div>
+
+                        {{/* Change the tooltip on the date. */}}
+                        {{if(raw.fcreated76221 === raw.fupdated76221) { }}
+                        <div class='coveo-date' title='Creation time.'>{{-dateTime(raw.sysdate)}}</div>
+                        {{ } else { }}
+                        <div class='coveo-date' title='Last time modified.'>{{-dateTime(raw.sysdate)}}</div>
+                        {{ } }}
+
+                        <div class='coveo-title'>
+
+                            {{ if (raw.fhaslayout76221 === "1" || raw.syssource !== "Coveo_web_index -
+                            MIDATLSERV7-midatlantic.aaa.com") { }}
+                            <a class='CoveoResultLink'>{{=title?highlight(title, titleHighlights):clickUri}}</a>
+                            {{ } else { }}
+                            <span class='CoveoResultTitle'>{{=title?highlight(title, titleHighlights):''}}</span>
+                            {{ } }}
+
+                            {{ if (hasHtmlVersion) { }}
+                            <div class='CoveoQuickView'
+                                 data-title="<span class='coveo-icon objecttype {{-raw.objecttype}}'></span>{{= Title }}"
+                                 data-fixed='true' data-width='70%' data-heigth='70%'>
+                                <div class='coveo-quick-view-header'>
+                                    <table class='CoveoFieldTable'>
+                                        <tr data-field='@sysdate' data-caption='Date' data-helper='dateTime'/>
+                                        <tr data-field='@sysauthor' data-caption='Author'/>
+                                        <tr data-field='@clickuri' data-html-value='true' data-caption='URL'
+                                            data-helper='anchor'
+                                            data-helper-options='{text: \"{{= raw.syssource }}\" , target:\"_blank\"}'>
+                                    </table>
+                                </div>
+                                <div class='CoveoQuickViewDocument'></div>
+                            </div>
+                            {{ } }}
+                        </div>
+
+                        <div class='coveo-excerpt'>
+                            {{=highlight(excerpt, excerptHighlights)}}
+                        </div>
+
+                        <table class='CoveoFieldTable'>
+                            <!--  <tr data-field='@fz95xtemplatename76221' data-caption='Template' />
+                              {{ if (raw.fcreated76221 === raw.fupdated76221) { }}
+                                  <tr data-field='@fparsedcreatedby76221' data-caption='Created by' />
+                              {{ } else { }}
+                                  <tr data-field='@fparsedcreatedby76221' data-caption='Created by' />
+                                  <tr data-field='@fcreated76221' data-caption='Created' data-helper='dateTime' />
+                                  <tr data-field='@fparsedupdatedby76221' data-caption='Updated by' />
+                              {{ } }}
+                              <tr data-field='@fparsedlanguage76221' data-caption='Language' />-->
+                            <!--   <tr>
+                                     <th class='CoveoCaption'>Uri</th>
+                                   <td class='CoveoClickableUri'>
+                                       <a href="{{= clickUri}}">{{= clickUri}}</a>
+                                   </td>
+                               </tr>-->
+                            <tr data-field='@fabstract76221'/>
+
+                        </table>
+                    </script>
+                    <div class="">
+                        <div class="CoveoResult">
+                            <div class="coveo-icon objecttype "></div>
+
+
+                            <div class="coveo-date" title="Creation time.">Yesterday, 5:34 PM</div>
+
+
+                            <div class="coveo-title">
+
+
+                                <a class="CoveoResultLink" href="http://midatlantic.aaa.com/Brandywine"><span
+                                        class="highlight">AAA</span> Brandywine</a>
+
+
+                                <div class="CoveoQuickView"
+                                     data-title="<span class='coveo-icon objecttype '></span>AAA Brandywine"
+                                     data-fixed="true" data-width="70%" data-heigth="70%">
+
+
+                                    <div class="coveo-icon-for-quickview">Quick View</div>
+                                </div>
+
+                            </div>
+
+                            <div class="coveo-excerpt">
+                                <span class="highlight">AAA</span> Brandywine
+                            </div>
+
+
+                        </div>
+                        <div class="CoveoResult">
+                            <div class="coveo-icon objecttype "></div>
+
+
+                            <div class="coveo-date" title="Creation time.">Yesterday, 5:26 PM</div>
+
+
+                            <div class="coveo-title">
+
+
+                                <a class="CoveoResultLink"
+                                   href="http://midatlantic.aaa.com/Automotive/AAARoadsideAssistance"><span
+                                        class="highlight">AAA</span> Roadside Assistance</a>
+
+
+                                <div class="CoveoQuickView"
+                                     data-title="<span class='coveo-icon objecttype '></span>AAA Roadside Assistance"
+                                     data-fixed="true" data-width="70%" data-heigth="70%">
+
+
+                                    <div class="coveo-icon-for-quickview">Quick View</div>
+                                </div>
+
+                            </div>
+
+                            <div class="coveo-excerpt">
+                                <span class="highlight">AAA</span>'s Roadside Assistance is available 24 hours a day, 7
+                                days a week
+                            </div>
+
+
+                        </div>
+                        <div class="CoveoResult">
+                            <div class="coveo-icon objecttype "></div>
+
+
+                            <div class="coveo-date" title="Creation time.">Yesterday, 5:26 PM</div>
+
+
+                            <div class="coveo-title">
+
+
+                                <a class="CoveoResultLink"
+                                   href="http://midatlantic.aaa.com/Automotive/MobileBattery"><span class="highlight">AAA</span>
+                                    Mobile Battery</a>
+
+
+                                <div class="CoveoQuickView"
+                                     data-title="<span class='coveo-icon objecttype '></span>AAA Mobile Battery"
+                                     data-fixed="true" data-width="70%" data-heigth="70%">
+
+
+                                    <div class="coveo-icon-for-quickview">Quick View</div>
+                                </div>
+
+                            </div>
+
+                            <div class="coveo-excerpt">
+                                <span class="highlight">AAA</span> Mobile Battery can put you back on the road in no
+                                time!
+                            </div>
+
+
+                        </div>
+                        <div class="CoveoResult">
+                            <div class="coveo-icon objecttype "></div>
+
+
+                            <div class="coveo-date" title="Creation time.">Yesterday, 5:26 PM</div>
+
+
+                            <div class="coveo-title">
+
+
+                                <a class="CoveoResultLink" href="http://midatlantic.aaa.com/Automotive/CarRepair"><span
+                                        class="highlight">AAA</span> Car Repair</a>
+
+
+                                <div class="CoveoQuickView"
+                                     data-title="<span class='coveo-icon objecttype '></span>AAA Car Repair"
+                                     data-fixed="true" data-width="70%" data-heigth="70%">
+
+
+                                    <div class="coveo-icon-for-quickview">Quick View</div>
+                                </div>
+
+                            </div>
+
+                            <div class="coveo-excerpt">
+                                <span class="highlight">AAA</span> Car Repair
+                            </div>
+
+
+                        </div>
+                        <div class="CoveoResult">
+                            <div class="coveo-icon objecttype "></div>
+
+
+                            <div class="coveo-date" title="Creation time.">Yesterday, 5:26 PM</div>
+
+
+                            <div class="coveo-title">
+
+
+                                <a class="CoveoResultLink"
+                                   href="http://midatlantic.aaa.com/Automotive/AAA Car Care"><span
+                                        class="highlight">AAA</span> Car Care</a>
+
+
+                                <div class="CoveoQuickView"
+                                     data-title="<span class='coveo-icon objecttype '></span>AAA Car Care"
+                                     data-fixed="true" data-width="70%" data-heigth="70%">
+
+
+                                    <div class="coveo-icon-for-quickview">Quick View</div>
+                                </div>
+
+                            </div>
+
+                            <div class="coveo-excerpt">
+                                Auto repair from a name you can trust
+                            </div>
+
+
+                        </div>
+                        <div class="CoveoResult">
+                            <div class="coveo-icon objecttype "></div>
+
+
+                            <div class="coveo-date" title="Creation time.">Yesterday, 12:13 PM</div>
+
+
+                            <div class="coveo-title">
+
+
+                                <a class="CoveoResultLink"
+                                   href="http://midatlantic.aaa.com/Store/Travel/AAARoadAtlas2016Edition"><span
+                                        class="highlight">AAA</span> Road Atlas - 2016 Edition</a>
+
+
+                                <div class="CoveoQuickView"
+                                     data-title="<span class='coveo-icon objecttype '></span>AAA Road Atlas - 2016 Edition"
+                                     data-fixed="true" data-width="70%" data-heigth="70%">
+
+
+                                    <div class="coveo-icon-for-quickview">Quick View</div>
+                                </div>
+
+                            </div>
+
+                            <div class="coveo-excerpt">
+                                Updated annually, the <span class="highlight">AAA</span> Road Atlas is brought to you by
+                                the leading expert on road travel in North ... planning and orientation guide.&lt;br /&gt;
+                                &lt;br /&gt; <span class="highlight">AAA</span> has been creating maps since 1905 and
+                                ...
+                            </div>
+
+
+                        </div>
+                        <div class="CoveoResult">
+                            <div class="coveo-icon objecttype "></div>
+
+
+                            <div class="coveo-date" title="Creation time.">Last Thursday, 8:22 PM</div>
+
+
+                            <div class="coveo-title">
+
+
+                                <a class="CoveoResultLink"
+                                   href="http://midatlantic.aaa.com/Travel/Vacation Packages/Destinations/Alaska/Explorations by AAA">Explorations
+                                    by <span class="highlight">AAA</span></a>
+
+
+                                <div class="CoveoQuickView"
+                                     data-title="<span class='coveo-icon objecttype '></span>Explorations by AAA"
+                                     data-fixed="true" data-width="70%" data-heigth="70%">
+
+
+                                    <div class="coveo-icon-for-quickview">Quick View</div>
+                                </div>
+
+                            </div>
+
+                            <div class="coveo-excerpt">
+                                Alaska is a land of splendid beauty with pristine landscapes, majestic wildlife and
+                                amazing ice age glaciers.
+                            </div>
+
+
+                        </div>
+                        <div class="CoveoResult">
+                            <div class="coveo-icon objecttype "></div>
+
+                            <div class="coveo-date" title="Creation time.">Last Thursday, 8:11 PM</div>
+
+                            <div class="coveo-title">
+                                <a class="CoveoResultLink"
+                                   href="http://midatlantic.aaa.com/Travel/Vacation Packages/Destinations/Alaska/Explorations by AAA">Explorations
+                                    by <span class="highlight">AAA</span></a>
+
+
+                                <div class="CoveoQuickView"
+                                     data-title="<span class='coveo-icon objecttype '></span>Explorations by AAA"
+                                     data-fixed="true" data-width="70%" data-heigth="70%">
+                                    <div class="coveo-icon-for-quickview">Quick View</div>
+                                </div>
+
+                            </div>
+
+                            <div class="coveo-excerpt">
+                                Alaska is a land of splendid beauty with pristine landscapes, majestic wildlife and
+                                amazing ice age glaciers.
+                            </div>
+
+
+                        </div>
+                        <div class="CoveoResult">
+                            <div class="coveo-icon objecttype "></div>
+
+
+                            <div class="coveo-date" title="Creation time.">Last Thursday, 8:15 PM</div>
+
+
+                            <div class="coveo-title">
+
+
+                                <a class="CoveoResultLink"
+                                   href="http://midatlantic.aaa.com/Travel/Vacation Packages/Destinations/Alaska/AAA Vacations - 2016"><span
+                                        class="highlight">AAA</span> Vacations - 2016</a>
+
+
+                                <div class="CoveoQuickView"
+                                     data-title="<span class='coveo-icon objecttype '></span>AAA Vacations - 2016"
+                                     data-fixed="true" data-width="70%" data-heigth="70%">
+
+
+                                    <div class="coveo-icon-for-quickview">Quick View</div>
+                                </div>
+
+                            </div>
+
+                            <div class="coveo-excerpt">
+                                Alaska is a land of splendid beauty with pristine landscapes, majestic wildlife and
+                                amazing ice age glaciers.
+                            </div>
+
+
+                        </div>
+                        <div class="CoveoResult">
+                            <div class="coveo-icon objecttype "></div>
+
+
+                            <div class="coveo-date" title="Creation time.">Yesterday, 5:26 PM</div>
+
+
+                            <div class="coveo-title">
+
+
+                                <a class="CoveoResultLink"
+                                   href="http://midatlantic.aaa.com/Automotive/MobileBattery/WarrantyFAQ"><span
+                                        class="highlight">AAA</span> Mobile Battery - Warranty FAQ</a>
+
+
+                                <div class="CoveoQuickView"
+                                     data-title="<span class='coveo-icon objecttype '></span>AAA Mobile Battery - Warranty FAQ"
+                                     data-fixed="true" data-width="70%" data-heigth="70%">
+
+
+                                    <div class="coveo-icon-for-quickview">Quick View</div>
+                                </div>
+
+                            </div>
+
+                            <div class="coveo-excerpt">
+                                <span class="highlight">AAA</span> Mobile Battery can put you back on the road in no
+                                time!
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="pagination-block" data-number-of-pages="10" data-show-previous-next="True">
+                    <ul>
+                        <li class="coveo-active"><a>1</a></li>
+                        <li class=""><a>2</a></li>
+                        <li class=""><a>3</a></li>
+                        <li class=""><a>4</a></li>
+                        <li class=""><a>5</a></li>
+                        <li class=""><a>6</a></li>
+                        <li class=""><a>7</a></li>
+                        <li class=""><a>8</a></li>
+                        <li class=""><a>9</a></li>
+                        <li class=""><a>10</a></li>
+                        <li class="coveo-next"><a><span title="Next"></span></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="windowsize-size"></div>
+<script src="chrome-extension://hhojmcideegachlhfgfdhailpfhgknjm/web_accessible_resources/index.js"></script>
+<div id="window-resizer-tooltip"><a href="#" title="Edit settings"></a><span
+        class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth"></span> x <span
+        class="tooltipHeight" id="winHeight"></span><br><span class="tooltipTitle">Viewport size: </span><span
+        class="tooltipWidth" id="vpWidth"></span> x <span class="tooltipHeight" id="vpHeight"></span></div>
+</body>
+</html>

@@ -1,0 +1,357 @@
+.coveo-sprites-common-get_started, .coveo-sprites-people-no-thumbnail, .CoveoSearchInterface .CoveoResult.coveo-people-result .CoveoThumbnail.coveo-no-thumbnail, .coveo-sprites-common-lock, .coveo-sprites-common-login_user, .coveo-sprites-common-star_active, .coveo-sprites-common-star_placeholder, .coveo-sprites-common-system, .coveo-omnibox .coveo-icon.syssource, .CoveoFacet .coveo-header .coveo-icon.syssource, .coveo-sprites-facet-arrow_back, .coveo-sprites-facet-email_sendto, .coveo-sprites-sort-sortby_bottom, .CoveoSort.coveo-selected .coveo-icon, .coveo-sprites-common-tagging_tag, .CoveoResultTagging .coveo-add-tag .coveo-add-tag-icon, .coveo-sprites-box-settings, .coveo-sprites-sort-sortby_top, .CoveoSort.coveo-selected.coveo-ascending .coveo-icon, .coveo-sprites-common-coveo-cloud, .coveo-sprites-common-logo_light_large, .coveo-logo-light-large, .coveo-sprites-common-thumbdown_active, .coveo-sprites-common-thumbdown_inactive, .coveo-sprites-common-logo_light, .coveo-logo-light, .coveo-sprites-common-checkbox_inactive, .coveo-sprites-facet-spin_facet_search, .coveo-search .coveo-wait-animation, .coveo-modalBox.coveo-mobile-facet-search > .coveo-wrapper > .coveo-body > .coveo-search .coveo-wait-animation, .coveo-sprites-facet-facetsearch, .coveo-search .coveo-magnifier, .coveo-search-button-mobile:before, .coveo-modalBox.coveo-mobile-facet-search > .coveo-wrapper > .coveo-body > .coveo-search .coveo-magnifier, .coveo-sprites-common-tagging_ok, .CoveoResultTagging .coveo-add-tag-tick-icon span, .coveo-sprites-common-tagging-cancel_clear, .CoveoResultTagging .coveo-clear-icon span, .CoveoResultTagging .coveo-delete-icon, .coveo-sprites-common-thumbup_active, .coveo-sprites-facet-clear_facetsearch_mobile, .coveo-sprites-common-coveo, .coveo-logo, .coveo-sprites-common-poweredbycoveo, .coveo-powered-by, .coveo-sprites-common-checkbox_active, .coveo-sprites-preferencesPanel-toggle_on, .CoveoPreferencesPanel .CoveoResultsPreferences .coveo-input-icon.coveo-selected, .CoveoPreferencesPanel .CoveoResultsFiltersPreferences .coveo-input-icon.coveo-selected, .CoveoPreferencePanelItem .coveo-input-icon.coveo-selected, .coveo-sprites-facet-showless, .coveo-sprites-facet-showmore, .coveo-sprites-common-small_x, .coveo-sprites-folding-email_sendto, .coveo-sprites-preferencesPanel-toggle_off, .CoveoPreferencesPanel .CoveoResultsPreferences .coveo-input-icon, .CoveoPreferencesPanel .CoveoResultsFiltersPreferences .coveo-input-icon, .CoveoPreferencePanelItem .coveo-input-icon, .coveo-sprites-box-expanded, .coveo-sprites-common-thumbup_inactive, .coveo-sprites-pager-previous, .CoveoPager ul li.coveo-previous > a > span, .coveo-sprites-common-settings, .CoveoSettings .coveo-settings-icon, .coveo-sprites-pager-next, .CoveoPager ul li.coveo-next > a > span, .coveo-sprites-searchButton-searchbutton, .ie8or9 .coveo-executing-query .CoveoSearchButton > .coveo-icon, .CoveoSearchButton > .coveo-icon, .CoveoPreferencesPanel .CoveoResultsFiltersPreferences .coveo-advanced-filters > .coveo-icon, .coveo-sprites-folding-showless, .coveo-less .coveo-folding-footer-icon, .coveo-sprites-common-star_inactive, .coveo-top-suggestion-header-icon, .coveo-top-field-suggestion-header .coveo-icon-top-field, .coveo-top-analytics-suggestion-header .coveo-icon-top-analytics, .coveo-omnibox-result-list-header .coveo-icon-omnibox-result-list, .coveo-sprites-facet-collapsed, .CoveoFacet .coveo-expand .coveo-icon, .CoveoFacetRange .coveo-expand .coveo-icon, .CoveoHierarchicalFacet .coveo-expand .coveo-icon, .CoveoHierarchicalFacet ul.coveo-values .coveo-value.coveo-has-childs .coveo-has-childs-toggle, .coveo-sprites-common-doritos, .coveo-sprites-common-checkmark_selected-on_dark_bg, .coveo-sprites-fileType-sharepoint-wikipagelibrary, .coveo-icon.sysfiletype.spwikipagelibrarylist, .coveo-sprites-fileType-sharepoint-user, .coveo-icon.sysfiletype.spuserprofile, .coveo-icon.sysfiletype.spuserinformation, .coveo-icon.sysfiletype.spuserinformationlist, .coveo-sprites-fileType-sharepoint-translationmanagementlibrary, .coveo-icon.sysfiletype.sptranslationmanagementlibrarylist, .coveo-sprites-fileType-sharepoint-thingstobring, .coveo-icon.sysfiletype.spthingstobring, .coveo-icon.sysfiletype.spthingstobringlist, .coveo-sprites-common-clear, .CoveoBreadcrumb .coveo-clear-all .coveo-icon, .CoveoPreferencesPanel .coveo-close .coveo-icon, .coveo-sprites-common-copy, .coveo-sprites-fileType-sharepoint-workflowhistory, .coveo-icon.sysfiletype.spworkflowhistory, .coveo-icon.sysfiletype.spworkflowhistorylist, .coveo-sprites-common-menu_reauthenticate, .coveo-advanced-menu .coveo-section.coveo-authentication-provider .coveo-icon, .coveo-sprites-common-menu_shareresult, .coveo-advanced-menu .coveo-section.coveo-share-query .coveo-icon, .coveo-sprites-documentType-account-salesforce, .coveo-omnibox .coveo-icon.sfaccountname, .coveo-omnibox .coveo-icon.sfaccounttype, .CoveoFacet .coveo-header .coveo-icon.sfaccountname, .CoveoFacet .coveo-header .coveo-icon.sfaccounttype, .coveo-sprites-documentType-account, .coveo-sprites-documentType-advanced-content, .coveo-sprites-documentType-all-content, .coveo-sprites-documentType-announcement, .coveo-sprites-documentType-answer, .coveo-sprites-documentType-approved, .coveo-sprites-documentType-attachment, .coveo-sprites-documentType-audience, .coveo-sprites-documentType-author, .coveo-sprites-documentType-block, .coveo-sprites-documentType-blog, .coveo-sprites-documentType-bug-severity, .coveo-sprites-documentType-campaign, .coveo-sprites-documentType-cancelled, .coveo-sprites-documentType-cant-reproduce, .coveo-sprites-documentType-case, .coveo-sprites-documentType-category, .coveo-omnibox .coveo-icon.Sfopportunityforecastcategory, .CoveoFacet .coveo-header .coveo-icon.Sfopportunityforecastcategory, .coveo-sprites-documentType-chatter, .coveo-sprites-documentType-city, .coveo-omnibox .coveo-icon.sfcountry, .coveo-omnibox .coveo-icon.sfcity, .CoveoFacet .coveo-header .coveo-icon.sfcountry, .CoveoFacet .coveo-header .coveo-icon.sfcity, .coveo-omnibox .coveo-icon.sfstate, .CoveoFacet .coveo-header .coveo-icon.sfstate, .coveo-sprites-documentType-closed, .coveo-sprites-documentType-comment, .coveo-sprites-documentType-company, .coveo-sprites-documentType-competition, .coveo-omnibox .coveo-icon.sfopportunitycompetitionc, .CoveoFacet .coveo-header .coveo-icon.sfopportunitycompetitionc, .coveo-sprites-documentType-completed, .coveo-sprites-documentType-contact, .coveo-omnibox .coveo-icon.sfcontactname, .CoveoFacet .coveo-header .coveo-icon.sfcontactname, .coveo-sprites-documentType-contract, .coveo-sprites-documentType-crash, .coveo-sprites-documentType-database, .coveo-sprites-documentType-default, .coveo-icon.sysfiletype, .coveo-sprites-documentType-deferred, .coveo-sprites-documentType-disqualified, .coveo-sprites-documentType-doc-admin, .coveo-sprites-documentType-doc-dev, .coveo-sprites-documentType-doc-user, .coveo-sprites-documentType-draft, .coveo-sprites-documentType-escalated, .coveo-sprites-documentType-event, .coveo-sprites-documentType-expert, .coveo-sprites-documentType-faq, .coveo-sprites-documentType-feature, .coveo-sprites-documentType-file, .coveo-sprites-documentType-filter, .coveo-sprites-documentType-fixed, .coveo-sprites-documentType-folder, .coveo-omnibox .coveo-icon.sysemailfolders, .CoveoFacet .coveo-header .coveo-icon.sysemailfolders, .coveo-sprites-documentType-from, .coveo-omnibox .coveo-icon.sysfrom, .coveo-omnibox .coveo-icon.sysdisplayfrom, .CoveoFacet .coveo-header .coveo-icon.sysfrom, .CoveoFacet .coveo-header .coveo-icon.sysdisplayfrom, .coveo-sprites-documentType-high, .coveo-sprites-documentType-how-to, .coveo-sprites-documentType-image, .coveo-sprites-documentType-immediate, .coveo-sprites-documentType-industry, .coveo-omnibox .coveo-icon.sfindustry, .CoveoFacet .coveo-header .coveo-icon.sfindustry, .coveo-sprites-documentType-install, .coveo-sprites-documentType-intranet, .coveo-omnibox .coveo-icon.sysdisplayparticipants, .CoveoFacet .coveo-header .coveo-icon.sysdisplayparticipants, .coveo-sprites-documentType-invalid, .coveo-sprites-documentType-jobtitle, .coveo-sprites-documentType-journal-log, .coveo-sprites-documentType-kb, .coveo-omnibox .coveo-icon.sysconcepts, .CoveoFacet .coveo-header .coveo-icon.sysconcepts, .coveo-sprites-documentType-language, .coveo-omnibox .coveo-icon.syslanguage, .CoveoFacet .coveo-header .coveo-icon.syslanguage, .coveo-sprites-documentType-lead, .coveo-omnibox .coveo-icon.sfleadsource, .CoveoFacet .coveo-header .coveo-icon.sfleadsource, .coveo-sprites-documentType-link, .coveo-sprites-documentType-lost, .coveo-sprites-documentType-mail-recall, .coveo-sprites-documentType-mail-reply, .coveo-sprites-documentType-mail-undeliverable, .coveo-sprites-documentType-mail, .coveo-omnibox .coveo-icon.sysmailbox, .CoveoFacet .coveo-header .coveo-icon.sysmailbox, .coveo-sprites-documentType-major, .coveo-sprites-documentType-manager, .coveo-omnibox .coveo-icon.sfuserdivision, .CoveoFacet .coveo-header .coveo-icon.sfuserdivision, .coveo-sprites-documentType-minor, .coveo-sprites-documentType-msproject, .coveo-sprites-documentType-music-file, .coveo-sprites-documentType-need-feedback, .coveo-sprites-documentType-negociation, .coveo-sprites-documentType-new, .coveo-sprites-documentType-not-started, .coveo-sprites-documentType-note, .coveo-sprites-documentType-open, .coveo-sprites-documentType-opportunity, .coveo-omnibox .coveo-icon.sfopportunityforecastcategory, .CoveoFacet .coveo-header .coveo-icon.sfopportunityforecastcategory, .coveo-omnibox .coveo-icon.sfopportunitytype, .coveo-omnibox .coveo-icon.sfopportunitystagename, .CoveoFacet .coveo-header .coveo-icon.sfopportunitytype, .CoveoFacet .coveo-header .coveo-icon.sfopportunitystagename, .coveo-sprites-documentType-pdf, .coveo-sprites-documentType-pending, .coveo-sprites-documentType-planned, .coveo-sprites-documentType-poll, .coveo-sprites-documentType-priority, .coveo-sprites-documentType-product, .coveo-sprites-documentType-project-name, .coveo-sprites-documentType-renewed-not, .coveo-sprites-documentType-renewed, .coveo-sprites-documentType-report, .coveo-sprites-documentType-resolved, .coveo-sprites-documentType-reviewed, .coveo-sprites-documentType-rss, .coveo-sprites-documentType-salesforce, .coveo-sprites-documentType-secure, .coveo-sprites-documentType-setting, .coveo-sprites-documentType-sharepoint, .coveo-sprites-documentType-slideshow, .coveo-sprites-documentType-source, .coveo-sprites-documentType-spreadsheet, .coveo-sprites-documentType-stage, .coveo-sprites-documentType-started, .coveo-sprites-documentType-status, .coveo-omnibox .coveo-icon.sfcasestatus, .CoveoFacet .coveo-header .coveo-icon.sfcasestatus, .coveo-omnibox .coveo-icon.Sfopportunitystagename, .CoveoFacet .coveo-header .coveo-icon.Sfopportunitystagename, .coveo-sprites-documentType-support, .coveo-omnibox .coveo-icon.sfcasepriority, .CoveoFacet .coveo-header .coveo-icon.sfcasepriority, .coveo-sprites-documentType-suspended, .coveo-sprites-documentType-task, .coveo-sprites-documentType-text, .coveo-sprites-documentType-timeline, .coveo-sprites-documentType-to, .coveo-omnibox .coveo-icon.systo, .coveo-omnibox .coveo-icon.sysdisplayrecipients, .CoveoFacet .coveo-header .coveo-icon.systo, .CoveoFacet .coveo-header .coveo-icon.sysdisplayrecipients, .coveo-sprites-documentType-topic, .coveo-sprites-documentType-troubleshooting, .coveo-sprites-documentType-urgent, .coveo-sprites-documentType-user, .coveo-omnibox .coveo-icon.sysauthor, .coveo-omnibox .coveo-icon.sfownername, .CoveoFacet .coveo-header .coveo-icon.sysauthor, .CoveoFacet .coveo-header .coveo-icon.sfownername, .coveo-omnibox .coveo-icon.sfuserdepartment, .CoveoFacet .coveo-header .coveo-icon.sfuserdepartment, .coveo-sprites-documentType-video, .coveo-sprites-documentType-webpage, .coveo-sprites-documentType-won, .coveo-sprites-documentType-xml, .coveo-sprites-documentType-yammer, .coveo-sprites-documentType-year, .coveo-omnibox .coveo-icon.sfopportunityclosedquarterc, .CoveoFacet .coveo-header .coveo-icon.sfopportunityclosedquarterc, .coveo-omnibox .coveo-icon.sysyear, .coveo-omnibox .coveo-icon.sysmonth, .coveo-omnibox .coveo-icon.sysdate, .CoveoFacet .coveo-header .coveo-icon.sysyear, .CoveoFacet .coveo-header .coveo-icon.sysmonth, .CoveoFacet .coveo-header .coveo-icon.sysdate, .coveo-sprites-documentType-zip, .coveo-sprites-fileType-sharepoint-textbox, .coveo-icon.sysfiletype.sptextbox, .coveo-icon.sysfiletype.sptextboxlist, .coveo-sprites-fileType-sharepoint-task, .coveo-icon.sysfiletype.sptask, .coveo-icon.sysfiletype.sptasklist, .coveo-icon.sysfiletype.spadministratortask, .coveo-icon.sysfiletype.spadministratortasklist, .coveo-sprites-fileType-sharepoint-survey, .coveo-icon.sysfiletype.spsurvey, .coveo-icon.sysfiletype.spsurveylist, .coveo-sprites-fileType-sharepoint-slidelibrary, .coveo-icon.sysfiletype.spslidelibrarylist, .coveo-sprites-fileType-sharepoint-sitedirectory, .coveo-icon.sysfiletype.spsitedirectory, .coveo-icon.sysfiletype.spsitedirectorylist, .coveo-sprites-fileType-sharepoint-site, .coveo-icon.sysfiletype.spportal, .coveo-icon.sysfiletype.spsite, .coveo-sprites-fileType-sharepoint-resource, .coveo-icon.sysfiletype.spresource, .coveo-icon.sysfiletype.spresourcelist, .coveo-sprites-facet-clear_facet, .CoveoFacet .coveo-eraser .coveo-icon, .CoveoFacetRange .coveo-eraser .coveo-icon, .coveo-settings-popup .coveo-section.coveo-hide .coveo-icon, .CoveoShareQuery .coveo-query-summary-info-close span, .CoveoHierarchicalFacet .coveo-eraser .coveo-icon, .coveo-sprites-fileType-sharepoint-reportlibrary, .coveo-icon.sysfiletype.spreportlibrarylist, .coveo-sprites-fileType-sharepoint-recordlibrary, .coveo-icon.sysfiletype.sprecordlibrarylist, .coveo-sprites-fileType-sharepoint-projecttask, .coveo-icon.sysfiletype.spprojecttask, .coveo-icon.sysfiletype.spprojecttasklist, .coveo-sprites-fileType-sharepoint-picturelibrary, .coveo-icon.sysfiletype.sppicturelibrarylist, .coveo-sprites-fileType-sharepoint-phonecallmemo, .coveo-icon.sysfiletype.spphonecallmemo, .coveo-icon.sysfiletype.spphonecallmemolist, .coveo-sprites-fileType-sharepoint-performancepointcontent, .coveo-icon.sysfiletype.spperformancepointcontent, .coveo-icon.sysfiletype.spperformancepointcontentlist, .coveo-sprites-facet-expanded, .CoveoFacet .coveo-collapse .coveo-icon, .CoveoFacetRange .coveo-collapse .coveo-icon, .CoveoHierarchicalFacet .coveo-collapse .coveo-icon, .CoveoHierarchicalFacet ul.coveo-values .coveo-value.coveo-has-childs.coveo-open .coveo-has-childs-toggle, .coveo-sprites-fileType-sharepoint-objective, .coveo-icon.sysfiletype.spobjective, .coveo-icon.sysfiletype.spobjectivelist, .coveo-sprites-facet-modeand, .CoveoFacet .coveo-operator .coveo-icon.coveo-and, .CoveoFacetRange .coveo-operator .coveo-icon.coveo-and, .CoveoHierarchicalFacet .coveo-operator .coveo-icon.coveo-and, .coveo-sprites-facet-modeor, .CoveoFacet .coveo-operator .coveo-icon.coveo-or, .CoveoFacetRange .coveo-operator .coveo-icon.coveo-or, .CoveoHierarchicalFacet .coveo-operator .coveo-icon.coveo-or, .coveo-sprites-facet-moreoption, .CoveoFacet .coveo-settings .coveo-icon, .CoveoFacetRange .coveo-settings .coveo-icon, .CoveoHierarchicalFacet .coveo-settings .coveo-icon, .coveo-sprites-fileType-sharepoint-meeting, .coveo-icon.sysfiletype.spmeetingserie, .coveo-icon.sysfiletype.spmeetingserielist, .coveo-sprites-fileType-sharepoint-listfolder, .coveo-icon.sysfiletype.splistfolder, .coveo-sprites-facet-show_facet, .coveo-settings-popup .coveo-section.coveo-show .coveo-icon, .coveo-sprites-fileType-sharepoint-link, .coveo-icon.sysfiletype.splink, .coveo-icon.sysfiletype.splinklist, .coveo-icon.sysfiletype.spdocumentlink, .coveo-sprites-fileType-sharepoint-languagesandtranslator, .coveo-icon.sysfiletype.splanguagesandtranslator, .coveo-icon.sysfiletype.splanguagesandtranslatorlist, .coveo-sprites-facet-openfacets, .coveo-sprites-facet-openinterfaces, .coveo-sprites-facet-spin, .CoveoFacet .coveo-wait-animation, .CoveoFacetRange .coveo-wait-animation, .CoveoHierarchicalFacet .coveo-wait-animation, .coveo-sprites-fileType-sharepoint-keyperformanceindicator, .coveo-icon.sysfiletype.spkeyperformanceindicator, .coveo-icon.sysfiletype.spkeyperformanceindicatorlist, .coveo-sprites-fileType-default, .coveo-icon.objecttype, .coveo-icon.sysfiletype, .coveo-icon.sysfiletype.lithiumcommunity, .coveo-sprites-fileType-sharepoint-issue, .coveo-icon.sysfiletype.spissue, .coveo-icon.sysfiletype.spissuelist, .coveo-sprites-fileType-sharepoint-ipfs, .coveo-icon.sysfiletype.spipfslist, .coveo-sprites-fileType-sharepoint-imedictionary, .coveo-icon.sysfiletype.spimedictionary, .coveo-icon.sysfiletype.spimedictionarylist, .coveo-sprites-menu-menu_avancedsearch, .coveo-sprites-menu-menu_opencontactinfoin, .coveo-sprites-menu-menu_saveoption, .coveo-settings-popup .coveo-section.coveo-save-state .coveo-icon, .CoveoPreferencesPanel .coveo-save .coveo-icon, .coveo-sprites-menu-menu_searchin, .coveo-sprites-menu-menu_shareresult, .coveo-sprites-menu-menu_sortby, .coveo-settings-popup .coveo-section.coveo-sort .coveo-icon, .coveo-sprites-menu-menu_sortdirection, .coveo-settings-popup .coveo-section.coveo-direction .coveo-icon, .coveo-sprites-fileType-sharepoint-healthrule, .coveo-icon.sysfiletype.sphealthrule, .coveo-icon.sysfiletype.sphealthrulelist, .coveo-sprites-fileType-sharepoint-healthreport, .coveo-icon.sysfiletype.sphealthreport, .coveo-icon.sysfiletype.sphealthreportlist, .coveo-sprites-common-amount, .coveo-sprites-preferencesPanel-menu_preferences, .coveo-advanced-menu .coveo-section.coveo-preference-panel .coveo-icon, .coveo-sprites-preferencesPanel-table-apply, .CoveoPreferencesPanel .CoveoResultsFiltersPreferences .coveo-advanced-filters-builder .coveo-choice-container.coveo-close-and-save .coveo-save, .coveo-sprites-preferencesPanel-table-cancel, .CoveoPreferencesPanel .CoveoResultsFiltersPreferences .coveo-advanced-filters-builder .coveo-choice-container.coveo-close-and-save .coveo-close, .coveo-sprites-preferencesPanel-table-delete, .CoveoPreferencesPanel .CoveoResultsFiltersPreferences .coveo-delete .coveo-icon, .coveo-sprites-preferencesPanel-table-edit, .CoveoPreferencesPanel .CoveoResultsFiltersPreferences .coveo-edit .coveo-icon, .coveo-sprites-common-datepicker, .coveo-sprites-fileType-sharepoint-whereabout, .coveo-icon.sysfiletype.spwhereabout, .coveo-icon.sysfiletype.spwhereaboutlist, .coveo-sprites-queryBox-clear, .coveo-query-box-clear .coveo-icon, .coveo-sprites-fileType-sharepoint-formlibrary, .coveo-icon.sysfiletype.spformlibrarylist, .coveo-sprites-quickView-quickview, .CoveoResultAttachments .coveo-thumbnail-icon, .coveo-feedItem-result .coveo-thumbnail-icon, .coveo-feedComment-result .coveo-thumbnail-icon, .coveo-sprites-quickView-quickview_next, .coveo-quickview-header .coveo-term .coveo-term-right-arrow .coveo-term-right-arrow-icon, .coveo-modalBox.coveo-mobile-facet-search > .coveo-wrapper > .coveo-body > .coveo-search-results .coveo-select-all .coveo-mobile-facet-search-select-all, .coveo-sprites-quickView-quickview_previous, .coveo-quickview-header .coveo-term .coveo-term-left-arrow .coveo-term-left-arrow-icon, .coveo-sprites-common-delete, .coveo-sprites-searchButton-searchbutton_gray, .coveo-sprites-searchButton-spin, .coveo-executing-query .CoveoSearchButton > .coveo-icon, .coveo-sprites-fileType-sharepoint-event, .coveo-icon.sysfiletype.spevent, .coveo-icon.sysfiletype.speventlist, .coveo-sprites-fileType-sharepoint-documentset, .coveo-icon.sysfiletype.spdocumentset, .coveo-sprites-tab-all-content, .coveo-sprites-tab-dropbox, .coveo-sprites-tab-email, .coveo-sprites-tab-googledrive, .coveo-sprites-tab-jira, .coveo-sprites-tab-lithium, .coveo-sprites-tab-people, .coveo-sprites-tab-salesforce, .coveo-sprites-tab-sharepoint, .coveo-sprites-tabGroup-show_more, .CoveoTabGroupMenu .coveo-menu-item-active > .coveo-show-more, .coveo-sprites-fileType-exchange-activity, .coveo-icon.sysfiletype.exchangeactivity, .coveo-sprites-fileType-exchange-appointment, .coveo-icon.sysfiletype.exchangecalendarmessage, .coveo-sprites-fileType-exchange-communicator, .coveo-icon.sysfiletype.exchangeofficecom, .coveo-sprites-fileType-exchange-file, .coveo-icon.sysfiletype.exchangedocument, .coveo-sprites-fileType-exchange-generic, .coveo-icon.sysfiletype.exchangefreebusy, .coveo-icon.sysfiletype.exchangemdn, .coveo-icon.sysfiletype.exchangeobject, .coveo-sprites-fileType-exchange-group, .coveo-icon.sysfiletype.exchangegroup, .coveo-sprites-fileType-exchange-meeting, .coveo-icon.sysfiletype.exchangeappointment, .coveo-sprites-fileType-exchange-message-junk, .coveo-icon.sysfiletype.exchangejunkmessage, .coveo-sprites-fileType-exchange-message-recall, .coveo-icon.sysfiletype.exchangerecallmessage, .coveo-icon.sysfiletype.exchangerecallreport, .coveo-sprites-fileType-exchange-message-undeliverable, .coveo-icon.sysfiletype.exchangedsn, .coveo-sprites-fileType-exchange-message, .coveo-icon.sysfiletype.exchangemessage, .coveo-sprites-fileType-exchange-note, .coveo-icon.sysfiletype.exchangenote, .coveo-sprites-fileType-exchange-rss, .coveo-icon.sysfiletype.exchangerssfeed, .coveo-sprites-fileType-exchange-task, .coveo-icon.sysfiletype.exchangetask, .coveo-sprites-fileType-exchange-user, .coveo-icon.sysfiletype.exchangeperson, .coveo-icon.sysfiletype.activedirperson, .coveo-sprites-fileType-formats-folder, .coveo-icon.sysfiletype.folder, .coveo-sprites-fileType-formats-html, .coveo-icon.sysfiletype.html, .coveo-sprites-fileType-formats-image, .coveo-icon.sysfiletype.image, .coveo-sprites-fileType-formats-pdf, .coveo-icon.sysfiletype.pdf, .coveo-sprites-fileType-formats-slideshow, .coveo-icon.sysfiletype.ppt, .coveo-sprites-fileType-formats-spreadsheet, .coveo-icon.sysfiletype.xls, .coveo-sprites-fileType-formats-text, .coveo-icon.sysfiletype.txt, .coveo-icon.sysfiletype.doc, .coveo-sprites-fileType-formats-video, .coveo-icon.sysfiletype.video, .coveo-sprites-fileType-formats-xml, .coveo-icon.sysfiletype.xml, .coveo-sprites-fileType-formats-zip, .coveo-icon.sysfiletype.zip, .coveo-sprites-fileType-lithium-board, .coveo-icon.sysfiletype.lithiumboard, .coveo-sprites-fileType-lithium-category, .coveo-icon.sysfiletype.lithiumcategory, .coveo-sprites-fileType-lithium-message, .coveo-icon.sysfiletype.lithiummessage, .coveo-sprites-fileType-lithium-thread, .coveo-icon.sysfiletype.lithiumthread, .coveo-sprites-fileType-objectType-account, .coveo-icon.objecttype.Account, .coveo-icon.objecttype.account, .coveo-sprites-fileType-objectType-answer, .coveo-icon.objecttype.Solution, .coveo-icon.objecttype.solution, .coveo-icon.objecttype.Kbsolution, .coveo-icon.objecttype.kbsolution, .coveo-sprites-fileType-objectType-attachment, .coveo-icon.objecttype.Attachment, .coveo-icon.objecttype.attachment, .coveo-icon.objecttype.Kbattachment, .coveo-icon.objecttype.kbattachment, .coveo-sprites-fileType-objectType-board, .coveo-icon.objecttype.Board, .coveo-icon.objecttype.board, .coveo-sprites-fileType-objectType-campaign, .coveo-icon.objecttype.Campaign, .coveo-icon.objecttype.campaign, .coveo-sprites-fileType-objectType-case, .coveo-icon.objecttype.Case, .coveo-icon.objecttype.case, .coveo-sprites-fileType-objectType-category, .coveo-icon.objecttype.Category, .coveo-icon.objecttype.category, .coveo-sprites-fileType-objectType-chatter, .coveo-icon.objecttype.Feeditem, .coveo-icon.objecttype.feeditem, .coveo-icon.objecttype.Feedcomment, .coveo-icon.objecttype.feedcomment, .coveo-sprites-fileType-objectType-comment, .coveo-icon.objecttype.Casecomment, .coveo-icon.objecttype.casecomment, .coveo-sprites-fileType-objectType-contact, .coveo-icon.objecttype.Contact, .coveo-icon.objecttype.contact, .coveo-sprites-fileType-objectType-contract, .coveo-icon.objecttype.Contract, .coveo-icon.objecttype.contract, .coveo-sprites-fileType-objectType-event, .coveo-icon.objecttype.Event, .coveo-icon.objecttype.event, .coveo-sprites-fileType-objectType-file, .coveo-icon.objecttype.File, .coveo-icon.objecttype.file, .coveo-sprites-fileType-objectType-kb, .coveo-icon.objecttype.Kbdocumentation, .coveo-icon.objecttype.kbdocumentation, .coveo-icon.objecttype.Kbknowledgearticle, .coveo-icon.objecttype.kbknowledgearticle, .coveo-sprites-fileType-objectType-lead, .coveo-icon.objecttype.Lead, .coveo-icon.objecttype.lead, .coveo-sprites-fileType-objectType-message, .coveo-icon.objecttype.Message, .coveo-icon.objecttype.message, .coveo-sprites-fileType-objectType-note, .coveo-icon.objecttype.Note, .coveo-icon.objecttype.note, .coveo-sprites-fileType-objectType-opportunity, .coveo-icon.objecttype.Opportunity, .coveo-icon.objecttype.opportunity, .coveo-sprites-fileType-objectType-partner, .coveo-icon.objecttype.Partner, .coveo-icon.objecttype.partner, .coveo-sprites-fileType-objectType-product, .coveo-icon.objecttype.Product, .coveo-icon.objecttype.product, .coveo-sprites-fileType-objectType-rss, .coveo-icon.objecttype.Feed, .coveo-icon.objecttype.feed, .coveo-sprites-fileType-objectType-task, .coveo-icon.objecttype.Task, .coveo-icon.objecttype.task, .coveo-sprites-fileType-objectType-thread, .coveo-icon.objecttype.Thread, .coveo-icon.objecttype.thread, .coveo-sprites-fileType-objectType-user, .coveo-icon.objecttype.People, .coveo-icon.objecttype.people, .coveo-icon.objecttype.User, .coveo-icon.objecttype.user, .coveo-sprites-fileType-salesforce-item, .coveo-icon.sysfiletype.saleforceuitem, .coveo-sprites-fileType-sharepoint-agenda, .coveo-icon.sysfiletype.spagenda, .coveo-icon.sysfiletype.spagendalist, .coveo-sprites-fileType-sharepoint-announcement, .coveo-icon.sysfiletype.spannouncement, .coveo-icon.sysfiletype.spannouncementlist, .coveo-sprites-fileType-sharepoint-area, .coveo-icon.sysfiletype.sparea, .coveo-sprites-fileType-sharepoint-arealisting, .coveo-icon.sysfiletype.sparealisting, .coveo-sprites-fileType-sharepoint-assetlibrary, .coveo-icon.sysfiletype.sppublishingimageslibrarylist, .coveo-sprites-fileType-sharepoint-attendees, .coveo-icon.sysfiletype.spattendee, .coveo-icon.sysfiletype.spattendeelist, .coveo-sprites-fileType-sharepoint-blogcategory, .coveo-icon.sysfiletype.spblogcategory, .coveo-icon.sysfiletype.spblogcategorylist, .coveo-sprites-fileType-sharepoint-blogcomment, .coveo-icon.sysfiletype.spblogcomment, .coveo-icon.sysfiletype.spblogcommentlist, .coveo-sprites-fileType-sharepoint-blogpost, .coveo-icon.sysfiletype.spblogpost, .coveo-icon.sysfiletype.spblogpostlist, .coveo-icon.sysfiletype.spmicrofeedpost, .coveo-icon.sysfiletype.spmicrofeedlist, .coveo-sprites-fileType-sharepoint-circulation, .coveo-icon.sysfiletype.spcirculation, .coveo-icon.sysfiletype.spcirculationlist, .coveo-sprites-fileType-sharepoint-contact, .coveo-icon.sysfiletype.spcontact, .coveo-icon.sysfiletype.spcontactlist, .coveo-sprites-fileType-sharepoint-custom, .coveo-icon.sysfiletype.spcustomlist, .coveo-icon.sysfiletype.spunknownlist, .coveo-icon.sysfiletype.spdistributiongroup, .coveo-icon.sysfiletype.spdistributiongrouplist, .coveo-icon.sysfiletype.sptab, .coveo-icon.sysfiletype.sptablist, .coveo-icon.sysfiletype.spworkflowprocess, .coveo-icon.sysfiletype.spworkflowprocesslist, .coveo-sprites-fileType-sharepoint-customgrid, .coveo-icon.sysfiletype.spcustomgridlist, .coveo-sprites-fileType-sharepoint-dashboardlibrary, .coveo-icon.sysfiletype.spdashboardslibrarylist, .coveo-sprites-fileType-sharepoint-dataconnectionlibrary, .coveo-icon.sysfiletype.spdataconnectionlibrarylist, .coveo-sprites-fileType-sharepoint-dataconnectionlibraryforperfpoint, .coveo-icon.sysfiletype.spdataconnectionforperformancepointlibrarylist, .coveo-sprites-fileType-sharepoint-datasource, .coveo-icon.sysfiletype.spdatasource, .coveo-icon.sysfiletype.spdatasourcelist, .coveo-sprites-fileType-sharepoint-decision, .coveo-icon.sysfiletype.spdecision, .coveo-icon.sysfiletype.spdecisionlist, .coveo-sprites-fileType-sharepoint-discussionboard, .coveo-icon.sysfiletype.spdiscussionboard, .coveo-icon.sysfiletype.spdiscussionboardlist, .coveo-sprites-fileType-sharepoint-documentlibrary, .coveo-icon.sysfiletype.spdocumentlibrarylist, .coveo-icon.sysfiletype.splisttemplatecataloglist, .coveo-icon.sysfiletype.spwebpartcataloglist, .coveo-icon.sysfiletype.spwebtemplatecataloglist, .coveo-icon.sysfiletype.spworkspacepagelist, .coveo-icon.sysfiletype.spareadocumentlibrarylist, .coveo-icon.sysfiletype.spmasterpagescataloglist, .coveo-icon.sysfiletype.spnocodeworkflowlibrarylist, .coveo-icon.sysfiletype.sppublishingpageslibrarylist, .coveo-icon.sysfiletype.spreportdocumentlibrarylist, .coveo-icon.sysfiletype.spprocessdiagramslibrarylist, .coveo-icon.sysfiletype.spsitethemeslibrarylist, .coveo-icon.sysfiletype.spsolutionslibrarylist, .coveo-icon.sysfiletype.spwfpublibrarylist, .coveo-sprites-facet-clear_facet_state, .coveo-settings-popup .coveo-section.coveo-clear-state .coveo-icon, .coveo-sprites-facet-checkmark_disabled, .coveo-sprites-facet-resume_selected, .coveo-facet-breadcrumb .coveo-values .coveo-value .coveo-multi-icon.coveo-selected, .coveo-results-filter-preferences-breadcrumb .coveo-values .coveo-value .coveo-multi-icon.coveo-selected, .coveo-sprites-facet-resume_disable, .coveo-facet-breadcrumb .coveo-values .coveo-value .coveo-multi-icon.coveo-excluded, .coveo-results-filter-preferences-breadcrumb .coveo-values .coveo-value .coveo-multi-icon.coveo-excluded, .coveo-sprites-facet-disable, .CoveoFacet .coveo-value .coveo-exclude, .CoveoFacetRange .coveo-value .coveo-exclude, .coveo-omnibox .coveo-omnibox-facet-value li .coveo-exclude, .CoveoHierarchicalFacet .coveo-value .coveo-exclude, .coveo-sprites-common-clear-mobile, .coveo-small-display .coveo-clear-all .coveo-icon, .coveo-sprites-facet-clear_activefilter, .coveo-facet-breadcrumb .coveo-values .coveo-value .coveo-clear, .coveo-results-filter-preferences-breadcrumb .coveo-values .coveo-value .coveo-clear, .coveo-sprites-facet-child_selected, .CoveoHierarchicalFacet ul.coveo-values .coveo-value.coveo-has-childs.coveo-has-childs-selected .coveo-checkbox > span, .coveo-sprites-facet-checkmark_unselected, .CoveoFacet .coveo-value .coveo-checkbox > span, .CoveoFacetRange .coveo-value .coveo-checkbox > span, .coveo-modalBox.coveo-mobile-facet-search > .coveo-wrapper > .coveo-body > .coveo-search-results .coveo-value .coveo-checkbox > span, .coveo-modalBox.coveo-mobile-facet-search > .coveo-wrapper > .coveo-body > .coveo-search-results .coveo-value:hover .coveo-checkbox span, .coveo-modalBox.coveo-mobile-facet-search > .coveo-wrapper > .coveo-body > .coveo-search-results .coveo-checkbox > span, .coveo-omnibox .coveo-omnibox-facet-value li .coveo-checkbox > span, .CoveoHierarchicalFacet .coveo-value .coveo-checkbox > span, .coveo-sprites-facet-checkmark_selected, .CoveoFacet .coveo-value:hover .coveo-checkbox > span, .CoveoFacet .coveo-value.coveo-selected .coveo-checkbox > span, .CoveoFacetRange .coveo-value:hover .coveo-checkbox > span, .CoveoFacetRange .coveo-value.coveo-selected .coveo-checkbox > span, .coveo-modalBox.coveo-mobile-facet-search > .coveo-wrapper > .coveo-body > .coveo-search-results .coveo-value.coveo-selected div.coveo-checkbox > span, .coveo-modalBox.coveo-mobile-facet-search > .coveo-wrapper > .coveo-body > .coveo-search-results .coveo-value.coveo-selected:hover div.coveo-checkbox span, .coveo-modalBox.coveo-mobile-facet-search > .coveo-wrapper > .coveo-body > .coveo-search-results .coveo-selected div.coveo-checkbox > span, .coveo-modalBox.coveo-mobile-facet-search > .coveo-wrapper > .coveo-body > .coveo-search-results .coveo-selected:hover div.coveo-checkbox span, .coveo-omnibox .coveo-omnibox-facet-value li:hover .coveo-checkbox > span, .coveo-omnibox .coveo-omnibox-facet-value li.coveo-selected .coveo-checkbox > span, .CoveoHierarchicalFacet .coveo-value:hover .coveo-checkbox > span, .CoveoHierarchicalFacet .coveo-value.coveo-selected .coveo-checkbox > span, .CoveoHierarchicalFacet ul.coveo-values .coveo-value.coveo-has-childs.coveo-has-childs-selected.coveo-selected .coveo-checkbox > span, .coveo-sprites-facet-checkmark_disabled_hover, .coveo-sprites-folding-showmore, .coveo-more .coveo-folding-footer-icon, .coveo-sprites-common-tagging-cancel_delete, .coveo-sprites-facet-clear_facetsearch, .coveo-search .coveo-clear .coveo-icon, .coveo-sprites-quickView-close {
+    background-image: url("../img/sprites.png");
+    display: inline-block;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: 1125px 115px;
+}
+
+#search {
+    background: #f4f4f4;
+}
+
+.coveo-sprites-queryBox-clear, .coveo-query-box-clear .coveo-icon {
+    background-position: -861px -64px;
+    width: 16px;
+    height: 16px;
+    text-indent: 16px;
+}
+
+.CoveoSearchInterface .coveo-results-section {
+    border-top: 1px solid #ddd;
+    float: none;
+    margin: 50px auto;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.085);
+    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.085);
+    -ms-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.085);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.085);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.CoveoSearchInterface .coveo-results-section:last-child {
+    background: #fff;
+    margin-right: auto;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.085);
+    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.085);
+    -ms-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.085);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.085);
+    /*padding: 30px;*/
+}
+
+.CoveoSearchInterface .coveo-results-section .coveo-results-column:last-child {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.coveo-facet-column > div {
+    background: #fff;
+    width: 100%;
+    /*margin-bottom: 0;*/
+    /*-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.085);
+    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.085);
+    -ms-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.085);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.085);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;*/
+}
+
+.CoveoSearchInterface .coveo-results-section .coveo-results-column {
+    border: none;
+    /*box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.085);*/
+    display: block;
+    margin-top: 0;
+    padding: 30px;
+    width: 66.66666%;
+}
+
+.CoveoSearchInterface .coveo-results-section .coveo-facet-column {
+    border: none;
+    float: left;
+    padding: 0;
+    width: 33.33333%;
+}
+
+.CoveoSearchInterface .coveo-results-section .coveo-facet-column, .CoveoSearchInterface .coveo-results-section .coveo-results-column {
+    margin-bottom: 0;
+    /*padding-bottom: 30px;*/
+}
+
+.CoveoSearchButton {
+    color: white;
+    background: #eaeaea;
+    padding: 14px 18px 9px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.coveo-sprites-searchButton-searchbutton, .ie8or9 .coveo-executing-query .CoveoSearchButton > .coveo-icon, .CoveoSearchButton > .coveo-icon, .CoveoPreferencesPanel .CoveoResultsFiltersPreferences .coveo-advanced-filters > .coveo-icon {
+    background-position: -1098px -58px;
+    width: 18px;
+    height: 18px;
+    text-indent: 18px;
+}
+
+.CoveoSearchButton:hover .coveo-icon {
+    background-position: -433px -86px;
+}
+
+.CoveoSearchButton {
+    color: white;
+    background: #eaeaea;
+    border-radius: 0;
+    border: 1px solid #eaeaea;
+    padding: 14px 18px 9px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.CoveoSearchButton:hover {
+    background: #e21f11;
+}
+
+.CoveoQuickView .coveo-icon-for-quickview {
+    background: #e21f11;
+    border: 1px solid #e21f11;
+    border-radius: 0;
+    color: #fff;
+    padding: 5px;
+    font-size: 10px;
+    line-height: 12px;
+}
+.CoveoQuickView .coveo-icon-for-quickview:hover {
+    color: #e21f11;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+.CoveoFacet {
+    border: none;
+    margin-top: 0;
+    padding: 30px;
+    float: left;
+    width: 100%;
+}
+
+.CoveoFacet .coveo-values {
+    float: left;
+    width: 100%;
+}
+
+.CoveoFacet .coveo-values .coveo-value {
+    float: left;
+    margin: 0 2.5% 0 -5px;
+    padding: 5px;
+    width: 100%;
+}
+
+.CoveoFacet[data-id="@section"] .coveo-header > .coveo-icon.section {
+    background-image: url("../img/sectionIcon.png") !important;
+}
+
+.CoveoResult .coveo-title .CoveoResultLink {
+    margin-left: 10px;
+}
+
+.CoveoResult {
+    box-shadow: inset -10px 0px 0px #eaeaea;
+    border-bottom: 2px solid #f4f4f4;
+    margin: 1px -30px 0 -30px;
+    padding: 25px 50px 25px;
+    position: relative;
+}
+
+.CoveoResultList {
+    border-top: 2px solid #f4f4f4;
+    margin-top: 40px;
+}
+
+.CoveoResult .coveo-excerpt {
+    padding: 5px 0 8px 10px;
+}
+
+.CoveoSort {
+    color: #e21f11;
+}
+
+.CoveoPager {
+    box-shadow: none;
+    margin-top: 25px;
+}
+
+.CoveoPager ul {
+    margin: 0;
+    background-color: #fff;
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    color: #e21f11;
+    line-height: auto;
+    padding: 0;
+}
+
+.CoveoPager ul li {
+    padding: 0;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.CoveoPager ul li > a {
+    /* display: inline-block; */
+    color: #e21f11;
+    min-width: 30px;
+    padding: 7px 6px 6px 5px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    vertical-align: center;
+    background: #f7f7f7;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    height: 29px;
+    cursor: pointer;
+}
+
+.CoveoPager ul li:hover > a {
+    border: none;
+}
+
+.CoveoPager ul li:last-child > a,
+.CoveoPager ul li:hover:last-child > a{
+    border: none;
+}
+
+.CoveoPager ul li.coveo-active:first-child > a {
+    border: none;
+    text-decoration: none;
+}
+
+.CoveoPager ul li.coveo-active > a {
+    background: #fff;
+    color: #222;
+}
+
+.CoveoSort:hover {
+    color: #e21f11;
+}
+
+.coveo-selectable {
+    transition: all .5s ease-in-out;
+}
+
+.CoveoResultLink:link,
+.CoveoResultLink:visited,
+.CoveoResultLink:hover {
+    color: #e21f11;
+}
+
+.coveo-advanced-menu .coveo-section .coveo-items .coveo-item:hover,
+.CoveoResultTagging .coveo-auto-complete-zone .coveo-auto-complete .coveo-selected,
+.CoveoResultTagging .coveo-auto-complete-zone .coveo-auto-complete .coveo-selectable:hover,
+.coveo-slider-line.coveo-active,
+.CoveoTabGroupMenu .coveo-menu-item-container a:hover,
+.coveo-selectable:hover,
+.coveo-search-results .coveo-selectable:hover,
+.coveo-search-results .coveo-selectable.coveo-current {
+    background-color: #ddd;
+    transition: all .25s ease-in-out;
+}
+
+.CoveoPager ul li > a,
+.CoveoResult .coveo-badge,
+.CoveoResult table.CoveoFieldTable,
+.coveo-folding-footer-section-for-less,
+.coveo-folding-footer-section-for-more,
+.CoveoSearchInterface.coveo-waiting-for-first-query,
+.CoveoSettings,
+.coveo-advanced-menu,
+.CoveoShareQuery .coveo-query-summary-info-close,
+.CoveoTabGroupMenu .coveo-menu-item-container,
+.coveo-slider-tooltip,
+.CoveoSearchInterface .CoveoEmailActions .CoveoEmailAction,
+.CoveoPreferencesPanel .coveo-close,
+.CoveoPreferencesPanel .CoveoResultsFiltersPreferences .coveo-online-help,
+.coveo-feedItem-result .coveo-footer, .coveo-feedComment-result .coveo-footer,
+.CoveoNotifications,
+.CoveoSearchInterface .coveo-search-section .coveo-logo-column,
+.CoveoSearchInterface .coveo-results-section .coveo-results-column .coveo-results-header,
+.coveo-modalBox.coveo-quick-view > .coveo-wrapper .coveo-quick-view-header .CoveoFieldTable,
+.coveo-modalBox.coveo-quick-view > .coveo-wrapper .coveo-quick-view-header .coveo-debug,
+.CoveoBreadcrumb .coveo-clear-all,
+.coveo-small-display .coveo-value,
+.CoveoSearchInterface .CoveoDidYouMean,
+.coveo-result-box,
+.CoveoErrorReport,
+.coveo-settings-popup,
+.CoveoHiddenQuery,
+.coveo-first-loading-animation,
+.CoveoSearchInterface .coveo-results-section .coveo-facet-column {
+    background: #fff;
+}
+
+.CoveoSearchBox {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    height: 44px;
+}
+
+.CoveoQueryBox {
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+
+.coveo-query-box-clear {
+    margin-top: -30px;
+}
+
+.CoveoSearchInterface .coveo-results-section .coveo-results-column {
+    float: right;
+}
+
+.coveo-omnibox .coveo-omnibox-section,
+.coveo-omnibox .coveo-omnibox-section > .coveo-text,
+.CoveoQueryBox,
+.CoveoPreferencesPanel .CoveoResultsFiltersPreferences .coveo-advanced-filters-builder .coveo-choice-container textArea,
+.CoveoPreferencesPanel .CoveoResultsFiltersPreferences .coveo-advanced-filters-builder .coveo-choice-container select,
+.coveo-modalBox,
+.CoveoSearchInterface,
+.coveo-search input {
+    font-family: "BryantWebMedium", "Helvetica Neue", Helvetica, Arial, sans-serif !important
+}
+
+.coveo-modalBox.coveo-quick-view > .coveo-wrapper .coveo-quick-view-header .CoveoFieldTable .CoveoFieldValue span.coveo-clickable:hover,
+.coveo-modalBox.coveo-quick-view > .coveo-wrapper .coveo-quick-view-header .CoveoFieldTable .CoveoFieldValue .coveo-debug,
+.coveo-modalBox.coveo-quick-view > .coveo-wrapper .coveo-quick-view-header .CoveoFieldTable .CoveoFieldValue a.coveo-clickable:hover,
+.coveo-modalBox.coveo-quick-view > .coveo-wrapper .coveo-quick-view-header .CoveoFieldTable .CoveoFieldValue .coveo-debug,
+.CoveoSearchInterface .CoveoResult.coveo-email-result .coveo-excerpt .CoveoResultLink:hover:hover,
+.coveo-email-from a:hover, .coveo-email-to a:hover,
+.coveo-emails-excess-collapsed:hover,
+.CoveoSearchInterface .CoveoResult.coveo-people-result .coveo-people-details .CoveoFieldValue a:hover,
+.CoveoErrorReport .coveo-previous:hover,
+.CoveoErrorReport .coveo-clear:hover,
+.CoveoErrorReport .coveo-retry:hover,
+.CoveoErrorReport .coveo-more-info:hover,
+.coveo-facet-breadcrumb .coveo-values .coveo-value:hover,
+.coveo-lithium-from a:hover, .coveo-lithium-to a:hover,
+.CoveoHiddenQuery .coveo-remove:hover,
+.CoveoResult a:hover,
+.CoveoResult .coveo-selectable-link:hover {
+    color: #e21f11;
+}
+
+.CoveoFacet .coveo-value:hover .coveo-exclude{
+    margin: 8px 10px 0 0;
+}

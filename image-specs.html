@@ -14,7 +14,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="apple-touch-icon" href="img/aaa-icon-iphone.png">
     <link rel="apple-touch-icon" sizes="72x72" href="img/aaa-icon-ipad.png">
     <link rel="apple-touch-icon" sizes="114x114" href="img/aaa-icon-iphone-retina.png">
@@ -65,6 +65,11 @@
             width: auto;
         }
 
+        .copy-wrap ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
         .iframe-container {
             padding-bottom: 60%;
             padding-top: 30px;
@@ -72,10 +77,27 @@
             overflow: hidden;
         }
 
+        /*a:hover {
+            text-decoration: underline;
+            border-bottom: 1px solid #222;
+        }
+*/
         em {
             color: #e21f11;
             font-weight: 800;
             font-style: normal;
+        }
+
+        b {
+            font-weight: bold;
+        }
+
+        .fa {
+            font-size: 12px;
+        }
+
+        .button-link .fa {
+            font-size: 16px;
         }
 
         .iframe-container iframe,
@@ -145,7 +167,7 @@
                         <li><a href="modals.html"> Modals </a></li>
                         <li><a href="tooltips.html"> Tooltips </a></li>
                         <li><a href="lists.html"> Lists </a></li>
-                        <li><a href="table.html"> Tables </a></li>
+                        <li><a href="simple-table.html"> Simple Tables </a></li>
                     </ul>
                 </div>
             </div>
@@ -213,38 +235,56 @@
 
     <div class="row">
         <div class="col-sm-12">
-            <p>The image specifications Style guide serves to provide the required image sizes<br>
+            <p>The image specifications Style guide serves to provide the required image sizes.<br>
                 This is the master guide for all AAA image dimensions and specs for the AAA website.</p>
+            <p>All images have <strong>apsect ratios</strong> that should be maintained regardless of image px
+                dimensions.<br>
+                <a href="http://digital-photography-school.com/aspect-ratio-what-it-is-and-why-it-matters/"
+                   target="_blank">
+                    <strong>Aspect Ratio:</strong> What it is and why it matters <i class="fa fa-external-link-square"
+                                                                                    aria-hidden="true"></i></i></a></p>
             <h3>Optimizing images in Photoshop? refer to the following:</h3>
         </div>
     </div>
     <div class="row">
         <div class="flex-wrapper flex-column">
             <div class="col-sm-6 flex-item">
-                <div class="card card-list card-title-red list-large">
+                <div class="card card-list card-title-red">
                     <h4>Videos</h4>
-                    <ul class="custom">
-                        <li><strong><a href="https://www.youtube.com/watch?v=QSyb_6NRDeI">How to Export Your Images Out
-                            of Photoshop
-                            CC for the Web
-                        </a><br> - 4:07</strong></li>
-                        <li><strong><a href="https://helpx.adobe.com/photoshop/how-to/export-image-web.html">Export
-                            image
-                            for the
-                            web</a><br> - 5:07</strong></li>
-                    </ul>
+
+                    <div class="copy-wrap">
+                        <strong>
+                            <a href="https://www.youtube.com/watch?v=QSyb_6NRDeI" target='_blank'>How to Export Your
+                                Images Out of Photoshop CC for the Web &nbsp; <i class="fa fa-external-link-square"
+                                                                                 aria-hidden="true"></i>
+                            </a>
+                        </strong>
+                        <p><b>4:07</b></p>
+                        <strong>
+                            <a href="https://helpx.adobe.com/photoshop/how-to/export-image-web.html" target='_blank'>Export
+                                image for the web &nbsp; <i class="fa fa-external-link-square"
+                                                            aria-hidden="true"></i></a>
+                        </strong>
+                        <p><b>5:07</b></p>
+                    </div>
+
 
                 </div>
-
             </div>
             <div class="col-sm-6 flex-item">
-                <div class="card card-list card-title-red list-large">
+                <div class="card card-list card-title-red">
                     <h4>Documents</h4>
-                    <ul class="custom">
-                        <li><strong>Optimizing Images for the Web: A Practical Guide</strong>
-                            <a class="button-link button-link-default alt view-pdf"
-                               href="assets/optimizing-images-for-web-01.pdf">Open Document</a></li>
-                    </ul>
+                    <div class="copy-wrap">
+                        <p><strong>Optimizing Images for the Web: A Practical Guide</strong></p>
+                        <a class="button-link button-link-default alt view-pdf"
+                           href="assets/optimizing-images-for-web-01.pdf">Open Document &nbsp; <i
+                                class="fa fa-plus-square-o" aria-hidden="true"></i></a>
+                    </div>
+                    <!--<div class="copy-wrap">
+                        <p><strong>Optimizing Images for the Web: A Practical Guide</strong></p>
+                        <a class="button-link button-link-default alt view-pdf"
+                           href="assets/optimizing-images-for-web-01.pdf">Open Document</a>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -253,22 +293,29 @@
 </div>
 <div class="container pos-top">
     <h3>Image Size Specifications for each Content Module</h3>
-    <p><strong>Please note that images may appear to be different in size because of cropping and re-sizing applied by CSS</strong></p>
+    <p><strong>Please note that images may appear to be different in size because of cropping and re-sizing applied by
+        CSS</strong><br>
+        View more details in a modal dialog</p>
     <div class="row flex-wrapper flex-columns">
 
         <div class="col-sm-6 flex-item">
             <div class="card">
                 <div class="copy-wrap">
                     <ul>
-                        <li><a href="#" data-toggle="modal" data-target="#ModalOne">Content Block Carousel Images</a>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalOne">Content Block Carousel Images &nbsp;
+                            <i class="fa fa-plus-square-o" aria-hidden="true"></i></a>
                         </li>
-                        <li><a href="#" data-toggle="modal" data-target="#ModalTwo">Content Block Feature Images</a>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalTwo">Content Block Feature Images &nbsp;
+                            <i class="fa fa-plus-square-o" aria-hidden="true"></i></a>
                         </li>
-                        <li><a href="#" data-toggle="modal" data-target="#ModalThree">Content Block Large Images</a>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalThree">Content Block Large Images &nbsp;
+                            <i class="fa fa-plus-square-o" aria-hidden="true"></i></a>
                         </li>
-                        <li><a href="#" data-toggle="modal" data-target="#ModalFour">Content Block Medium Images</a>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalFour">Content Block Medium Images &nbsp;
+                            <i class="fa fa-plus-square-o" aria-hidden="true"></i></a>
                         </li>
-                        <li><a href="#" data-toggle="modal" data-target="#ModalFive">Content Block Small Images</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalFive">Content Block Small Images &nbsp;
+                            <i class="fa fa-plus-square-o" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -277,12 +324,17 @@
             <div class="card">
                 <div class="copy-wrap">
                     <ul>
-                        <li><a href="#" data-toggle="modal" data-target="#ModalSix">Hero Images</a></li>
-                        <li><a href="#" data-toggle="modal" data-target="#ModalSeven">List Module Feature Images</a>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalSix">Hero Images &nbsp; <i
+                                class="fa fa-plus-square-o" aria-hidden="true"></i></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalSeven">List Module Feature Images &nbsp;
+                            <i class="fa fa-plus-square-o" aria-hidden="true"></i></a>
                         </li>
-                        <li><a href="#" data-toggle="modal" data-target="#ModalEight">List Module Full Images</a></li>
-                        <li><a href="#" data-toggle="modal" data-target="#ModalNine">Sidebar CTA Content Images</a></li>
-                        <li><a href="#" data-toggle="modal" data-target="#ModalTen">Support Module Images</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalEight">List Module Full Images &nbsp; <i
+                                class="fa fa-plus-square-o" aria-hidden="true"></i></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalNine">Sidebar CTA Content Images &nbsp;
+                            <i class="fa fa-plus-square-o" aria-hidden="true"></i></a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#ModalTen">Support Module Images &nbsp; <i
+                                class="fa fa-plus-square-o" aria-hidden="true"></i></a></li>
                     </ul>
 
                 </div>
@@ -290,6 +342,8 @@
         </div>
     </div>
 </div>
+
+<span class="spacer spacer-sm-3 spacer-md-1 spacer-lg-1"></span>
 
 <!-- Begin Modal One Code for modal content -->
 <div id="ModalOne" class="modal fade" tabindex="-1" role="dialog">
