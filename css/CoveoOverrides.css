@@ -1,8 +1,4 @@
 
-.CoveoSearchInterface {
-    background: #f4f4f4 !important;
-}
-
 .CoveoSearchInterface .coveo-main-section {
     max-width: 1155px !important;
     padding: 0 7.5px !important;
@@ -22,6 +18,7 @@
 }
 
 .CoveoSearchInterface {
+    background: #f4f4f4 !important;
     /*font-family: "BryantMedium", "Helvetica Neue", Helvetica, Arial, sans-serif !important;*/
     font-family: "BryantWebMedium", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }

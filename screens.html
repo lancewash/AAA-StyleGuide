@@ -21,6 +21,12 @@
     <link rel="apple-touch-icon" sizes="144x144" href="img/aaa-icon-ipad-retina.png">
     <link rel="icon" href="/favicon.ico">
     <style>
+        .container.main {
+            max-width: 120rem;
+            width: 90%;
+            padding-bottom: 100px;
+        }
+
         .modal-content {
             border-radius: 0;
             border: none;
@@ -96,6 +102,10 @@
             margin: 0;
         }
 
+        li span {
+            color: #222;
+            font-size: .8rem;
+        }
 
         .border-primary {
             border-top: 3px solid #e21f11;
@@ -138,11 +148,106 @@
         }
 
         img {
-            display: block;
-            margin: 50px auto;
+            margin: 0;
             max-width: 100%;
             width: auto;
         }
+
+        .screens .col-sm-12 {
+            margin-top: 50px;
+            padding: 0 0 25px;
+        }
+
+        .screens .col-sm-12>p {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .screens .col-sm-12>p b {
+            background: #fff;
+            padding: 10px 15px;
+        }
+        
+        .aaa-logo {
+            display: inline-block;
+            position: relative;
+        }
+        
+        .aaa-logo img {
+            position: absolute;
+            z-index: 99999;
+            bottom: 25px;
+            margin:0 auto;
+            left: 0;
+            right: 0;
+        }
+
+        iframe.i320x480 {
+            width: 350px;
+            height: 576px;
+            border-left: 20px solid #444;
+            border-right: 20px solid #444;
+            border-top: 30px solid #444;
+            border-bottom: 64px solid #444;
+            border-radius: 12px;
+        }
+        iframe.i360x640 {
+            width: 390px;
+            height: 736px;
+            border-left: 24px solid #444;
+            border-right: 24px solid #444;
+            border-top: 34px solid #444;
+            border-bottom: 64px solid #444;
+            border-radius: 12px;
+        }
+
+        iframe.i480x800 {
+            width: 520px;
+            height: 894px;
+            border-left: 28px solid #444;
+            border-right: 28px solid #444;
+            border-top: 36px solid #444;
+            border-bottom: 60px solid #444;
+            border-radius: 12px;
+        }
+        iframe.i600x800 {
+            width: 650px;
+            height: 920px;
+            border-left: 32px solid #333;
+            border-right: 32px solid #333;
+            border-top: 42px solid #333;
+            border-bottom: 74px solid #333;
+            border-radius: 12px;
+        }
+        iframe.i768x1024 {
+            width: 824px;
+            height: 1060px;
+            border-left: 38px solid #333;
+            border-right: 38px solid #333;
+            border-top: 42px solid #333;
+            border-bottom: 74px solid #333;
+            border-radius: 12px;
+        }
+
+        iframe.i960x640 {
+            width: 1038px;
+            height: 760px;
+            border-left: 38px solid #333;
+            border-right: 38px solid #333;
+            border-top: 42px solid #333;
+            border-bottom: 74px solid #333;
+            border-radius: 12px;
+        }
+        iframe.i1024x600 {
+            width: 1108px;
+            height: 760px;
+            border-left: 38px solid #333;
+            border-right: 38px solid #333;
+            border-top: 42px solid #333;
+            border-bottom: 74px solid #333;
+            border-radius: 12px;
+        }
+
     </style>
 </head>
 
@@ -256,47 +361,158 @@
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container main">
     <div class="row">
         <div class="col-sm-12">
-            <h1 class="module-label">Viewports</h1>
+            <h1 class="module-label">Viewport Screens and Resolutions Snapshots</h1>
+            <p>This page offers a visual representation of how the AAA app is viewed<br>
+                through various size digital screens of some of the most popular viewport resolutions.</p>
+            <!--<iframe src="http://midatlantic.aaa.com/"></iframe>-->
+            <!--<iframe class="i320" src="http://www.edesimselection.com/en/"></iframe>-->
         </div>
     </div>
     <div class="row">
-        <div id="sidebar" class="col-sm-9 sidebar">
-        <img id="320x480" src="image/screens/320x480.jpg" alt="">
+        <div class="col-sm-10">
+            <div class="row screens">
+                <!--<div  id="320x480"class="col-sm-12">
+                    <p><b>320 x 480</b></p>
+                    <img src="image/screens/320x480.jpg" alt="">
+                    <iframe class="i320x480" src="http://midatlantic.aaa.com/"></iframe>
+                </div>-->
+                <div id="360x640" class="col-sm-12"><p><b>360 x 640</b></p>
+                    <img src="image/screens/360x640.jpg" alt="">
+                    <div class="aaa-logo">
+                    <iframe class="i360x640" src="http://policylab.chop.edu/"></iframe>
+                        <img src="image/screens/aaa-logo.png" alt="">
+                    </div>
+                </div>
+                <div id="480x800" class="col-sm-12"><p><b>480 x 800</b></p>
+                    <img src="image/screens/480x800.jpg" alt="">
+                    <iframe class="i480x800" src="http://policylab.chop.edu/"></iframe>
+                </div>
+                <div id="600x800" class="col-sm-12"><p><b>600 x 800</b></p>
+                    <img src="image/screens/600x800.jpg" alt="">
+                    <iframe class="i600x800" src="http://policylab.chop.edu/"></iframe>
+                </div>
+                <div id="768x1024" class="col-sm-12"><p><b>768 x 1024</b></p>
+                    <img src="image/screens/768x1024.jpg" alt="">
+                    <iframe class="i768x1024" src="http://policylab.chop.edu/"></iframe>
+                </div>
+                <div id="960x640" class="col-sm-12"><p><b>960 x 640</b></p>
+                    <img src="image/screens/960x640.jpg" alt="">
+                    <iframe class="i960x640" src="http://policylab.chop.edu/"></iframe>
+                </div>
+                <div id="1024x600" class="col-sm-12"><p><b>1024 x 600</b></p>
+                    <img src="image/screens/1024x600.jpg" alt="">
+                    <iframe class="i1024x600" src="http://policylab.chop.edu/"></iframe>
+                </div>
+                <div id="1024x768" class="col-sm-12"><p><b>1024 x 768</b></p>
+                    <img src="image/screens/1024x768.jpg" alt="">
+                </div>
+                <div id="1280x800" class="col-sm-12"><p><b>1280 x 800</b></p>
+                    <img src="image/screens/1280x800.jpg" alt="">
+                </div>
+                <div id="1280x1024" class="col-sm-12"><p><b>1280 x 1024</b></p>
+                    <img src="image/screens/1280x1024.jpg" alt="">
+                </div>
+                <div id="1360x768" class="col-sm-12"><p><b>1360 x 768</b></p>
+                    <img src="image/screens/1360x768.jpg" alt="">
+                </div>
 
-        <img id="360x640" src="image/screens/360x640.jpg" alt="">
+                <div id="1440x900" class="col-sm-12"><p><b>1440 x 900</b></p>
+                    <img src="image/screens/1440x900.jpg" alt="">
+                </div>
+                <div id="1600x900" class="col-sm-12"><p><b>1600 x 900</b></p>
+                    <img src="image/screens/1600x900.jpg" alt="">
+                </div>
+                <div id="1680x1050" class="col-sm-12"><p><b>1680 x 1050</b></p>
+                    <img src="image/screens/1680x1050.jpg" alt="">
+                </div>
+                <div id="1920x1080" class="col-sm-12"><p><b>1920 x 1080</b></p>
+                    <img src="image/screens/1920x1080.jpg" alt="">
+                </div>
+                <div id="540x960" class="col-sm-12"><p><b>540 x 960 > 360 x 640</b></p>
+                    <img src="image/screens/540x960-360x640.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="well-block">
+                        <p>At this time, mobile devices have improved so much that their screen resolutions are
+                            similar
+                            and sometimes even better than desktop screens resolutions.<br>
 
-        <img id="480x800" src="image/screens/480x800.jpg" alt="">
+                            For example Galaxy S4 of Samsung has 1080X1920 pixels - Full HD screen!<br>
 
-        <img id="600x800" src="image/screens/600x800.jpg" alt="">
+                            But in responsive design we check resolution and need to fit according the resolution
+                            and if
+                            you try to add media query, let's say min-width of 1000px and check it on the Samsung
+                            Galaxy
+                            S4 you will see that nothing happened.
 
-        <img id="768x1024" src="image/screens/768x1024.jpg" alt="">
-</div>
-        <div id="sidebar" class="col-sm-3 sidebar">
+                            The reason for it is that mobile high density screen have two aspect of pixels.<br>
+
+                            <strong>Real resolution</strong><br>
+                            The first resolution is the factory real resolution, it's mostly for videos and images.
+                            on
+                            Samsung galaxy S4 the real resolution is 1080X1920.
+
+                            CSS resolution<br>
+                            The second resolution is for the browser. and for us developers that means we need to
+                            act
+                            different and not according the real screen resolution. in Samsung Galaxy S4, CSS
+                            resolution
+                            is 360X640.<br>
+
+                            <strong>Samsung Galaxy S4 resolution:</strong><br>
+                            Real resolution: 1080X1920<br>
+                            CSS resolution: 360X640<br></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sidebar" class="col-sm-2 sidebar">
             <span class="spacer spacer-sm-3 spacer-md-1 spacer-lg-1"></span>
+            <div class="well-block">
+                <h4 style="margin-bottom: 0;">Display Resolutions with typical device/devices</h4>
+            </div>
+
             <div class="card">
                 <ul class="custom content-wrap">
-                    <li><a class="link" data-scroll href="#320x480">320 x 480</a></li>
+                    <!--<li><a class="link" data-scroll href="#320x480">320 x 480<br>
+                        <span>(3.5'' iPhone)</span></a></li>-->
                     <li><a class="link" data-scroll href="#360x640">360 x 640</a></li>
-                    <li><a class="link" data-scroll href="#480x800">480 x 800</a></li>
-                    <li><a class="link" data-scroll href="#600x800">600 x 800</a></li>
-                    <li><a class="link" data-scroll href="#768x1024">768 x 1024</a></li>
-                    <li><a class="link" data-scroll href="#style-guide-buttons">Buttons</a></li>
-                    <li><a class="link" data-scroll href="#graphic-elements">Graphic Elements</a></li>
-                    <li><a class="link" data-scroll href="#general-copy">General Copy Samples</a></li>
-                    <li><a class="link" data-scroll href="#general-copy-floated">General Copy Samples w/Floated
-                        Image</a></li>
-                    <li><a class="link" data-scroll href="#copy-alignment">Copy Alignment Samples</a></li>
-                    <li><a class="link" data-scroll href="#column-copy">Column Copy Samples</a></li>
-                    <li><a class="link" data-scroll href="#aside-callout">Aside Callout Samples</a></li>
-                    <li><a class="link" data-scroll href="#comparo-chart">Tables and Comparison Chart</a></li>
-                    <li><a class="link" data-scroll href="#general-form">General Form</a></li>
-                    <li><a class="link" data-scroll href="#inline-form">Inline Form</a></li>
-                    <li><a class="link" data-scroll href="#inline-form-no">Inline Form (No Labels)</a></li>
-                    <li><a class="link" data-scroll href="#alert-message">Alert Messages</a></li>
-                    <li><a class="link" data-scroll href="#grid-samples">Grid Samples</a></li>
+                    <li><a class="link" data-scroll href="#480x800">480 x 800<br>
+                        <span>(Samsung	Galaxy S)</span></a></li>
+                    <li><a class="link" data-scroll href="#600x800">600 x 800<br>
+                        <span>(Nexus 7)</span></a></li>
+                    <li><a class="link" data-scroll href="#768x1024">768 x 1024<br>
+                        <span>(9.7'' iPad)</span></a></li>
+                    <li><a class="link" data-scroll href="#960x640">960 x 640<br>
+                        <span>(Apple iPhone 4/4S)</span></a></li>
+                    <li><a class="link" data-scroll href="#1024x600">1024 x 600<br>
+                        <span>(7'' Display)</span></a></li>
+                    <li><a class="link" data-scroll href="#1024x768">1024 x 768<br>
+                        <span>(15'' monitor)</span></a></li>
+                    <li><a class="link" data-scroll href="#1280x800">1280 x 800<br>
+                        <span>(14'' Notebook)</span></a></li>
+                    <li><a class="link" data-scroll href="#1280x1024">1280 x 1024<br>
+                        <span>(19'' monitor)</span></a></li>
+                    <li><a class="link" data-scroll href="#1360x768">1360 x 768/1366 x 768<br>
+                        <span>(14'' Notebook / 15.6'' Laptop / 18.5'' monitor)</a></li>
+                    <li><a class="link" data-scroll href="#1440x900">1440 x 900<br>
+                        <span>(19'' monitor)</span></a></li>
+                    <li><a class="link" data-scroll href="#1600x900">1600 x 900<br>
+                        <span>(20'' monitor)</span></a></li>
+                    <li><a class="link" data-scroll href="#1680x1050">1680 x 1050<br>
+                        <span>(22'' monitor)</span></a></li>
+                    <li><a class="link" data-scroll href="#1920x1080">1920 x 1080<br>
+                        <span>(21.5'' monitor / 23'' monitor / 1080p TV)</span></a></li>
+                    <li><a class="link" data-scroll href="#540x960">Real Resolution vs CSS Resolution (PPI-Pixels
+                        per
+                        inch)</a></li>
+
+
                 </ul>
                 <a class="smooth-scroll-top" href="#smooth-scroll-top">Back to Top</a>
             </div>
