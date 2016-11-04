@@ -4980,3 +4980,53 @@ box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.085)
     margin-bottom: 15px;
 }
 
+/*
+#header .nav a:focus {
+    border-bottom: 2px solid #222;
+}
+*/
+
+.dropdown-menu {
+    margin-left: 40%;
+    width: 50%;
+}
+
+.dropdown-menu {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu li a {
+    color: #e21f11;
+    padding: 10px 20px;
+}
+
+.dropdown-menu li a:hover {
+    color: #222;
+}
+
+.dropdown .button-link.button-link-default.alt {
+    background: transparent;
+}
+
+.button-link.button-link-default {
+    border: none;
+}
+
+.dropdown-toggle {
+    box-shadow: 2px 2px 12px rgba(0,0,0,.2);
+    line-height: 0;
+    padding: 0 !important;
+}
+
+ol.custom h4 {
+    font-family: "BryantMedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: inherit;
+    text-transform: capitalize;
+}

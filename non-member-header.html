@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Non Member Header</title>
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7141914/7601752/css/fonts.css"/>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" href="img/aaa-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/aaa-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/aaa-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/aaa-icon-ipad-retina.png">
+    <link rel="icon" href="/favicon.ico">
+    <!-- Additional CSS Styling needed -->
+    <style>
+
+        b {
+            color: #e21f11;
+            font-weight: bold;
+            display: inline-block;
+            border: 1px solid #ccc;
+            padding: 2px 8px;
+        }
+
+        strong {
+            color: #639a00;
+        }
+
+        .main-menu {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .main-menu > li > a {
+            padding: 25px 50px;
+        }
+
+        #header .non-member-nav .main-menu > li > a {
+            padding: 25px 35px;
+        }
+
+        #header .non-member-nav .main-menu > li:last-child > a :hover {
+            color: #222;
+        }
+
+        #header .non-member-nav .member-menu li:first-child:after {
+            content: "";
+            width: 0px;
+            height: 0;
+            background: transparent;
+        }
+
+        /*.non-member-nav #alt-nav .alt-menu {
+            width: 75%;
+        }*/
+
+        .non-member-nav #alt-nav .alt-menu li {
+            float: left;
+            text-align: center;
+            width: 33.33333%;
+        }
+
+        .non-member-nav #alt-nav .alt-menu li a {
+            color: #222;
+            display: block;
+        }
+
+        .non-member-nav #alt-nav .alt-menu li a:hover {
+            color: #e21f11;
+        }
+
+        #header .non-member-nav .member-menu {
+            text-align: center;
+            width: 25%;
+        }
+        #header .non-member-nav .member-menu.alt-menu {
+            text-align: center;
+            width: 75%;
+        }
+
+        /*#header .non-member-nav {
+            display: flex;
+        }*/
+
+
+    </style>
+</head>
+
+<body class="loading  module-page ">
+<div class="overlay"></div>
+
+<div id="tool-header" class="header">
+    <div class="container">
+        <div class="table-wrap">
+            <div class="logo align-text-left">
+                <a href="index.html">
+                    <i class="icon icon-aaa fill-white">
+                        <svg>
+                            <use xlink:href="img/spritemap.svg#aaa-logo"></use>
+                        </svg>
+                    </i>
+                    <span class="visuallyhidden">AAA</span>
+                </a>
+            </div>
+            <div class="align-text-right">
+                <a href="image-specs.html" class="button-link button-link-default alt">Image Specifications</a>
+                <a href="style-guide.html" class="button-link button-link-default alt">Style Guide</a>
+                <a href="#" class="button-link button-link-default alt tool-menu-button">Menu</a>
+            </div>
+        </div>
+    </div>
+    <div class="tool-header-trigger">
+        <a href="#">
+            <i class="icon icon-trigger">
+                <svg>
+                    <use xlink:href="img/spritemap.svg#icon-plus-circle"></use>
+                </svg>
+            </i>
+        </a>
+    </div>
+</div>
+
+<div id="tool-nav" class="nav">
+    <div class="nav-wrap-inner">
+        <div class="align-text-right"><a href="#" class="button-link tool-menu-button">Close</a></div>
+        <div class="nav-group">
+            <div class="row">
+                <div class="col-sm-6 nav-block"><h4>Applications</h4>
+                    <ul>
+                        <li><a href="application-1.html"> Application 1 </a></li>
+                        <li><a href="application-2.html"> Application 2 </a></li>
+                        <li><a href="application-3.html"> Application 3 </a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 nav-block"><h4>Additional Styling and Functionality</h4>
+                    <ul>
+                        <li><a href="modals.html"> Modals </a></li>
+                        <li><a href="tooltips.html"> Tooltips </a></li>
+                        <li><a href="lists.html"> Lists </a></li>
+                        <li><a href="simple-table.html"> Simple Tables </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav-group"><h4>Modules</h4>
+            <div class="row">
+                <div class="col-sm-6 nav-block">
+                    <ul>
+                        <li><a href="accordion.html"> Accordion </a></li>
+                        <li><a href="breadcrumbs.html"> Breadcrumbs </a></li>
+                        <li><a href="content-block-carousel.html"> Content Block Carousel </a></li>
+                        <li><a href="content-block-feature.html"> Content Block Feature </a></li>
+                        <li><a href="content-block-large.html"> Content Block Large </a></li>
+                        <li><a href="content-block-medium.html"> Content Block Medium </a></li>
+                        <li><a href="content-block-small.html"> Content Block Small </a></li>
+                        <li><a href="content-block-suggested-links.html"> Content Block Suggested Links </a></li>
+                        <li><a href="footer.html"> Footer </a></li>
+                        <li><a href="forms.html"> Forms </a></li>
+                        <li><a href="general-content.html"> General Content </a></li>
+                        <li><a href="general-titles.html"> General Titles </a></li>
+                        <li><a href="header.html"> Header </a></li>
+                        <li><a href="heros.html"> Heros </a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 nav-block">
+                    <ul>
+                        <li><a href="list-module-featured.html"> List Module Featured </a></li>
+                        <li><a href="list-module-full.html"> List Module Full </a></li>
+                        <li><a href="list-module.html"> List Module </a></li>
+                        <li><a href="map-modules.html"> Map Modules </a></li>
+                        <li><a href="news-link.html"> News Link </a></li>
+                        <li><a href="pagination.html"> Pagination </a></li>
+                        <li><a href="results-form.html"> Results Form </a></li>
+                        <li><a href="search-list.html"> Search List </a></li>
+                        <li><a href="sidebar-CTA-content.html"> Sidebar CTA Content </a></li>
+                        <li><a href="sidebar-contact-links.html"> Sidebar Contact Links </a></li>
+                        <li><a href="sidebar-login.html"> Sidebar Login </a></li>
+                        <li><a href="sidebar-quicklinks.html"> Sidebar Quicklinks </a></li>
+                        <li><a href="sidebar-titles.html"> Sidebar Titles </a></li>
+                        <li><a href="table.html"> Table </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nav-group">
+            <div class="row">
+                <div class="col-sm-12 nav-block"><h4>Collections</h4>
+                    <ul>
+                        <li><a href="content-blocks.html"> Content Blocks </a></li>
+                        <li><a href="search-results.html"> Search Results </a></li>
+                        <li><a href="sidebar-tools.html"> Sidebar Tools </a></li>
+                        <li><a href="support-module.html"> Support Module </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-sm-12">
+
+            <h1 class="module-label">Non-Member Header</h1>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="module-wrapper">
+    <div class="module-wrapper">
+        <!-- Additional CSS Styling needed -->
+        <style>
+            .main-menu {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .main-menu > li > a {
+                padding: 25px 50px;
+            }
+        </style>
+        <!-- Additional CSS Styling needed -->
+        <div id="header" class="z-index-5 headroom headroom--top headroom--not-bottom">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="header-inner-wrap">
+                            <a href="/" id="main-logo">
+                                <i class="icon icon-aaa white">
+                                    <svg>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                             xlink:href="img/spritemap.svg#aaa-logo"></use>
+                                        <svg>
+                                </i>
+                            </a>
+                            <a href="#" class="menu-button" title=" Menu ">
+                                <span class="bar bar-top"></span>
+                                <span class="bar bar-bottom"></span>
+                                <span class="text">Menu</span>
+                            </a>
+                            <div class="nav-wrapper non-member-nav">
+                                <div id="main-nav" class="nav">
+
+                                    <!--View Cart for mobile begin -->
+
+                                    <div class="row view-cart-mobile">
+                                        <ul class="member-menu menu menu-tab">
+
+
+                                        </ul>
+                                    </div>
+
+                                    <!--View Cart for mobile end -->
+
+
+                                    <ul class="main-menu menu" role="menubar" aria-hidden="false">
+
+                                        <li class="HeaderMainMenuItems" role="menuitem" aria-haspopup="true">
+
+                                            <a href="#">
+                                                <span class="menu-label main">Roadside Assistance</span>
+                                                <span class="menu-label sub">lorem + ipsum</span>
+                                                <i class="icon icon-arrow-circle">
+                                                    <svg>
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                             xlink:href="img/spritemap.svg#icon-arrow-circle"></use>
+                                                    </svg>
+                                                </i>
+                                            </a>
+                                            <ul class="sub-menu col-lg col-3" data-test="true" aria-hidden="true"
+                                                role="menu">
+                                                <li class="col col-intro" role="menuitem">
+                                                    <img src="/-/media/AAA-Transportation-Funding-Survey-Data.ashx"
+                                                         alt="">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit. Fugiat
+                                                        doloribus repellat architecto.</p>
+                                                </li>
+                                                <li class="col" role="menuitem">
+                                                    <ul>
+                                                        <li class="title-link" role="menuitem">
+
+                                                            <a href="#" tabindex="0" title=" MEMBERSHIP ">
+                                                                MEMBERSHIP
+                                                                <i class="icon icon-arrow">
+                                                                    <svg>
+                                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                             xlink:href="/img/spritemap.svg#icon-arrow-right"></use>
+                                                                    </svg>
+                                                                </i>
+                                                            </a>
+                                                        </li>
+                                                        <li role="menuitem">
+
+                                                            <a href="/membership/group" tabindex="0"
+                                                               title="Click Here | Group Membership > | http://cms.aca.aaa.com/membership/group">Group
+                                                                Membership &gt;</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col" role="menuitem">
+                                                    <ul>
+                                                        <li class="title-link" role="menuitem">
+
+                                                            <a href="#" tabindex="0" title=" ABOUT ">
+                                                                ABOUT
+                                                                <i class="icon icon-arrow">
+                                                                    <svg>
+                                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                             xlink:href="/img/spritemap.svg#icon-arrow-right"></use>
+                                                                    </svg>
+                                                                </i>
+                                                            </a>
+                                                        </li>
+                                                        <li role="menuitem">
+
+                                                            <a href="/about/stores" tabindex="0"
+                                                               title="Click Here | AAA Store Locations > | http://cms.aca.aaa.com/about/stores">AAA
+                                                                Store Locations &gt;</a>
+                                                        </li>
+                                                        <li role="menuitem">
+
+                                                            <a href="/about/Stores?ccit=only" tabindex="0"
+                                                               title="Click Here | Car Care Locations > | http://cms.aca.aaa.com/about/Stores?ccit=only">Car
+                                                                Care Locations &gt;</a>
+                                                        </li>
+                                                        <li role="menuitem">
+
+                                                            <a href="/about/Events" tabindex="0"
+                                                               title="Click Here | Store Events > | http://cms.aca.aaa.com/about/Events">Store
+                                                                Events &gt;</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="HeaderMainMenuItems" role="menuitem" aria-haspopup="true">
+
+                                            <a href="#">
+                                                <span class="menu-label main">Discounts</span>
+                                                <span class="menu-label sub">lorem + ipsum</span>
+                                                <i class="icon icon-arrow-circle">
+                                                    <svg>
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                             xlink:href="img/spritemap.svg#icon-arrow-circle"></use>
+                                                    </svg>
+                                                </i>
+                                            </a>
+                                            <ul class="sub-menu col-lg col-3" data-test="true" aria-hidden="true"
+                                                role="menu">
+                                                <li class="col col-intro" role="menuitem">
+                                                    <img src="/-/media/img3.ashx" alt="">
+                                                    <p>This is Automotive... Hear me Vrooooom... <a
+                                                            href="http://soundbible.com/717-Full-Throttle.html"
+                                                            title="Click Here |  Click Me"
+                                                            style="padding: 0; display: inline-block; border-bottom: medium none;"
+                                                            target="_blank" tabindex="-1">Click Me</a></p>
+                                                </li>
+                                                <li class="col" role="menuitem">
+                                                    <ul>
+                                                        <li class="title-link" role="menuitem">
+
+                                                            <a href="/automotive/extendedwarranty/quote" tabindex="-1"
+                                                               title="Click Here |  WARRANTY  | http://cms.aca.aaa.com/automotive/extendedwarranty/quote">
+                                                                WARRANTY
+                                                                <i class="icon icon-arrow">
+                                                                    <svg>
+                                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                             xlink:href="/img/spritemap.svg#icon-arrow-right"></use>
+                                                                    </svg>
+                                                                </i>
+                                                            </a>
+                                                        </li>
+                                                        <li role="menuitem">
+
+                                                            <a href="/automotive/extendedwarranty/quote" tabindex="-1"
+                                                               title="Click Here | Extended Warranty > | http://cms.aca.aaa.com/automotive/extendedwarranty/quote">Extended
+                                                                Warranty &gt;</a>
+                                                        </li>
+                                                        <li role="menuitem">
+
+                                                            <a href="/automotive/extendedwarranty/quote" tabindex="-1"
+                                                               title="Click Here | Extended Warranty > | http://cms.aca.aaa.com/automotive/extendedwarranty/quote">Extended
+                                                                Warranty &gt;</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col" role="menuitem">
+                                                    <ul>
+                                                        <li class="title-link" role="menuitem">
+
+                                                            <a href="#" tabindex="-1" title=" BATTERY ">
+                                                                BATTERY
+                                                                <i class="icon icon-arrow">
+                                                                    <svg>
+                                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                             xlink:href="/img/spritemap.svg#icon-arrow-right"></use>
+                                                                    </svg>
+                                                                </i>
+                                                            </a>
+                                                        </li>
+                                                        <li role="menuitem">
+
+                                                            <a href="/automotive/mobilebattery/quote" tabindex="-1"
+                                                               title="Click Here | Mobile Battery > | http://cms.aca.aaa.com/automotive/mobilebattery/quote">Mobile
+                                                                Battery &gt;</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col" role="menuitem">
+                                                    <ul>
+                                                        <li class="title-link" role="menuitem">
+
+                                                            <a href="#" tabindex="-1" title=" OTHER APPS ">
+                                                                OTHER APPS
+                                                                <i class="icon icon-arrow">
+                                                                    <svg>
+                                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                             xlink:href="/img/spritemap.svg#icon-arrow-right"></use>
+                                                                    </svg>
+                                                                </i>
+                                                            </a>
+                                                        </li>
+                                                        <li role="menuitem">
+
+                                                            <a href="/AAAWorld" tabindex="-1"
+                                                               title="Click Here | AAA WORLD > | http://cms.aca.aaa.com/AAAWorld">AAA
+                                                                WORLD &gt;</a>
+                                                        </li>
+                                                        <li role="menuitem">
+
+                                                            <a href="/FuelPriceFinder" tabindex="-1"
+                                                               title="Click Here | Fuel Price Finder > | http://cms.aca.aaa.com/FuelPriceFinder">Fuel
+                                                                Price Finder &gt;</a>
+                                                        </li>
+                                                        <li role="menuitem">
+
+                                                            <a href="/public-affairs/PressRelease" tabindex="-1"
+                                                               title="Click Here | Press Release > | http://cms.aca.aaa.com/public-affairs/PressRelease">Press
+                                                                Release &gt;</a>
+                                                        </li>
+                                                        <li role="menuitem">
+
+                                                            <a href="/optout" tabindex="-1"
+                                                               title="Click Here | OptOut > | http://cms.aca.aaa.com/optout">OptOut
+                                                                &gt;</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="HeaderMainMenuItems" role="menuitem" aria-haspopup="true">
+
+                                            <a href="#">
+                                                <span class="menu-label main">Member Benefits</span>
+                                                <span class="menu-label sub">lorem + ipsum</span>
+                                                <i class="icon icon-arrow-circle">
+                                                    <svg>
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                             xlink:href="img/spritemap.svg#icon-arrow-circle"></use>
+                                                    </svg>
+                                                </i>
+                                            </a>
+                                            <ul class="sub-menu col-lg col-3" data-test="true" aria-hidden="true"
+                                                role="menu">
+                                                <li class="col col-intro" role="menuitem">
+                                                    <img src="/-/media/AAA-Transportation-Funding-Survey-Data.ashx"
+                                                         alt="">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit. Fugiat
+                                                        doloribus repellat architecto.</p>
+                                                </li>
+                                                <li class="col" role="menuitem">
+                                                    <ul>
+                                                        <li class="title-link" role="menuitem">
+
+                                                            <a href="#" tabindex="-1" title=" INSURANCE ">
+                                                                INSURANCE
+                                                                <i class="icon icon-arrow">
+                                                                    <svg>
+                                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                             xlink:href="/img/spritemap.svg#icon-arrow-right"></use>
+                                                                    </svg>
+                                                                </i>
+                                                            </a>
+                                                        </li>
+                                                        <li role="menuitem">
+
+                                                            <a href="/Insurance/auto/Quote" tabindex="-1"
+                                                               title="Click Here | Auto > | http://cms.aca.aaa.com/Insurance/auto/Quote">Auto
+                                                                &gt;</a>
+                                                        </li>
+                                                        <li role="menuitem">
+
+                                                            <a href="/Insurance/life/Quote" tabindex="-1"
+                                                               title="Click Here | Life > | http://cms.aca.aaa.com/Insurance/life/Quote">Life
+                                                                &gt;</a>
+                                                        </li>
+                                                        <li role="menuitem">
+
+                                                            <a href="/Insurance/commercial/Quote" tabindex="-1"
+                                                               title="Click Here | Commercial > | http://cms.aca.aaa.com/Insurance/commercial/Quote">Commercial
+                                                                &gt;</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col" role="menuitem">
+                                                    <ul>
+                                                        <li class="title-link" role="menuitem">
+
+                                                            <a href="#" tabindex="-1" title=" LOCATOR ">
+                                                                LOCATOR
+                                                                <i class="icon icon-arrow">
+                                                                    <svg>
+                                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                             xlink:href="/img/spritemap.svg#icon-arrow-right"></use>
+                                                                    </svg>
+                                                                </i>
+                                                            </a>
+                                                        </li>
+                                                        <li role="menuitem">
+
+                                                            <a href="/about/InsuranceAgentZip" tabindex="-1"
+                                                               title="Click Here | Insurance Agent Locator > | http://cms.aca.aaa.com/about/InsuranceAgentZip">Insurance
+                                                                Agent Locator &gt;</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="HeaderMainMenuItems" role="menuitem" aria-haspopup="true">
+
+                                            <a href="#">
+                                                <span class="menu-label main">Plans and Pricing</span>
+                                                <span class="menu-label sub">lorem + ipsum</span>
+                                                <i class="icon icon-arrow-circle">
+                                                    <svg>
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                             xlink:href="img/spritemap.svg#icon-arrow-circle"></use>
+                                                    </svg>
+                                                </i>
+                                            </a>
+                                            <ul class="sub-menu col-lg col-3" data-test="true" aria-hidden="true"
+                                                role="menu">
+                                                <li class="col col-intro" role="menuitem">
+                                                    <img src="/-/media/AAA-Transportation-Funding-Survey-Data.ashx"
+                                                         alt="">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit.</p>
+                                                </li>
+                                                <li class="col" role="menuitem">
+                                                    <ul>
+                                                        <li class="title-link" role="menuitem">
+
+                                                            <a href="#" tabindex="-1" title=" DISNEY ">
+                                                                DISNEY
+                                                                <i class="icon icon-arrow">
+                                                                    <svg>
+                                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                             xlink:href="/img/spritemap.svg#icon-arrow-right"></use>
+                                                                    </svg>
+                                                                </i>
+                                                            </a>
+                                                        </li>
+                                                        <li role="menuitem">
+
+                                                            <a href="/travel/disney/quote" tabindex="-1"
+                                                               title="Click Here | Disney Long > | http://cms.aca.aaa.com/travel/disney/quote">Disney
+                                                                Long &gt;</a>
+                                                        </li>
+                                                        <li role="menuitem">
+
+                                                            <a href="/travel/disney/quickquote" tabindex="-1"
+                                                               title="Click Here | Disney Short > | http://cms.aca.aaa.com/travel/disney/quickquote">Disney
+                                                                Short &gt;</a>
+                                                        </li>
+                                                        <li role="menuitem">
+
+                                                            <a href="/Travel/HotDeals/HotDealsSearch" tabindex="-1"
+                                                               title="Click Here | Hot Deals > | http://cms.aca.aaa.com/Travel/HotDeals/HotDealsSearch">Hot
+                                                                Deals &gt;</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col" role="menuitem">
+                                                    <ul>
+                                                        <li class="title-link" role="menuitem">
+
+                                                            <a href="#" tabindex="-1" title=" LOCATOR ">
+                                                                LOCATOR
+                                                                <i class="icon icon-arrow">
+                                                                    <svg>
+                                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                             xlink:href="/img/spritemap.svg#icon-arrow-right"></use>
+                                                                    </svg>
+                                                                </i>
+                                                            </a>
+                                                        </li>
+                                                        <li role="menuitem">
+
+                                                            <a href="/about/TravelAgentZip" tabindex="-1"
+                                                               title="Click Here | Travel Agent Locator > | http://cms.aca.aaa.com/about/TravelAgentZip">Travel
+                                                                Agent Locator &gt;</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="menu-label main red">Join Today ></span>
+                                                <i class="icon icon-arrow-circle">
+                                                    <svg>
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                             xlink:href="img/spritemap.svg#icon-arrow-circle"></use>
+                                                    </svg>
+                                                </i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div id="alt-nav" class="nav">
+                                    <ul class="alt-menu menu member-menu">
+                                        <li>
+
+                                            <a href=""
+                                               title="Click Here |  ROADSIDE ASSISTANCE  | http://cms.aca.aaa.com/">
+                                                <span class="icon icon-roadside-assistance"></span>
+                                                <!--<i class="icon icon-roadside-assistance">
+                                                    <svg><use xlink:href="/img/spritemap.svg#icon-roadside-assistance"></use></svg>
+                                                </i>-->
+                                                ROADSIDE ASSISTANCE
+                                            </a>
+                                        </li>
+                                        <li>
+
+                                            <a href=""
+                                               title="Click Here |  RENEW MEMBERSHIP  | http://cms.aca.aaa.com/">
+                                                <span class="icon icon-renew-membership"></span>
+                                                <!--<i class="icon icon-renew-membership">
+                                                    <svg><use xlink:href="/img/spritemap.svg#icon-renew-membership"></use></svg>
+                                                </i>-->
+                                                RENEW MEMBERSHIP
+                                            </a>
+                                        </li>
+                                        <li>
+
+                                            <a href="" title="Click Here |  STORE LOCATOR  | http://cms.aca.aaa.com/">
+                                                <span class="icon icon-store-locator"></span>
+                                                <!--<i class="icon icon-store-locator">
+                                                    <svg><use xlink:href="/img/spritemap.svg#icon-store-locator"></use></svg>
+                                                </i>-->
+                                                STORE LOCATOR
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="member-menu menu">
+                                        <li>
+                                            <a href="#">
+                                                <i class="icon icon-login">
+                                                    <svg>
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/spritemap.svg#icon-login"></use>
+                                                        <svg>
+                                                        </svg></svg></i>
+                                                Member? Log in &gt;
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row view-cart-desktop" style="float:right">
+                    <ul class="member-menu menu menu-tab">
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <span class="spacer spacer-md-3"></span>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Markup</h2>
+                    <p><strong>non-member-nav</strong> class added to the <strong>nav-wrapper</strong> <b>&#60;div
+                        class="<strong>nav-wrapper non-member-nav</strong>"&#62;</b><br>
+                        See comment in markup below</p>
+
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-12">
+
+                    <div class="module-rules">
+
+                        <p></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
