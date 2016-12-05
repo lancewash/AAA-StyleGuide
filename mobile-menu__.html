@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/fonts.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/mobile-menu.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile-menu.css">
     <link rel="stylesheet" href="http://sc.dev.midatlantic.aaa.com/content/aaa-style.css">
     <link rel="stylesheet" href="css/search.css">
     <link rel="apple-touch-icon" href="img/aaa-icon-iphone.png">
@@ -22,34 +22,22 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/aaa-icon-iphone-retina.png">
     <link rel="apple-touch-icon" sizes="144x144" href="img/aaa-icon-ipad-retina.png">
     <link rel="icon" href="/favicon.ico">
+    <!--<style>
+        .active-nav #header-mobile #alt-nav-mobile {
+            margin-top: 35px;
+            /*margin-top: 0;*/
+            display: block;
+        }
+        #header-mobile #alt-nav-mobile {
+            margin-top: 0;
+            display: none;
+        }
+    </style>-->
 </head>
-<style>
-    #main-logo {
-        width: 80px;
-    }
-
-    .menu-button {
-        width: 30px;
-    }
-
-    .menu-button[title="Menu"] {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .member-welcome {
-        text-align: center;
-        width: 100%;
-        line-height: 1.2;
-        margin: auto;
-        right: 0;
-        left: 0;
-        top: 10px;
-        position: absolute;
-    }
-</style>
 <body class="loading  module-page ">
+
+
+<!-- Begin Mobile Header HTML Code  -->
 <div id="header-mobile" class="z-index-5 headroom headroom--top headroom--not-bottom">
     <div class="container">
         <div class="row">
@@ -75,140 +63,143 @@
                         <span class="text">Menu</span>
                     </a>
                     <div class="nav-wrapper ">
+                        <!-- &lt;!&ndash; View Cart Bar &ndash;&gt;
+                         <div style="/*display: none;*/ color: #fff; height: 35px; padding: 5px 15px; width: 100%;background: #3c3c3c; border-top: 1px solid #fff;">
+                             View Cart (3) <a style="border: none; color: #fff; margin: 0 20px; left: auto;" href="#" class="member-welcome aaa-white" title=" Welcome Margaret ">
+                             <i class="fa faMember fa-user fa-1" aria-hidden="true"></i>
+                             Welcome Margaret
+                         </a>
+                         </div>-->
                         <div id="main-nav-mobile" class="nav">
-                            <div class="search-field">
-                                <div id="sb-search" class="sb-search">
-                                    <form>
-                                        <input class="sb-search-input" placeholder="Search" type="search" name="search" id="search">
-                                        <input class="sb-search-submit" type="submit" value="">
-
+                            <div class="action-link-wrap" style="position: relative; width: 100%">
+                                <!-- Begin expanding search input -->
+                                <div class="search-field">
+                                    <div id="sb-search" class="sb-search">
+                                        <form>
+                                            <input class="sb-search-input" placeholder="Search" type="search"
+                                                   name="search"
+                                                   id="search">
+                                            <input class="sb-search-submit" type="submit" value="">
                                         <span class="sb-icon-search"><svg>
                                             <use xmlns:xlink="http://www.w3.org/1999/xlink"
                                                  xlink:href="img/spritemap.svg#icon-search"></use>
                                         </svg></span>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- End expanding search input -->
+                                <!--<div class="search-field">
+                                    <form action="#">
+                                        <div class="form-block">
+                                            <label class="visuallyhidden" for="txtSearch-mobile">Search:</label>
+                                            <input type="search" placeholder="Search" id="txtSearch-mobile">
+                                            <label for="searchBtn-mobile" style="height: 0px; width: 0px; display: none; visibility: collapse;">searchBtn</label>
+                                            <button type="button" class="button-link" onclick="Search()" id="searchBtn-mobile">
+                                                <svg>
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                         xlink:href="img/spritemap.svg#icon-search"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
                                     </form>
+                                </div>-->
+
+                                <div id="alt-nav-mobile" class="nav">
+                                    <ul class="member-menu action-menu menu">
+                                        <!-- Begin Login button -->
+                                        <li class="button-login">
+                                            <a href="/Account/Login"
+                                               title="Click Here |  Login  | http://sc.dev.midatlantic.aaa.com/Account/Login">
+                                                <div class="button-login-wrap">
+                                                    <svg>
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                             xlink:href="img/spritemap.svg#icon-login"></use>
+                                                    </svg>
+                                                    <span>Login</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- End expanding search input -->
+
+                                        <!-- Begin Store Locator (Map Marker icon) -->
+                                        <li class="button-action-icon button-marker">
+                                            <a href="http://sc.dev.midatlantic.aaa.com/about/stores">
+                                                <svg>
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                         xlink:href="img/spritemap.svg#icon-marker"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <!-- End Store Locator (Map Marker icon) -->
+
+                                        <!-- Begin Cart (Cart icon) -->
+                                        <li class="button-action-icon button-cart">
+                                            <a href="">
+                                                <svg>
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                         xlink:href="img/spritemap.svg#icon-cart"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <!-- Begin Cart (Cart icon) -->
+
+                                    </ul>
+
+                                    <ul class="alt-menu menu member-menu">
+                                        <li>
+                                            <a href=""
+                                               title="Click Here |  DISCOUNTS  | http://">
+                                                <!--<span class="icon icon-roadside-assistance"></span>-->
+                                                <!--<i class="icon icon-roadside-assistance">
+                                                    <svg><use xlink:href="img/spritemap.svg#icon-roadside-assistance"></use></svg>
+                                                </i>-->
+                                                Discounts
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/online-store"
+                                               title="Click Here |  ONLINE STORE  | http://sc.dev.midatlantic.aaa.com/online-store">
+                                                ONLINE STORE
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href=""
+                                               title="Click Here |  ROADSIDE ASSISTANCE  | http://sc.dev.midatlantic.aaa.com/automotive">
+                                                <!--<span class="icon icon-roadside-assistance"></span>-->
+                                                <!--<i class="icon icon-roadside-assistance">
+                                                    <svg><use xlink:href="img/spritemap.svg#icon-roadside-assistance"></use></svg>
+                                                </i>-->
+                                                Roadside Assistance
+                                            </a>
+                                        </li>
+
+
+                                        <li>
+                                            <a href=""
+                                               title="Click Here |  RENEW MEMBERSHIP  | http://sc.dev.midatlantic.aaa.com/automotive">
+                                                <!--<span class="icon icon-renew-membership"></span>-->
+                                                <!--<i class="icon icon-renew-membership">
+                                                    <svg><use xlink:href="img/spritemap.svg#icon-renew-membership"></use></svg>
+                                                </i>-->
+                                                Renew Membership
+                                            </a>
+                                        </li>
+                                    </ul>
+
                                 </div>
                             </div>
-                            <!--<div class="search-field">
-                                <form action="#">
-                                    <div class="form-block">
-                                        <label class="visuallyhidden" for="txtSearch-mobile">Search:</label>
-                                        <input type="search" placeholder="Search" id="txtSearch-mobile">
-                                        <label for="searchBtn-mobile" style="height: 0px; width: 0px; display: none; visibility: collapse;">searchBtn</label>
-                                        <button type="button" class="button-link" onclick="Search()" id="searchBtn-mobile">
-                                            <svg>
-                                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                     xlink:href="img/spritemap.svg#icon-search"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>-->
-                            <div id="alt-nav-mobile" class="nav">
-                                <ul class="member-menu action-menu menu">
-                                    <li class="button-login">
-                                        <a href="/Account/Login"
-                                           title="Click Here |  Login  | http://sc.dev.midatlantic.aaa.com/Account/Login">
-                                            <div class="button-login-wrap">
-                                            <svg>
-                                               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/spritemap.svg#icon-login"></use>
-                                            </svg>
-                                           <span>Login</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="button-action-icon button-marker">
-                                        <a href="">
-                                            <svg>
-                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/spritemap.svg#icon-marker"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="button-action-icon button-cart">
-                                        <a href="">
-                                            <svg>
-                                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/spritemap.svg#icon-cart"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <!--<li class="half">
-                                    <a href="/discounts"
-                                       title="Click Here |  DISCOUNTS  | http://sc.dev.midatlantic.aaa.com/discounts">
-                                        <span class="icon icon-discount"></span> DISCOUNTS
-                                    </a>
-                                    </li>-->
-                                    <!--<li class="half">
-                                        <a href="/online-store"
-                                           title="Click Here |  ONLINE STORE  | http://sc.dev.midatlantic.aaa.com/online-store">
-                                            <span class="icon icon-cart"></span> ONLINE STORE
-                                        </a>
-                                    </li>-->
-                                </ul>
-
-                                <ul class="alt-menu menu member-menu">
-                                    <li>
-                                        <a href=""
-                                           title="Click Here |  DISCOUNTS  | http://">
-                                            <!--<span class="icon icon-roadside-assistance"></span>-->
-                                            <!--<i class="icon icon-roadside-assistance">
-                                                <svg><use xlink:href="img/spritemap.svg#icon-roadside-assistance"></use></svg>
-                                            </i>-->
-                                            Discounts
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="/online-store"
-                                           title="Click Here |  ONLINE STORE  | http://sc.dev.midatlantic.aaa.com/online-store">
-                                            ONLINE STORE
-                                        </a>
-                                    </li>
-                                    <!--<li>
-                                    <a href="/about/stores"
-                                       title="Click Here |  STORE LOCATOR  | http://sc.dev.midatlantic.aaa.com/about/stores">
-                                        &lt;!&ndash;<span class="icon icon-store-locator"></span>&ndash;&gt;
-                                        &lt;!&ndash;<i class="icon icon-store-locator">
-                                            <svg><use xlink:href="img/spritemap.svg#icon-store-locator"></use></svg>
-                                        </i>&ndash;&gt;
-                                        Store Locator
-                                    </a>
-                                    </li>-->
-                                    <li>
-                                        <a href=""
-                                           title="Click Here |  ROADSIDE ASSISTANCE  | http://sc.dev.midatlantic.aaa.com/automotive">
-                                            <!--<span class="icon icon-roadside-assistance"></span>-->
-                                            <!--<i class="icon icon-roadside-assistance">
-                                                <svg><use xlink:href="img/spritemap.svg#icon-roadside-assistance"></use></svg>
-                                            </i>-->
-                                            Roadside Assistance
-                                        </a>
-                                    </li>
-
-
-                                    <li>
-                                    <a href=""
-                                       title="Click Here |  RENEW MEMBERSHIP  | http://sc.dev.midatlantic.aaa.com/automotive">
-                                        <!--<span class="icon icon-renew-membership"></span>-->
-                                        <!--<i class="icon icon-renew-membership">
-                                            <svg><use xlink:href="img/spritemap.svg#icon-renew-membership"></use></svg>
-                                        </i>-->
-                                        Renew Membership
-                                    </a>
-                                </li>
-                                </ul>
-
-                            </div>
                             <!--View Cart for mobile begin -->
-                            <div class="row view-cart-mobile">
+                            <!--<div class="row view-cart-mobile">
                                 <ul class="member-menu menu menu-tab">
 
                                 </ul>
-                            </div>
+                            </div>-->
                             <!--View Cart for mobile end -->
                             <ul class="main-menu menu" role="menubar" aria-hidden="false">
 
                                 <li class="HeaderMainMenuItems" role="menuitem" aria-haspopup="true">
-
                                     <a href="/Membership" onclick="ClickTrackingEvent('membershiplinktrackingid')"
                                        title="Click Here |  MEMBERSHIP benefits + discounts  | http://sc.dev.midatlantic.aaa.com/Membership">
                                         <span class="menu-label main ">MEMBERSHIP</span>
@@ -807,22 +798,35 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="row view-cart-desktop" style="float:right">
+        </div><!-- View Cart Bar -->
+        <!--<div style="display: none; color: #fff; height: 35px; padding: 5px 15px; position: fixed; left: 0; top: 60px; z-index:99999; width: 100%;background: #3c3c3c; border-top: 1px solid #fff;">
+            View Cart (3) <a style="border: none; color: #fff; margin: 0 20px; left: auto;" href="#" class="member-welcome aaa-white" title=" Welcome Margaret ">
+            <i class="fa faMember fa-user fa-1" aria-hidden="true"></i>
+            Welcome Margaret
+        </a>
+        </div>-->
+        <!--<div class="row view-cart-desktop" style="float:right">
             <ul class="member-menu menu menu-tab">
 
 
             </ul>
-        </div>
+        </div>-->
     </div>
 </div>
+<!-- END Mobile Header HTML Code  -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/scripts.js"></script>
+
+
+<!-- scripts required for expanding search input button -->
 <script src="js/search.js"></script>
 <script>
     new UISearch(document.getElementById('sb-search'));
 </script>
+<!-- scripts required for expanding search input button -->
+
+
 </body>
 </html>
