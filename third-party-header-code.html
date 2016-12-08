@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>3rd Party Header</title>
+    <link href="http://aca.aaa.com/Content/bootstrap.css" rel="stylesheet"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="//cloud.typography.com/7141914/6263952/css/fonts.css" rel="stylesheet"/>
+    <link href="http://apps.midatlantic.aaa.com/styleguide/resources/aaa-style.css" rel="stylesheet"/>
+    <!--<script src="http://apps.midatlantic.aaa.com/styleguide/resources/scripts/jquery-1.10.2.js"></script>
+    <script src="http://apps.midatlantic.aaa.com/styleguide/resources/scripts/bootstrap.js"></script>
+    <script src="http://apps.midatlantic.aaa.com/styleguide/resources/js/classie.js"></script>
+    <script src="http://apps.midatlantic.aaa.com/styleguide/resources/js/search.js"></script>
+    <script src="http://apps.midatlantic.aaa.com/styleguide/resources/js/plugins.js"></script>
+    <script src="http://apps.midatlantic.aaa.com/styleguide/resources/js/scripts.js"></script>
+    <script src="http://apps.midatlantic.aaa.com/styleguide/resources/scripts/MobileHeaderExt.js"></script>-->
+
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7141914/7601752/css/fonts.css"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--<link rel="apple-touch-icon" href="img/aaa-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/aaa-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/aaa-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/aaa-icon-ipad-retina.png">
+    <link rel="icon" href="/favicon.ico">-->
+    <!--<style>
+        #header-mobile.third-party-header .member-menu {
+            height: 66px;
+        }
+
+        #header-mobile.third-party-header .alt-menu li,
+        #header-mobile.third-party-header .member-menu li {
+            position: relative;
+            text-align: center;
+            width: 50%;
+        }
+
+        #header-mobile.third-party-header .alt-menu li:nth-child(even) {
+            border-left: 1px solid #eaeaea;
+        }
+
+        #header-mobile.third-party-header .member-menu li a {
+            position: absolute;
+            top: 12px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #header-mobile.third-party-header .main-menu > li > a.closed .icon-arrow-circle svg {
+            display: none;
+        }
+
+        /*#header-mobile.third-party-header .search-field {*/
+        /*position: relative;*/
+        /*}*/
+
+        /*#header-mobile.third-party-header #main-nav {
+            margin-top: 70px;
+        }*/
+
+        @media (max-width: 991px) {
+
+            #header.third-party-header {
+                display: none;
+            }
+
+            #header-mobile.third-party-header {
+                display: block;
+            }
+        }
+
+        @media (min-width: 992px) {
+
+            #header.third-party-header {
+                display: block;
+            }
+
+            #header-mobile.third-party-header {
+                display: none;
+            }
+        }
+    </style>-->
+    <style>
+        #header.third-party-header .alt-menu span.icon.icon-roadside-assistance {
+            margin-top: -2px;
+        }
+        #header-mobile .alt-menu.member-menu li:last-child {
+            width: 100%;
+        }
+
+        @media (min-width: 992px) {
+
+            #header.third-party-header .nav .alt-menu a:hover,
+            #header.third-party-header .nav .alt-menu a:focus {
+                color: #222;
+            }
+        }
+    </style>
+</head>
+<body class="loading  module-page">
+<div class="module-wrapper">
+    <div class="module-wrapper">
+        <!-- Begin Desktop header -->
+        <div id="header" class="third-party-header z-index-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="header-inner-wrap">
+                            <a href="/" id="main-logo">
+                                <i class="icon icon-aaa white">
+                                    <svg>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                             xlink:href="img/spritemap.svg#aaa-logo"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                            <a href="#" class="menu-button">
+                                <span class="bar bar-top"></span>
+                                <span class="bar bar-bottom"></span>
+                                <span class="text">Menu</span>
+                            </a>
+                            <div class="nav-wrapper">
+                                <div id="main-nav" class="nav">
+                                    <div class="search-field">
+                                        <form action="#">
+                                            <div class="form-block">
+                                                <label class="visuallyhidden" for="site-search">Search:</label>
+                                                <input id="site-search" type="search" placeholder="Search">
+                                                <button type="submit" class="button-link">
+                                                    <svg>
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                             xlink:href="img/spritemap.svg#icon-search"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <nav role="navigation" aria-label="Primary Menu">
+                                        <ul class="main-menu menu">
+                                            <li>
+                                                <a href="#">
+                                                    <span class="menu-label main">Membership</span>
+                                                    <span class="menu-label sub">benifits + discounts</span>
+                                                    <i class="icon icon-arrow-circle">
+                                                        <svg>
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                 xlink:href="img/spritemap.svg#icon-arrow-circle"></use>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="menu-label main">Automotive</span>
+                                                    <span class="menu-label sub">roadside + more</span>
+                                                    <i class="icon icon-arrow-circle">
+                                                        <svg>
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                 xlink:href="img/spritemap.svg#icon-arrow-circle"></use>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="menu-label main">Insurance &amp; Finances</span>
+                                                    <span class="menu-label sub">protect + save</span>
+                                                    <i class="icon icon-arrow-circle">
+                                                        <svg>
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                 xlink:href="img/spritemap.svg#icon-arrow-circle"></use>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="menu-label main">Travel</span>
+                                                    <span class="menu-label sub">plan + book</span>
+                                                    <i class="icon icon-arrow-circle">
+                                                        <svg>
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                 xlink:href="img/spritemap.svg#icon-arrow-circle"></use>
+                                                        </svg>
+                                                    </i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div id="alt-nav" class="nav" role="navigation">
+                                    <ul class="alt-menu menu">
+                                        <li><a href="#">
+                                            <span class="icon icon-roadside-assistance"></span>
+                                            Roadside Assistance</a></li>
+                                        <li><a href="#">
+                                            <span class="icon icon-renew-membership"></span>
+                                            Renew Membership</a></li>
+                                        <li><a href="#">
+                                            <span class="icon icon-store-locator"></span>
+                                            Find a Location</a></li>
+                                    </ul>
+                                    <ul class="member-menu menu">
+                                        <li>
+                                            <a href="#">
+                                                <i class="icon icon-cart">
+                                                    <svg>
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                             xlink:href="img/spritemap.svg#icon-cart"></use>
+                                                    </svg>
+                                                </i>
+                                                Online Store
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="icon icon-login">
+                                                    <svg>
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                             xlink:href="img/spritemap.svg#icon-login"></use>
+                                                    </svg>
+                                                </i>
+                                                Login
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Desktop header -->
+        <!-- Start Mobile header -->
+        <div id="header-mobile" class="z-index-5 headroom headroom--top headroom--not-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="header-inner-wrap flex-wrapper">
+                            <a href="/" id="main-logo" title="AAA">
+                                <i class="icon icon-aaa white">
+                                    <svg>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                             xlink:href="img/spritemap.svg#aaa-logo"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                            <a href="#" class="menu-button" title="Menu">
+                                <span class="bar bar-top"></span>
+                                <span class="bar bar-bottom"></span>
+                                <span class="text">Menu</span>
+                            </a>
+                            <div class="nav-wrapper ">
+                                <div id="main-nav-mobile" class="nav">
+                                    <!-- Begin expanding search input -->
+                                    <div class="action-link-wrap" style="position: relative; width: 100%">
+                                        <div class="search-field">
+                                            <div id="sb-search" class="sb-search">
+                                                <form>
+                                                    <input class="sb-search-input" placeholder="Search" type="search"
+                                                           id="txtSearchMobile">
+                                                    <input class="sb-search-submit" value="" onclick="SearchMobile()">
+
+                                                <span class="sb-icon-search">
+                                                    <svg>
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                             xlink:href="img/spritemap.svg#icon-search"></use>
+                                                    </svg>
+                                                </span>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div id="alt-nav-mobile" class="nav">
+                                            <ul class="member-menu action-menu menu">
+                                                <!-- Begin Login button -->
+                                                <li class="button-login">
+                                                    <a href="/Account/Login"
+                                                       title="Click Here |  Login  | /Account/Login">
+                                                        <div class="button-login-wrap">
+                                                            <svg>
+                                                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                     xlink:href="img/spritemap.svg#icon-login"></use>
+                                                            </svg>
+                                                            <span>Login</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="button-action-icon button-cart">
+                                                    <a href="/about/stores"
+                                                       title="Click Here |   | http://dev.aca.aaa.com/about/stores">
+                                                        <svg>
+                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                 xlink:href="img/spritemap.svg#icon-marker"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <!-- End Cart (Cart icon) -->
+                                            </ul>
+
+                                            <ul class="alt-menu menu member-menu">
+                                                <li><a href="#">Roadside Assistance</a></li>
+                                                <li><a href="#">Renew Membership</a></li>
+                                                <li><a href="#">Find a Location</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <ul class="main-menu menu" role="menubar" aria-hidden="false">
+                                        <li class="HeaderMainMenuItems " role="menuitem" aria-haspopup="true">
+                                            <a href="#" title="Click Here |  benefits + discounts" class="closed">
+                                                <span class="menu-label main ">MEMBERSHIP</span>
+                                                <span class="menu-label sub">benefits + discounts</span>
+                                                <!--<i class="icon icon-arrow-circle">
+                                                    <svg>
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/spritemap.svg#icon-arrow-circle"></use>
+                                                    </svg>
+                                                </i>-->
+                                            </a>
+                                        </li>
+                                        <li class="HeaderMainMenuItems NoSubMenu" role="menuitem" aria-haspopup="true">
+                                            <a href="/automotive" title="Click Here |  roadside + more" class="closed">
+                                                <span class="menu-label main ">AUTOMOTIVE</span>
+                                                <span class="menu-label sub">roadside + more</span>
+                                                <!--<i class="icon icon-arrow-circle">
+                                                    <svg>
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/spritemap.svg#icon-arrow-circle"></use>
+                                                    </svg>
+                                                </i>-->
+                                            </a>
+                                        </li>
+                                        <li class="HeaderMainMenuItems " role="menuitem" aria-haspopup="true">
+                                            <a href="#" title="Click Here |  protect + save" class="closed">
+                                                <span class="menu-label main ">INSURANCE &amp; FINANCES</span>
+                                                <span class="menu-label sub">protect + save</span>
+                                                <!--<i class="icon icon-arrow-circle">
+                                                    <svg>
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/spritemap.svg#icon-arrow-circle"></use>
+                                                    </svg>
+                                                </i>-->
+                                            </a>
+                                        </li>
+                                        <li class="HeaderMainMenuItems " role="menuitem" aria-haspopup="true">
+                                            <a href="#" title="Click Here |  plan + book" class="closed">
+                                                <span class="menu-label main ">TRAVEL</span>
+                                                <span class="menu-label sub">plan + book</span>
+                                                <!--<i class="icon icon-arrow-circle">
+                                                    <svg>
+                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/spritemap.svg#icon-arrow-circle"></use>
+                                                    </svg>
+                                                </i>-->
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Mobile header -->
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/search.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/scripts.js"></script>
+<script>
+    new UISearch(document.getElementById('sb-search'));
+</script>
+</body>
+</html>

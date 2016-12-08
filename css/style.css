@@ -6326,7 +6326,7 @@ Tooltip
 }
 
 #header .alt-menu span.icon {
-    background: url("../../images/icon-sprite.png") no-repeat;
+    background: url("../image/icon-sprite.png") no-repeat;
     display: inline-block;
     float: left;
     margin-right: 5px;
@@ -6342,14 +6342,14 @@ Tooltip
 #header .alt-menu span.icon.icon-renew-membership {
     background-position: 0 -14px;
     height: 12px;
-    margin-top: 5px;
+    margin-top: 0;
     width: 20px;
 }
 
 #header .alt-menu span.icon.icon-store-locator {
     background-position: 0 -50px;
     height: 15px;
-    margin-top: 3px;
+    margin-top: -2px;
     width: 13px;
 }
 
@@ -9907,9 +9907,26 @@ a.skip:hover {
     width: 100%;
 }*/
 
+#header.third-party-header .alt-menu li {
+    width: 33.333333%;
+}
+
+#header.third-party-header .alt-menu a {
+    padding-left: 27px;
+}
+
 .third-party-header .main-menu > li > a {
     padding: 25px 0;
 }
+
+@media (max-width: 1220px) {
+
+    .third-party-header .alt-menu {
+    width: 75%;
+
+  }
+}
+
 
 @media (max-width: 992px) {
     .third-party-header .main-menu {
@@ -9929,6 +9946,7 @@ a.skip:hover {
     .third-party-header .main-menu > li > a {
         padding: 25px 30px;
     }
+
 }
 
 /* AAA ==========  MOBILE MENU MAIN (_mobile-menu-main.scss)  ========== */
@@ -10917,7 +10935,7 @@ New
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1001;
+    z-index: 1010;
     transition: all .5s ease-in-out;
 }
 
