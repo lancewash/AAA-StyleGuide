@@ -29,78 +29,89 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/aaa-icon-iphone-retina.png">
     <link rel="apple-touch-icon" sizes="144x144" href="img/aaa-icon-ipad-retina.png">
     <link rel="icon" href="/favicon.ico">-->
-    <!--<style>
-        #header-mobile.third-party-header .member-menu {
-            height: 66px;
-        }
 
-        #header-mobile.third-party-header .alt-menu li,
-        #header-mobile.third-party-header .member-menu li {
-            position: relative;
-            text-align: center;
-            width: 50%;
-        }
-
-        #header-mobile.third-party-header .alt-menu li:nth-child(even) {
-            border-left: 1px solid #eaeaea;
-        }
-
-        #header-mobile.third-party-header .member-menu li a {
-            position: absolute;
-            top: 12px;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-
-        #header-mobile.third-party-header .main-menu > li > a.closed .icon-arrow-circle svg {
-            display: none;
-        }
-
-        /*#header-mobile.third-party-header .search-field {*/
-        /*position: relative;*/
-        /*}*/
-
-        /*#header-mobile.third-party-header #main-nav {
-            margin-top: 70px;
-        }*/
-
-        @media (max-width: 991px) {
-
-            #header.third-party-header {
-                display: none;
-            }
-
-            #header-mobile.third-party-header {
-                display: block;
-            }
-        }
-
-        @media (min-width: 992px) {
-
-            #header.third-party-header {
-                display: block;
-            }
-
-            #header-mobile.third-party-header {
-                display: none;
-            }
-        }
-    </style>-->
     <style>
-        #header.third-party-header .alt-menu span.icon.icon-roadside-assistance {
-            margin-top: -2px;
+        #header.third-party-header #main-logo img {
+            display: block;
+            margin: 34px auto 0;
+            width: auto;
         }
-        #header-mobile .alt-menu.member-menu li:last-child {
-            width: 100%;
+        #header.third-party-header.headroom--unpinned #main-logo img {
+            margin: 16px auto 0;
         }
 
-        @media (min-width: 992px) {
-
-            #header.third-party-header .nav .alt-menu a:hover,
-            #header.third-party-header .nav .alt-menu a:focus {
-                color: #222;
-            }
+        #header.third-party-header span.icon {
+            background: url('image/icon-sprite.png') no-repeat;
+            display: inline-block;
+            float: left;
+            margin-right: 5px;
+        }
+        #header.third-party-header span.icon.icon-cart {
+            background-position: 0 -66px;
+            height: 18px;
+            margin-top: 0;
+            width: 15px;
+        }
+        #header.third-party-header .menu a:hover .icon-cart {
+            background-position: -19px -66px;
+        }
+        #header.third-party-header span.icon.icon-login {
+            background-position: 0 -113px;
+            height: 22px;
+            margin-top: 2px;
+            width: 13px;
+        }
+        #header.third-party-header .menu a:hover .icon-login {
+            background-position: -17px -113px;
+        }
+        #header.third-party-header span.icon.icon-search {
+            background-position: 0 -151px;
+            height: 28px;
+            margin-top: 4px;
+            margin-left: 12px;
+            width: 24px;
+        }
+        #header.third-party-header button:hover span.icon.icon-search {
+            background-position: 0 -195px;
+            height: 28px;
+            margin-top: 4px;
+            margin-left: 12px;
+            width: 24px;
+        }
+        #header-mobile.third-party-header #main-logo-mobile img {
+            margin-left: 15px;
+            margin-top: 12px;
+            width: auto;
+        }
+        #header-mobile.third-party-header #sb-search .sb-icon-search {
+            background: url('image/icon-sprite.png') no-repeat #eaeaea;
+            margin: 0;
+        }
+        #header-mobile.third-party-header #sb-search .sb-icon-search {
+            background-position: 25px -140px;
+            z-index: 90;
+        }
+        #header-mobile.third-party-header #sb-search.sb-search-open .sb-icon-search {
+            background: url('image/icon-sprite.png') no-repeat #E21F11;
+            background-position: 25px -185px;
+        }
+        #header-mobile.third-party-header .button-action-icon .icon-marker {
+            background: url('image/icon-sprite.png') no-repeat #3c3c3c;
+            background-position: 0 -240px;
+            margin-left: 44px;
+            margin-top: 11px;
+        }
+        #header-mobile.third-party-header .button-login-wrap .icon-login {
+            background: url('image/icon-sprite.png') no-repeat;
+            background-position: 0 -276px;
+            margin: -4px 0 0 -25px;
+            /*margin-top: 9px;*/
+        }
+        #header-mobile.third-party-header .button-login {
+            height: 44px;
+        }
+        #header-mobile.third-party-header .header-inner-wrap {
+            box-shadow: none;
         }
     </style>
 </head>
@@ -113,13 +124,8 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="header-inner-wrap">
-                            <a href="/" id="main-logo">
-                                <i class="icon icon-aaa white">
-                                    <svg>
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                             xlink:href="img/spritemap.svg#aaa-logo"></use>
-                                    </svg>
-                                </i>
+                            <a href="http://www.aaa.com" id="main-logo">
+                                <img src="img/aaa-icon-white.png" alt="" height="56" width="92">
                             </a>
                             <a href="#" class="menu-button">
                                 <span class="bar bar-top"></span>
@@ -134,10 +140,7 @@
                                                 <label class="visuallyhidden" for="site-search">Search:</label>
                                                 <input id="site-search" type="search" placeholder="Search">
                                                 <button type="submit" class="button-link">
-                                                    <svg>
-                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                             xlink:href="img/spritemap.svg#icon-search"></use>
-                                                    </svg>
+                                                    <span class="icon icon-search"></span>
                                                 </button>
                                             </div>
                                         </form>
@@ -148,48 +151,24 @@
                                                 <a href="#">
                                                     <span class="menu-label main">Membership</span>
                                                     <span class="menu-label sub">benifits + discounts</span>
-                                                    <i class="icon icon-arrow-circle">
-                                                        <svg>
-                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                                 xlink:href="img/spritemap.svg#icon-arrow-circle"></use>
-                                                        </svg>
-                                                    </i>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#">
                                                     <span class="menu-label main">Automotive</span>
                                                     <span class="menu-label sub">roadside + more</span>
-                                                    <i class="icon icon-arrow-circle">
-                                                        <svg>
-                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                                 xlink:href="img/spritemap.svg#icon-arrow-circle"></use>
-                                                        </svg>
-                                                    </i>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#">
                                                     <span class="menu-label main">Insurance &amp; Finances</span>
                                                     <span class="menu-label sub">protect + save</span>
-                                                    <i class="icon icon-arrow-circle">
-                                                        <svg>
-                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                                 xlink:href="img/spritemap.svg#icon-arrow-circle"></use>
-                                                        </svg>
-                                                    </i>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#">
                                                     <span class="menu-label main">Travel</span>
                                                     <span class="menu-label sub">plan + book</span>
-                                                    <i class="icon icon-arrow-circle">
-                                                        <svg>
-                                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                                 xlink:href="img/spritemap.svg#icon-arrow-circle"></use>
-                                                        </svg>
-                                                    </i>
                                                 </a>
                                             </li>
                                         </ul>
@@ -210,23 +189,13 @@
                                     <ul class="member-menu menu">
                                         <li>
                                             <a href="#">
-                                                <i class="icon icon-cart">
-                                                    <svg>
-                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                             xlink:href="img/spritemap.svg#icon-cart"></use>
-                                                    </svg>
-                                                </i>
+                                                <span class="icon icon-cart"></span>
                                                 Online Store
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i class="icon icon-login">
-                                                    <svg>
-                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                             xlink:href="img/spritemap.svg#icon-login"></use>
-                                                    </svg>
-                                                </i>
+                                                <span class="icon icon-login"></span>
                                                 Login
                                             </a>
                                         </li>
@@ -240,18 +209,13 @@
         </div>
         <!-- End Desktop header -->
         <!-- Start Mobile header -->
-        <div id="header-mobile" class="z-index-5 headroom headroom--top headroom--not-bottom">
+        <div id="header-mobile" class="z-index-5 headroom headroom--top headroom--not-bottom third-party-header">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="header-inner-wrap flex-wrapper">
-                            <a href="/" id="main-logo" title="AAA">
-                                <i class="icon icon-aaa white">
-                                    <svg>
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                             xlink:href="img/spritemap.svg#aaa-logo"></use>
-                                    </svg>
-                                </i>
+                            <a href="http://www.aaa.com" id="main-logo-mobile" title="AAA">
+                                <img src="img/aaa-icon-white-mobile.png" alt="" width="61" height="38">
                             </a>
                             <a href="#" class="menu-button" title="Menu">
                                 <span class="bar bar-top"></span>
@@ -265,16 +229,9 @@
                                         <div class="search-field">
                                             <div id="sb-search" class="sb-search">
                                                 <form>
-                                                    <input class="sb-search-input" placeholder="Search" type="search"
-                                                           id="txtSearchMobile">
+                                                    <input class="sb-search-input" placeholder="Search" type="search" id="txtSearchMobile">
                                                     <input class="sb-search-submit" value="" onclick="SearchMobile()">
-
-                                                <span class="sb-icon-search">
-                                                    <svg>
-                                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                             xlink:href="img/spritemap.svg#icon-search"></use>
-                                                    </svg>
-                                                </span>
+                                                <span class="icon sb-icon-search"></span>
                                                 </form>
                                             </div>
                                         </div>
@@ -285,21 +242,22 @@
                                                     <a href="/Account/Login"
                                                        title="Click Here |  Login  | /Account/Login">
                                                         <div class="button-login-wrap">
-                                                            <svg>
+                                                            <!--<svg>
                                                                 <use xmlns:xlink="http://www.w3.org/1999/xlink"
                                                                      xlink:href="img/spritemap.svg#icon-login"></use>
-                                                            </svg>
+                                                            </svg>-->
+                                                            <span class="icon icon-login"></span>
                                                             <span>Login</span>
                                                         </div>
                                                     </a>
                                                 </li>
                                                 <li class="button-action-icon button-cart">
-                                                    <a href="/about/stores"
-                                                       title="Click Here |   | http://dev.aca.aaa.com/about/stores">
-                                                        <svg>
+                                                    <a href="/about/stores" title="Click Here |   | http://dev.aca.aaa.com/about/stores">
+                                                        <span class="icon icon-marker"></span>
+                                                        <!--<svg>
                                                             <use xmlns:xlink="http://www.w3.org/1999/xlink"
                                                                  xlink:href="img/spritemap.svg#icon-marker"></use>
-                                                        </svg>
+                                                        </svg>-->
                                                     </a>
                                                 </li>
                                                 <!-- End Cart (Cart icon) -->

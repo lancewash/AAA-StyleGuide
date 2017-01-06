@@ -1,0 +1,89 @@
+#header.third-party-header #main-logo img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90px;
+    height: 55px;
+    margin: -27.5px 0 0 -45px;
+}
+/*#header.third-party-header.headroom--unpinned #main-logo img {
+    margin-top: 17px;
+}*/
+
+#header.third-party-header span.icon {
+    background: url('http://apps.midatlantic.aaa.com/styleguide/resources/image/icon-sprite.png') no-repeat;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+}
+#header.third-party-header span.icon.icon-cart {
+    background-position: 0 -66px;
+    height: 18px;
+    margin-top: 0;
+    width: 15px;
+}
+#header.third-party-header .menu a:hover .icon-cart {
+    background-position: -19px -66px;
+}
+#header.third-party-header span.icon.icon-login {
+    background-position: 0 -113px;
+    height: 22px;
+    margin-top: 2px;
+    width: 13px;
+}
+#header.third-party-header .menu a:hover .icon-login {
+    background-position: -17px -113px;
+}
+#header.third-party-header span.icon.icon-search {
+    background-position: 0 -151px;
+    height: 28px;
+    margin-top: 4px;
+    margin-left: 12px;
+    width: 24px;
+}
+#header.third-party-header button:hover span.icon.icon-search {
+    background-position: 0 -195px;
+    height: 28px;
+    margin-top: 4px;
+    margin-left: 12px;
+    width: 24px;
+}
+#header.third-party-header .alt-menu span.icon.icon-roadside-assistance {
+    margin-top: -2px;
+}
+#header-mobile.third-party-header #main-logo-mobile img {
+    margin: 12px 0 10px 15px;
+    width: auto;
+}
+
+#header-mobile.third-party-header #sb-search .sb-icon-search {
+    background: url('http://apps.midatlantic.aaa.com/styleguide/resources/image/icon-sprite.png') no-repeat #eaeaea;
+    margin: 0;
+}
+#header-mobile.third-party-header #sb-search .sb-icon-search {
+    background-position: 25px -140px;
+    z-index: 90;
+}
+#header-mobile.third-party-header #sb-search.sb-search-open .sb-icon-search {
+    background: url('http://apps.midatlantic.aaa.com/styleguide/resources/image/icon-sprite.png') no-repeat #E21F11;
+    background-position: 25px -185px;
+}
+#header-mobile.third-party-header .button-action-icon .icon-marker {
+    background: url('http://apps.midatlantic.aaa.com/styleguide/resources/image/icon-sprite.png') no-repeat #3c3c3c;
+    background-position: 0 -240px;
+    margin-left: 37%;
+    margin-top: 11px;
+}
+#header-mobile.third-party-header .button-login-wrap .icon-login {
+    background: url('http://apps.midatlantic.aaa.com/styleguide/resources/image/icon-sprite.png') no-repeat;
+    background-position: 0 -276px;
+    margin: -4px 0 0 -25px;
+    /*margin-top: 9px;*/
+}
+#header-mobile.third-party-header .button-login {
+    height: 44px;
+}
+#header-mobile.third-party-header .header-inner-wrap {
+    box-shadow: none;
+}

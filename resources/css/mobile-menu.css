@@ -1,0 +1,664 @@
+/* AAA ==========  MOBILE MENU MAIN (_mobile-menu-main.scss)  ========== */
+
+.template-wrapper #header-mobile {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#header-mobile:hover .module-link {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*--------------------------------------------------------------
+// Header
+--------------------------------------------------------------*/
+
+#header-mobile .menu-button[title="Menu"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#header-mobile .member-welcome {
+    border-left: 1px solid rgba(255, 255, 255, .25);
+    border-right: 1px solid rgba(255, 255, 255, .25);
+    text-align: center;
+    max-width: 140px;
+    width: 100%;
+    line-height: 1.2;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 10px;
+    position: absolute;
+}
+
+#header-mobile .member-welcome:hover {
+    color: #efefef;
+    text-decoration: underline;
+}
+
+#header-mobile {
+    height: 60px;
+    background: #e21f11;
+    backface-visibility: hidden;
+    transition: all ease .2s;
+    z-index: 1001;
+}
+
+#header-mobile .form-block {
+    margin-bottom: 0;
+}
+
+#header-mobile .container {
+    max-width: 100%;
+    width: 100%;
+}
+
+#header-mobile .col-sm-12 {
+    padding: 0;
+}
+
+#header-mobile .nav-wrapper {
+    /*background: #fff;*/
+    position: relative;
+    width: 100%;
+    float: left;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all ease .2s;
+}
+
+.active-nav #header-mobile .nav-wrapper {
+    opacity: 1;
+    height: calc(100vh - 60px);
+    overflow: scroll;
+}
+
+#header-mobile .nav {
+    width: 100%;
+    float: left;
+}
+
+#header-mobile .nav a {
+    text-transform: uppercase;
+    color: #222222;
+}
+
+/*@media (min-width: 992px) {
+    #header-mobile .nav a:hover, #header-mobile .nav a:focus {
+        color: #e21f11; } }*/
+#header-mobile .nav .menu-label {
+    font-size: 22px;
+}
+
+#header-mobile .nav .sub {
+    text-transform: lowercase;
+    font-size: 11px;
+}
+
+#header-mobile form > *, #header-mobile form input {
+    float: left;
+}
+
+#header-mobile .member-menu {
+    font-size: 11px;
+    float: left;
+    width: 100%;
+    display: flex;
+}
+
+#header-mobile .alt-menu.member-menu {
+    display: block;
+}
+
+#header-mobile .alt-menu.member-menu li {
+    float: left;
+    width: 50%;
+}
+
+#header-mobile .alt-menu.member-menu li:nth-child(2n+0) {
+    border-left: 1px solid #ddd;
+}
+
+#header-mobile .alt-menu.member-menu a {
+    padding: 10px 0;
+}
+
+@media (min-width: 992px) {
+    #header-mobile .member-menu {
+        display: block;
+        width: auto;
+    }
+}
+
+@media (min-width: 1220px) {
+    #header-mobile .member-menu {
+        font-size: .8125em;
+    }
+}
+
+#header-mobile .member-menu li {
+    float: none;
+    position: relative;
+    display: flex;
+}
+
+@media (min-width: 992px) {
+    #header-mobile .member-menu li {
+        display: inline-block;
+    }
+}
+
+#header-mobile .member-menu li:first-child:after {
+    content: "";
+    width: 1px;
+    height: 15px;
+    background: #222222;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+#header-mobile span.icon {
+    background: none;
+}
+
+#header-mobile .member-menu a {
+    color: #e21f11;
+    /*padding: 3px;*/
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#header-mobile .member-menu a:hover, #header-mobile .member-menu a:focus {
+    color: #222222;
+}
+
+@media (min-width: 1220px) {
+    #header-mobile .member-menu a {
+        padding: 10px 17px;
+    }
+}
+
+#header-mobile .member-menu .icon, #header-mobile .member-menu svg {
+    width: 30px;
+    height: 30px;
+}
+
+#header-mobile .member-menu svg {
+    /*float: left;*/
+    margin-top: 7px;
+}
+
+#header-mobile.headroom--unpinned {
+    transform: translateY(-40px);
+}
+
+#header-mobile.headroom--unpinned #main-logo {
+    height: 90px;
+    transform: translateY(40px);
+}
+
+#header-mobile .search-field {
+    width: 100%;
+    float: left;
+    padding: 0;
+    position: absolute;
+}
+
+@media (min-width: 992px) {
+    #header-mobile .search-field {
+        padding: 0;
+        display: inline-block;
+        width: 30%;
+        float: right;
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 1220px) {
+    #header-mobile .search-field {
+        width: 25%;
+    }
+}
+
+#header-mobile .search-field form {
+    float: left;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    #header-mobile .search-field form {
+        width: 85%;
+    }
+}
+
+@media (min-width: 1220px) {
+    #header-mobile .search-field form {
+        width: 100%;
+    }
+}
+
+#header-mobile .search-field input, #header-mobile .search-field .button-link {
+    height: 44px;
+}
+
+#header-mobile .search-field input {
+    /*width: calc(100% - 45px);*/
+    padding: 6px 12px;
+}
+
+@media (min-width: 1220px) {
+    #header-mobile .search-field input {
+        width: 165px;
+    }
+}
+
+#header-mobile .search-field .button-link {
+    width: 45px;
+    padding: 0;
+}
+
+#header-mobile .search-field .button-link:hover, #header-mobile .search-field .button-link:focus {
+    background: #e21f11;
+    color: #fff;
+}
+
+#header-mobile .search-field svg {
+    color: #e21f11;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: -2px;
+    z-index: 99999;
+}
+
+#header-mobile .search-field .sb-search-open svg {
+    color: #fff;
+}
+
+#header-mobile .main-menu > li:hover[aria-haspopup="true"] > a {
+    color: #e21f11;
+}
+
+.template-wrapper #header-mobile {
+    z-index: 20;
+}
+
+#header-mobile .container {
+    height: 0;
+}
+
+/*#header-mobile .menu-tab {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15), 0 2px 0 0 rgba(0, 0, 0, 0.085); }*/
+/* Hack removal of vertical pipe displayed to the right of links */
+#header-mobile .member-menu li:first-child:after {
+    display: none;
+}
+
+#header-mobile .alt-menu a {
+    color: #222;
+}
+
+/* Fixes display issue (<li>'s drop) */
+#header-mobile form > *, #header-mobile form #scController,
+#header-mobile form > *, #header-mobile form #scAction {
+    float: none !important;
+}
+
+.alt-menu.member-menu {
+    line-height: 1.9;
+}
+
+#header-mobile .menu-tab {
+    background-color: #fff;
+    float: right;
+    margin-right: 7.5px;
+    max-height: 0;
+    padding: 0;
+    position: relative;
+    transition: all .25s ease-in-out;
+}
+
+#header-mobile .menu-tab li {
+    margin-bottom: 0;
+    top: -21px;
+    transition: all .25s ease-in-out;
+}
+
+#header-mobile .menu-tab #navMiniCart,
+#header-mobile .menu-tab .member-welcome {
+    padding: 0 12px;
+}
+
+#header-mobile .member-welcome-tab {
+    min-width: 290px;
+}
+
+#header-mobile .main-menu .icon-arrow-circle {
+    right: 20px;
+}
+
+.caret {
+    margin-left: 8px;
+    /* increased distance of caret icon from 2px to 8px */
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-top: 8px solid;
+    height: 8px;
+    transition: all .15s ease-in-out;
+}
+
+/* added open/closed state for caret */
+.open .caret {
+    border-bottom: 8px solid;
+    border-top: 0;
+}
+
+/* Removes vertical divider line in top sub-nav - associated with logout/online stores/discount */
+#header-mobile .alt-menu li:first-child:after,
+#header-mobile .member-welcome-tab li:first-child:after {
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+
+/* Removes vertical divider line in top sub-nav - associated with logout/online stores/discount */
+#header-mobile .alt-menu li:first-child:after,
+#header-mobile .member-welcome-tab li:first-child:after {
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+
+@media (max-width: 991px) {
+    #header-mobile .member-menu {
+        font-size: 13px;
+        /*border-top: 1px solid #fff;*/
+        margin-bottom: 0;
+    }
+
+    #header-mobile #alt-nav-mobile {
+        border-top: 1px solid #fff;
+    }
+
+    #header-mobile .member-menu li a:not(#navMiniCart) {
+        flex-grow: 1;
+        margin: 0 -.5px -1px;
+    }
+
+    .caret {
+        display: none;
+    }
+
+    #header-mobile .HeaderMainMenuItems {
+        background: #fff;
+    }
+
+    .HeaderMainMenuItems .title-link,
+    .HeaderMainMenuItems .sub-menu ul {
+        margin-bottom: 5px;
+    }
+}
+
+/* AAA ==========  SPRITE (_sprite.scss)  ========== */
+/*#header-mobile .alt-menu a {
+    padding-left: 15px; }*/
+
+/*#header-mobile .alt-menu a {
+    padding: 10px 25px;
+}*/
+
+#header-mobile .alt-menu span.icon {
+    background: url("../../images/icon-sprite.png") no-repeat;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+}
+
+#header-mobile .alt-menu span.icon.icon-roadside-assistance {
+    background-position: 0 0;
+    height: 13px;
+    margin-top: 4px;
+    width: 20px;
+}
+
+#header-mobile .alt-menu span.icon.icon-renew-membership {
+    background-position: 0 -14px;
+    height: 12px;
+    margin-top: 5px;
+    width: 20px;
+}
+
+#header-mobile .alt-menu span.icon.icon-store-locator {
+    background-position: 0 -50px;
+    height: 15px;
+    margin-top: 3px;
+    width: 13px;
+}
+
+/* AAA ==========  BUTTON (_button.scss)  ========== */
+#header-mobile .button-login-wrap {
+    position: relative;
+}
+
+#header-mobile .button-login-wrap svg {
+    margin-left: -40px;
+}
+
+#header-mobile .button-login {
+    background: #e21f11;
+    border-right: 1px solid #fff;
+    position: relative;
+}
+
+#header-mobile .action-menu li:not(.button-login) {
+    background: #3c3c3c;
+}
+
+#header-mobile .action-menu a {
+    color: #fff;
+}
+
+#header-mobile .action-menu a:hover {
+    color: rgba(255, 255, 255, .75);
+}
+
+#header-mobile .button-login span {
+    position: absolute;
+    top: 12px;
+}
+
+#header-mobile .button-login a {
+    color: #e21f11;
+    color: #fff;
+    margin: 15px 30px 0 0;
+}
+
+#header-mobile .button-login a:hover {
+    color: #fff;
+}
+
+#header-mobile .button-action-icon {
+    width: 135px;
+    background: #eaeaea;
+}
+
+#header-mobile .button-cart {
+    margin-right: 71px;
+
+}
+
+#header-mobile .button-marker {
+    margin-right: 1px;
+}
+
+#header-mobile #minicart {
+    line-height: 1.25;
+}
+
+#header-mobile #minicart p {
+    margin-bottom: 5px;
+}
+
+#header-mobile #minicart a:not(.button-link) {
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+/*.minicart_item {
+  margin-bottom: 5px;
+}*/
+#header-mobile #minicart .minicart_right a {
+    line-height: 1;
+    padding: 10px 0;
+}
+
+#header-mobile .member-menu:not(.member-welcome-tab) #minicartdropdown {
+    margin-left: -168px;
+    padding-top: 40px;
+}
+
+/* AAA ==========  ECOMM VIEW CART (Ecommerce/_ecomm-menu.scss)  ========== */
+#header-mobile .view-cart-mobile {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#header-mobile .view-cart-mobile .menu-tab {
+    border-bottom: none;
+    float: left;
+    max-height: inherit;
+}
+
+#header-mobile .view-cart-mobile .menu-tab li {
+    top: -16px;
+}
+
+#header-mobile .view-cart-mobile .menu-tab li #navMiniCart {
+    display: block;
+    width: 100%;
+    right: 20px;
+    padding: 0;
+    text-align: right;
+    width: 130px;
+}
+
+/*@media (min-width: 992px) {
+    #header-mobile .view-cart-mobile {
+        display: none; } }*/
+
+/* AAA ==========  TABLET (Viewport/_tablet.scss)  ========== */
+/* Override default bootstrap width to maximize viewport display */
+@media screen and (orientation: portrait) {
+    #header-mobile.headroom--unpinned #main-logo,
+    #header-mobile.z-index-5 {
+        height: 60px;
+        transform: translateY(0) !important;
+    }
+
+    #header-mobile.headroom--unpinned {
+        transform: translateY(0) !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #header-mobile.headroom--unpinned #main-logo,
+    #header-mobile.z-index-5 {
+        height: 60px;
+        transform: translateY(0) !important;
+    }
+
+    #header-mobile.headroom--unpinned {
+        transform: translateY(0) !important;
+    }
+}
+
+#header-mobile .non-member-nav .main-menu > li > a {
+    padding: 25px 35px;
+}
+
+#header-mobile .main-menu > li > a {
+    border-top: 1px solid #eaeaea;
+    padding: 15px 20px 10px;
+}
+
+#header-mobile .main-menu li:last-child {
+    border-bottom: 1px solid #eaeaea;
+}
+
+#header-mobile .non-member-nav .main-menu > li:last-child > a :hover {
+    color: #222;
+}
+
+#header-mobile .non-member-nav .member-menu li:first-child:after {
+    content: "";
+    width: 0px;
+    height: 0;
+    background: transparent;
+}
+
+#header-mobile .non-member-nav .member-menu {
+    text-align: center;
+    width: 25%;
+}
+
+#header-mobile .non-member-nav .member-menu.alt-menu {
+    text-align: center;
+    width: 75%;
+}
+
+/* AAA ==========  MOBILE MENU ALTERNATE (_mobile-menu-alt.scss)  ========== */
+@media (max-width: 992px) {
+    #header-mobile .member-menu,
+    #header-mobile .member-menu li {
+        text-align: center;
+        #header-mobile . member-menu svg
+    }
+
+    #header-mobile .member-menu li.half {
+        float: left;
+        width: 50% !important;
+    }
+
+    #header-mobile .member-menu li.third {
+        float: left;
+        width: 33.33333% !important;
+    }
+
+    #header-mobile .member-menu li.half:last-child {
+        border-left: 1px solid #eaeaea;
+    }
+
+    #header-mobile .alt-menu.menu.member-menu {
+        background: #f4f4f4;
+    }
+
+    #header-mobile .alt-menu.menu.member-menu a {
+        border: none;
+    }
+
+    #header-mobile .alt-menu.menu.member-menu li {
+        border-top: 1px solid #ddd;
+    }
+
+    /*#header-mobile input {
+        border: 1px solid #eaeaea;
+    }*/
+    #header-mobile .button-link:not(.no-styles) {
+        margin: 0;
+    }
+}
+
+#txtSearch-mobile:focus {
+    border: 1px solid #222222;
+}
+
